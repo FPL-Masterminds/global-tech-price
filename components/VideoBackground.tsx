@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface VideoBackgroundProps {
   src: string;
@@ -15,10 +15,31 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
   objectFit = 'cover'
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+
+    // Fade in on load
+    const handleCanPlay = () => {
+      setOpacity(1);
+    };
+
+    // Fade out before loop, fade in after
+    const handleTimeUpdate = () => {
+      if (video.duration > 0) {
+        const timeLeft = video.duration - video.currentTime;
+        if (timeLeft < 1) {
+          setOpacity(0);
+        } else if (video.currentTime < 1) {
+          setOpacity(1);
+        }
+      }
+    };
+
+    video.addEventListener('canplay', handleCanPlay);
+    video.addEventListener('timeupdate', handleTimeUpdate);
 
     // Use HLS.js for .m3u8 support if native support isn't available
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
@@ -28,6 +49,11 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
       hls.loadSource(src);
       hls.attachMedia(video);
     }
+
+    return () => {
+      video.removeEventListener('canplay', handleCanPlay);
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+    };
   }, [src]);
 
   return (
@@ -38,8 +64,8 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
         loop
         muted
         playsInline
-        className="w-full h-full"
-        style={{ objectFit }}
+        className="w-full h-full transition-opacity duration-1000"
+        style={{ objectFit, opacity }}
       />
       <div 
         className="absolute inset-0 z-1" 
