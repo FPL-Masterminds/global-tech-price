@@ -157,35 +157,6 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Feature Section with Video Background Cards */}
-      <section className="bg-black py-[160px] flex flex-col items-center">
-        <div className="w-[87.5%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-8">
-          
-          <div className="relative rounded-[28px] overflow-hidden h-[500px] flex flex-col justify-end p-12">
-            <VideoBackground src={sectionVideos.card1} overlayOpacity={0.6} />
-            <div className="relative z-10">
-              <h3 className="text-[32px] font-semibold mb-4 leading-tight">Travel-Ready Savings</h3>
-              <p className="text-white/80 text-[18px] mb-8">Discover which international destinations offer the best value for your next upgrade. Factor in tourist tax refunds automatically.</p>
-              <button className="h-[56px] px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 font-semibold hover:bg-white/20 transition-all">
-                Learn more
-              </button>
-            </div>
-          </div>
-
-          <div className="relative rounded-[28px] overflow-hidden h-[500px] flex flex-col justify-end p-12">
-            <VideoBackground src={sectionVideos.card2} overlayOpacity={0.6} />
-            <div className="relative z-10">
-              <h3 className="text-[32px] font-semibold mb-4 leading-tight">Real-time FX Monitoring</h3>
-              <p className="text-white/80 text-[18px] mb-8">Our algorithm tracks global exchange rates every 15 minutes to provide the most accurate pricing index available.</p>
-              <button className="h-[56px] px-8 rounded-full bg-white/10 backdrop-blur-md border border-white/20 font-semibold hover:bg-white/20 transition-all">
-                View methodology
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* Accordion FAQ Section */}
       <section className="bg-black py-[124px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[800px]">
