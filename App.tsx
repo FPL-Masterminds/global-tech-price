@@ -12,7 +12,7 @@ const App: React.FC = () => {
   // Testing videos systematically - no randomization
   const sectionVideos = useMemo(() => {
     return {
-      hero: VIDEO_POOL[3],  // Video #4 (testing)
+      hero: VIDEO_POOL[4],  // Video #5 (testing)
       grid: VIDEO_POOL[1],
       card1: VIDEO_POOL[2],
       card2: VIDEO_POOL[3],
