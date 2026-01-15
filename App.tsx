@@ -122,7 +122,7 @@ const App: React.FC = () => {
                   <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="font-['Inter']">
                 {MOCK_PRICES.map((item, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                     <td className="py-4 px-6 sticky left-0 z-10 bg-white hover:bg-gray-50 border-r border-gray-100">
@@ -133,13 +133,13 @@ const App: React.FC = () => {
                       />
                     </td>
                     <td className="py-4 px-6 text-[14px] font-semibold text-gray-900">{item.country}</td>
-                    <td className="py-4 px-6 text-[14px] font-normal text-gray-700 text-right">{item.officialPrice}</td>
+                    <td className="py-4 px-6 text-[14px] text-gray-700 text-right">{item.officialPrice}</td>
                     <td className="py-4 px-6 text-center">
                       <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700 whitespace-nowrap">
                         {item.taxStatus}
                       </span>
                     </td>
-                    <td className="py-4 px-6 text-[13px] font-normal text-gray-500 text-right whitespace-nowrap">{item.fxRate}</td>
+                    <td className="py-4 px-6 text-[13px] text-gray-500 text-right whitespace-nowrap">{item.fxRate}</td>
                     <td className="py-4 px-6 text-[16px] font-semibold text-gray-900 text-right whitespace-nowrap">${item.priceInUsd.toLocaleString()}</td>
                     <td className="py-4 px-6 text-[14px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
                       {item.vsUsPrice}
