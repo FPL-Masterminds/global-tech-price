@@ -1,17 +1,16 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] })
 
 export const metadata: Metadata = {
-  title: "Global Apple Price Index | Find Best Prices Worldwide",
+  title: "Global Tech Price | Compare Apple Prices Worldwide",
   description:
-    "Compare Apple product prices across countries with live exchange rates and tax calculations. Find the best deals on MacBooks, iPhones, and more.",
-  generator: "v0.app",
+    "Compare Apple product prices across 30+ countries with live FX rates and tax calculations. Find the best deals on MacBooks, iPhones, iPads, and more.",
   icons: {
     icon: [
       {
@@ -38,7 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <head>
+        <Script src="https://cdn.jsdelivr.net/npm/hls.js@latest" strategy="beforeInteractive" />
+      </head>
+      <body className={`${inter.className} antialiased bg-black text-[#F5F5F7]`}>
         {children}
         <Analytics />
       </body>
