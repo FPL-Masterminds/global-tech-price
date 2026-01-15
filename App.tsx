@@ -12,11 +12,11 @@ const App: React.FC = () => {
   const sectionVideos = useMemo(() => {
     const shuffled = [...VIDEO_POOL].sort(() => 0.5 - Math.random());
     return {
-      hero: shuffled[0],
+      hero: shuffled[4],
       grid: shuffled[1],
       card1: shuffled[2],
       card2: shuffled[3],
-      footer: shuffled[4]
+      footer: shuffled[0]
     };
   }, []);
 
