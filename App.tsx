@@ -112,40 +112,40 @@ const App: React.FC = () => {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider sticky left-0 z-20 bg-gray-50">Flag</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Country</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Official Price</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-center">Tax Status</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">FX Rate</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Price in USD</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs US</th>
-                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
+                  <th className="py-3 px-6 min-w-[80px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider sticky left-0 z-20 bg-gray-50">Flag</th>
+                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Country</th>
+                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Official Price</th>
+                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-center">Tax Status</th>
+                  <th className="py-3 px-6 min-w-[160px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">FX Rate</th>
+                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Price in USD</th>
+                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs US</th>
+                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
                 </tr>
               </thead>
               <tbody>
                 {MOCK_PRICES.map((item, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-4 sticky left-0 z-10 bg-white hover:bg-gray-50 border-r border-gray-100">
+                    <td className="py-4 px-6 sticky left-0 z-10 bg-white hover:bg-gray-50 border-r border-gray-100">
                       <img 
                         src={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png`}
                         alt={`${item.country} flag`}
                         className="w-8 h-6 object-cover rounded shadow-sm"
                       />
                     </td>
-                    <td className="py-4 px-4 font-semibold text-[14px] text-gray-900">{item.country}</td>
-                    <td className="py-4 px-4 text-[14px] text-gray-700 text-right font-mono">{item.officialPrice}</td>
-                    <td className="py-4 px-4 text-center">
-                      <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">
+                    <td className="py-4 px-6 text-[14px] font-semibold text-gray-900">{item.country}</td>
+                    <td className="py-4 px-6 text-[14px] font-normal text-gray-700 text-right">{item.officialPrice}</td>
+                    <td className="py-4 px-6 text-center">
+                      <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700 whitespace-nowrap">
                         {item.taxStatus}
                       </span>
                     </td>
-                    <td className="py-4 px-4 text-[12px] text-gray-500 text-right font-mono">{item.fxRate}</td>
-                    <td className="py-4 px-4 font-bold text-[16px] text-gray-900 text-right">${item.priceInUsd.toLocaleString()}</td>
-                    <td className="py-4 px-4 font-semibold text-[14px] text-right" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
+                    <td className="py-4 px-6 text-[13px] font-normal text-gray-500 text-right whitespace-nowrap">{item.fxRate}</td>
+                    <td className="py-4 px-6 text-[16px] font-semibold text-gray-900 text-right whitespace-nowrap">${item.priceInUsd.toLocaleString()}</td>
+                    <td className="py-4 px-6 text-[14px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
                       {item.vsUsPrice}
                     </td>
-                    <td className="py-4 px-4 text-right">
-                      <button className="px-4 py-1.5 rounded-md text-[12px] font-semibold bg-black text-white hover:bg-gray-800 transition-all">
+                    <td className="py-4 px-6 text-right">
+                      <button className="px-5 py-2 rounded-md text-[12px] font-semibold bg-black text-white hover:bg-gray-800 transition-all whitespace-nowrap">
                         Check Store
                       </button>
                     </td>
