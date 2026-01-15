@@ -56,10 +56,10 @@ const App: React.FC = () => {
         
         <div className="relative z-10 text-center px-4 w-[87.5%] max-w-[1024px]">
           <h1 className="text-[48px] md:text-[80px] font-semibold leading-[1.05] mb-6 tracking-tight">
-            Global Apple <br /> Pricing Index
+            Global Tech <br /> Price Index
           </h1>
           <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px] mx-auto mb-10">
-            Live FX & Tax Data. Find the best country to buy your next Apple product.
+            Live FX & Tax Data. Find the best country to buy your next Tech product.
           </p>
           
           {/* Controls Glass Card */}
