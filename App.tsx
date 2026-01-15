@@ -125,8 +125,8 @@ const App: React.FC = () => {
               <tbody>
                 {MOCK_PRICES.map((item, idx) => (
                   <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-4 sticky left-0 z-10 bg-white group-hover:bg-gray-50 border-r border-gray-100">
-                      <span className="text-[20px]">{item.code === 'US' ? '🇺🇸' : item.code === 'GB' ? '🇬🇧' : item.code === 'JP' ? '🇯🇵' : item.code === 'MY' ? '🇲🇾' : item.code === 'BR' ? '🇧🇷' : item.code === 'FR' ? '🇫🇷' : item.code === 'AU' ? '🇦🇺' : item.code === 'SG' ? '🇸🇬' : '🏳️'}</span>
+                    <td className="py-4 px-4 sticky left-0 z-10 bg-white hover:bg-gray-50 border-r border-gray-100">
+                      <span className="inline-block w-10 h-7 rounded overflow-hidden text-[24px] leading-7 text-center">{item.code === 'US' ? '🇺🇸' : item.code === 'GB' ? '🇬🇧' : item.code === 'JP' ? '🇯🇵' : item.code === 'MY' ? '🇲🇾' : item.code === 'BR' ? '🇧🇷' : item.code === 'FR' ? '🇫🇷' : item.code === 'AU' ? '🇦🇺' : item.code === 'SG' ? '🇸🇬' : '🏳️'}</span>
                     </td>
                     <td className="py-4 px-4 font-semibold text-[14px] text-gray-900">{item.country}</td>
                     <td className="py-4 px-4 text-[14px] text-gray-700 text-right font-mono">{item.officialPrice}</td>
