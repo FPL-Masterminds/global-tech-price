@@ -1,4 +1,3 @@
-"use client"
 
 import React, { useEffect, useRef } from 'react';
 
@@ -24,7 +23,7 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
     // Use HLS.js for .m3u8 support if native support isn't available
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = src;
-    } else if (typeof window !== 'undefined' && (window as any).Hls && (window as any).Hls.isSupported()) {
+    } else if ((window as any).Hls && (window as any).Hls.isSupported()) {
       const hls = new (window as any).Hls();
       hls.loadSource(src);
       hls.attachMedia(video);

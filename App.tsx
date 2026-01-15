@@ -1,20 +1,22 @@
-"use client"
 
-import React, { useState, useMemo } from 'react';
-import VideoBackground from '@/components/VideoBackground';
-import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/lib/constants';
+import React, { useState, useEffect, useMemo } from 'react';
+import VideoBackground from './components/VideoBackground';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from './constants';
+import { Product } from './types';
 
-export default function Home() {
+const App: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
   const [includeTaxes, setIncludeTaxes] = useState(true);
 
+  // Randomly select videos for different sections on mount
   const sectionVideos = useMemo(() => {
     const shuffled = [...VIDEO_POOL].sort(() => 0.5 - Math.random());
     return {
       hero: shuffled[0],
-      card1: shuffled[1],
-      card2: shuffled[2],
-      footer: shuffled[3]
+      grid: shuffled[1],
+      card1: shuffled[2],
+      card2: shuffled[3],
+      footer: shuffled[4]
     };
   }, []);
 
@@ -44,12 +46,13 @@ export default function Home() {
         
         <div className="relative z-10 text-center px-4 w-[87.5%] max-w-[1024px]">
           <h1 className="text-[48px] md:text-[80px] font-semibold leading-[1.05] mb-6 tracking-tight">
-            Global Tech <br /> Price Index
+            Global Apple <br /> Pricing Index
           </h1>
           <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px] mx-auto mb-10">
             Live FX & Tax Data. Find the best country to buy your next Apple product.
           </p>
           
+          {/* Controls Glass Card */}
           <div className="glass-card rounded-[28px] p-6 md:p-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 backdrop-blur-[20px]">
             <div className="flex flex-col items-start">
               <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Product</label>
@@ -90,7 +93,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Grid Section - BLACK */}
+      {/* Main Grid Section */}
       <section className="bg-black py-[124px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[1200px]">
           <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center">Global Comparison</h2>
@@ -143,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Section */}
+      {/* Feature Section with Video Background Cards */}
       <section className="bg-black py-[160px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-8">
           
@@ -204,7 +207,7 @@ export default function Home() {
       <footer className="relative bg-black py-[160px] flex flex-col items-center overflow-hidden">
         <VideoBackground src={sectionVideos.footer} overlayOpacity={0.8} />
         <div className="relative z-10 w-[87.5%] max-w-[1024px] text-center">
-          <h2 className="text-[32px] md:text-[56px] font-semibold mb-12">Global Tech Price</h2>
+          <h2 className="text-[32px] md:text-[56px] font-semibold mb-12">Apple Pricing Index</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-left text-[14px] text-white/60 mb-20">
             <div>
               <h4 className="text-white font-semibold mb-4">Explore</h4>
@@ -240,11 +243,13 @@ export default function Home() {
             </div>
           </div>
           <div className="pt-12 border-t border-white/10 text-[12px] text-white/40 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p>Copyright © 2026 Global Tech Price. All rights reserved.</p>
-            <p>Made with precision for global shoppers.</p>
+            <p>Copyright © 2024 Apple Pricing Index Noir. All rights reserved.</p>
+            <p>Made with minimalist precision for global shoppers.</p>
           </div>
         </div>
       </footer>
     </div>
   );
-}
+};
+
+export default App;
