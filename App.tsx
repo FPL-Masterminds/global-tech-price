@@ -104,44 +104,45 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Grid Section */}
-      <section className="bg-black py-[124px] flex flex-col items-center">
-        <div className="w-[87.5%] max-w-[1200px]">
-          <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center">Global Comparison</h2>
+      <section className="bg-white py-[124px] flex flex-col items-center">
+        <div className="w-[87.5%] max-w-[1400px]">
+          <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center text-black">Global Comparison</h2>
           
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto bg-white rounded-lg shadow-sm border border-gray-200">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b-2 border-white/10 text-[14px] text-white/40 font-semibold uppercase tracking-wider">
-                  <th className="pb-6 pr-4">Country</th>
-                  <th className="pb-6 pr-4">Official Price</th>
-                  <th className="pb-6 pr-4">Tax Status</th>
-                  <th className="pb-6 pr-4">FX Rate</th>
-                  <th className="pb-6 pr-4">Price in USD</th>
-                  <th className="pb-6 pr-4">Diff vs US</th>
-                  <th className="pb-6 pr-4 text-right">Action</th>
+                <tr className="bg-gray-50 border-b border-gray-200">
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider sticky left-0 z-20 bg-gray-50">Flag</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Country</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Official Price</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-center">Tax Status</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">FX Rate</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Price in USD</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs US</th>
+                  <th className="py-3 px-4 text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
                 </tr>
               </thead>
-              <tbody className="text-[18px]">
+              <tbody>
                 {MOCK_PRICES.map((item, idx) => (
-                  <tr key={idx} className="border-b border-white/5 group hover:bg-white/5 transition-colors">
-                    <td className="py-8 pr-4">
-                      <div className="flex items-center space-x-3">
-                        <span className="text-white/40 font-mono text-[14px]">{item.code}</span>
-                        <span className="font-semibold">{item.country}</span>
-                      </div>
+                  <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-4 sticky left-0 z-10 bg-white group-hover:bg-gray-50 border-r border-gray-100">
+                      <span className="text-[20px]">{item.code === 'US' ? '🇺🇸' : item.code === 'GB' ? '🇬🇧' : item.code === 'JP' ? '🇯🇵' : item.code === 'MY' ? '🇲🇾' : item.code === 'BR' ? '🇧🇷' : item.code === 'FR' ? '🇫🇷' : item.code === 'AU' ? '🇦🇺' : item.code === 'SG' ? '🇸🇬' : '🏳️'}</span>
                     </td>
-                    <td className="py-8 pr-4 text-white/80">{item.officialPrice}</td>
-                    <td className="py-8 pr-4">
-                      <span className="px-3 py-1 rounded-full text-[12px] font-semibold bg-white/10 text-white/80">
+                    <td className="py-4 px-4 font-semibold text-[14px] text-gray-900">{item.country}</td>
+                    <td className="py-4 px-4 text-[14px] text-gray-700 text-right font-mono">{item.officialPrice}</td>
+                    <td className="py-4 px-4 text-center">
+                      <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">
                         {item.taxStatus}
                       </span>
                     </td>
-                    <td className="py-8 pr-4 text-[14px] text-white/40">{item.fxRate}</td>
-                    <td className="py-8 pr-4 font-semibold text-[22px]">${item.priceInUsd}</td>
-                    <td className="py-8 pr-4 font-semibold text-white/80">{item.vsUsPrice}</td>
-                    <td className="py-8 pr-4 text-right">
-                      <button className="px-6 py-2 rounded-full border border-white/20 text-[14px] font-semibold hover:bg-white hover:text-black transition-all">
-                        Check Apple Store
+                    <td className="py-4 px-4 text-[12px] text-gray-500 text-right font-mono">{item.fxRate}</td>
+                    <td className="py-4 px-4 font-bold text-[16px] text-gray-900 text-right">${item.priceInUsd.toLocaleString()}</td>
+                    <td className="py-4 px-4 font-semibold text-[14px] text-right" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
+                      {item.vsUsPrice}
+                    </td>
+                    <td className="py-4 px-4 text-right">
+                      <button className="px-4 py-1.5 rounded-md text-[12px] font-semibold bg-black text-white hover:bg-gray-800 transition-all">
+                        Check Store
                       </button>
                     </td>
                   </tr>
@@ -150,8 +151,8 @@ const App: React.FC = () => {
             </table>
           </div>
           
-          <p className="mt-12 text-center text-[14px] text-white/40 italic">
-            Exchange rates and prices are for reference only. Tax rates may vary by region. Always check the official Apple Store for current pricing.
+          <p className="mt-8 text-center text-[12px] text-gray-500 italic">
+            Exchange rates and prices are for reference only. Tax rates may vary by region. Always check the official store for current pricing.
           </p>
         </div>
       </section>
