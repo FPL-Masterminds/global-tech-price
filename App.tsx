@@ -9,14 +9,14 @@ const App: React.FC = () => {
   const [includeTaxes, setIncludeTaxes] = useState(true);
 
   // Randomly select videos for different sections on mount
+  // Testing videos systematically - no randomization
   const sectionVideos = useMemo(() => {
-    const shuffled = [...VIDEO_POOL].sort(() => 0.5 - Math.random());
     return {
-      hero: shuffled[4],
-      grid: shuffled[1],
-      card1: shuffled[2],
-      card2: shuffled[3],
-      footer: shuffled[0]
+      hero: VIDEO_POOL[0],  // Video #1
+      grid: VIDEO_POOL[1],
+      card1: VIDEO_POOL[2],
+      card2: VIDEO_POOL[3],
+      footer: VIDEO_POOL[4]
     };
   }, []);
 
