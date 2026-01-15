@@ -9,14 +9,24 @@ const App: React.FC = () => {
   const [includeTaxes, setIncludeTaxes] = useState(true);
 
   // Randomly select videos for different sections on mount
-  // Testing videos systematically - no randomization
+  // Curated hero videos: #2, #7, #8, #9, #10, #11
+  const heroVideoPool = [
+    VIDEO_POOL[1],  // #2
+    VIDEO_POOL[6],  // #7
+    VIDEO_POOL[7],  // #8
+    VIDEO_POOL[8],  // #9
+    VIDEO_POOL[9],  // #10
+    VIDEO_POOL[10]  // #11
+  ];
+
   const sectionVideos = useMemo(() => {
+    const randomHero = heroVideoPool[Math.floor(Math.random() * heroVideoPool.length)];
     return {
-      hero: VIDEO_POOL[10],  // Video #11 (testing - LAST ONE)
+      hero: randomHero,  // Random from curated favorites
       grid: VIDEO_POOL[1],
       card1: VIDEO_POOL[2],
       card2: VIDEO_POOL[3],
-      footer: VIDEO_POOL[4]  // Video #5 (locked)
+      footer: VIDEO_POOL[4]  // Video #5 (LOCKED - always footer)
     };
   }, []);
 
