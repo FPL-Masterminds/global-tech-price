@@ -2,14 +2,12 @@
 
 import React, { useState, useMemo } from 'react';
 import VideoBackground from '@/components/VideoBackground';
-import PriceGrid from '@/components/PriceGrid';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/lib/constants';
 
 export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
   const [includeTaxes, setIncludeTaxes] = useState(true);
 
-  // Randomly select videos for different sections on mount
   const sectionVideos = useMemo(() => {
     const shuffled = [...VIDEO_POOL].sort(() => 0.5 - Math.random());
     return {
@@ -40,7 +38,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - BLACK with VIDEO */}
+      {/* Hero Section */}
       <header className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         <VideoBackground src={sectionVideos.hero} overlayOpacity={0.5} />
         
@@ -52,7 +50,6 @@ export default function Home() {
             Live FX & Tax Data. Find the best country to buy your next Apple product.
           </p>
           
-          {/* Controls Glass Card */}
           <div className="glass-card rounded-[28px] p-6 md:p-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 backdrop-blur-[20px]">
             <div className="flex flex-col items-start">
               <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Product</label>
@@ -93,27 +90,60 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main Grid Section - WHITE (APPLE STYLE) */}
-      <section className="bg-white py-[124px] flex flex-col items-center">
-        <div className="w-[87.5%] max-w-[1400px]">
-          <h2 className="text-[32px] md:text-[56px] font-semibold mb-4 text-center text-gray-900">
-            Global Comparison
-          </h2>
-          <p className="text-center text-gray-500 mb-16 text-lg">
-            Compare prices across {MOCK_PRICES.length} countries with live exchange rates
-          </p>
+      {/* Main Grid Section - BLACK */}
+      <section className="bg-black py-[124px] flex flex-col items-center">
+        <div className="w-[87.5%] max-w-[1200px]">
+          <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center">Global Comparison</h2>
           
-          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
-            <PriceGrid prices={MOCK_PRICES} />
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b-2 border-white/10 text-[14px] text-white/40 font-semibold uppercase tracking-wider">
+                  <th className="pb-6 pr-4">Country</th>
+                  <th className="pb-6 pr-4">Official Price</th>
+                  <th className="pb-6 pr-4">Tax Status</th>
+                  <th className="pb-6 pr-4">FX Rate</th>
+                  <th className="pb-6 pr-4">Price in USD</th>
+                  <th className="pb-6 pr-4">Diff vs US</th>
+                  <th className="pb-6 pr-4 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody className="text-[18px]">
+                {MOCK_PRICES.map((item, idx) => (
+                  <tr key={idx} className="border-b border-white/5 group hover:bg-white/5 transition-colors">
+                    <td className="py-8 pr-4">
+                      <div className="flex items-center space-x-3">
+                        <span className="text-white/40 font-mono text-[14px]">{item.code}</span>
+                        <span className="font-semibold">{item.country}</span>
+                      </div>
+                    </td>
+                    <td className="py-8 pr-4 text-white/80">{item.officialPrice}</td>
+                    <td className="py-8 pr-4">
+                      <span className="px-3 py-1 rounded-full text-[12px] font-semibold bg-white/10 text-white/80">
+                        {item.taxStatus}
+                      </span>
+                    </td>
+                    <td className="py-8 pr-4 text-[14px] text-white/40">{item.fxRate}</td>
+                    <td className="py-8 pr-4 font-semibold text-[22px]">${item.priceInUsd}</td>
+                    <td className="py-8 pr-4 font-semibold text-white/80">{item.vsUsPrice}</td>
+                    <td className="py-8 pr-4 text-right">
+                      <button className="px-6 py-2 rounded-full border border-white/20 text-[14px] font-semibold hover:bg-white hover:text-black transition-all">
+                        Check Apple Store
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
           
-          <p className="mt-12 text-center text-[14px] text-gray-400 italic">
+          <p className="mt-12 text-center text-[14px] text-white/40 italic">
             Exchange rates and prices are for reference only. Tax rates may vary by region. Always check the official Apple Store for current pricing.
           </p>
         </div>
       </section>
 
-      {/* Feature Section - BLACK with Video Background Cards */}
+      {/* Feature Section */}
       <section className="bg-black py-[160px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-8">
           
@@ -142,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Accordion FAQ Section - BLACK */}
+      {/* Accordion FAQ Section */}
       <section className="bg-black py-[124px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[800px]">
           <h2 className="text-[32px] md:text-[48px] font-semibold mb-12 text-center">Price Index FAQ</h2>
@@ -170,7 +200,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer - BLACK with VIDEO */}
+      {/* Footer */}
       <footer className="relative bg-black py-[160px] flex flex-col items-center overflow-hidden">
         <VideoBackground src={sectionVideos.footer} overlayOpacity={0.8} />
         <div className="relative z-10 w-[87.5%] max-w-[1024px] text-center">
