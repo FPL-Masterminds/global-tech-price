@@ -104,9 +104,9 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Grid Section */}
-      <section className="bg-white py-[124px] flex flex-col items-center">
+      <section className="bg-black py-[124px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[1400px]">
-          <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center text-black">Global Comparison</h2>
+          <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center text-white">Global Comparison</h2>
           
           <div className="overflow-x-auto bg-white rounded-lg shadow-sm border border-gray-200">
             <table className="w-full text-left border-collapse">
@@ -151,7 +151,7 @@ const App: React.FC = () => {
             </table>
           </div>
           
-          <p className="mt-8 text-center text-[12px] text-gray-500 italic">
+          <p className="mt-8 text-center text-[12px] text-white/60 italic">
             Exchange rates and prices are for reference only. Tax rates may vary by region. Always check the official store for current pricing.
           </p>
         </div>
