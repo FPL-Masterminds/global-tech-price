@@ -51,11 +51,14 @@ const App: React.FC = () => {
   const normalizePrice = (item: any) => {
     let basePrice = item.priceInUsd;
     
+    console.log(`[${item.country}] Original: $${basePrice}, TaxRate: ${item.taxRate}, TaxIncluded: ${item.taxIncluded}, Mode: ${includeTaxes ? 'GROSS' : 'NET'}`);
+    
     if (includeTaxes) {
       // GROSS MODE: All prices should include tax
       if (!item.taxIncluded) {
         // Add tax to pre-tax prices
         basePrice = basePrice * (1 + item.taxRate);
+        console.log(`  -> Added tax: $${basePrice}`);
       }
       // Already tax-included prices stay as-is
     } else {
@@ -63,6 +66,7 @@ const App: React.FC = () => {
       if (item.taxIncluded) {
         // Remove tax from tax-included prices
         basePrice = basePrice / (1 + item.taxRate);
+        console.log(`  -> Removed tax: $${basePrice}`);
       }
       // Already pre-tax prices stay as-is
     }
