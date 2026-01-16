@@ -144,7 +144,29 @@ const App: React.FC = () => {
                       {item.priceInUsd - 2150 === 0 ? '+£0' : item.priceInUsd - 2150 > 0 ? `+£${item.priceInUsd - 2150}` : `-£${Math.abs(item.priceInUsd - 2150)}`}
                     </td>
                     <td className="py-3 px-4 text-center">
-                      <button className="px-4 py-1 text-[11px] font-normal text-white whitespace-nowrap" style={{ background: 'linear-gradient(180deg, #6ba6ff 0%, #3478F6 100%)', border: '1px solid #2d6bc7', borderRadius: '12px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
+                      <button 
+                        className="px-4 py-1.5 text-[11px] font-semibold whitespace-nowrap transition-all"
+                        style={{ 
+                          background: 'linear-gradient(180deg, #e8e8e8 0%, #b0b0b0 50%, #9a9a9a 100%)', 
+                          color: '#333',
+                          border: '1px solid #888', 
+                          borderRadius: '14px', 
+                          boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 3px rgba(0,0,0,0.3)',
+                          cursor: 'pointer'
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = 'linear-gradient(180deg, #6ba6ff 0%, #3478F6 50%, #2d6bc7 100%)';
+                          e.currentTarget.style.color = '#fff';
+                          e.currentTarget.style.borderColor = '#1e5bb8';
+                          e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 3px rgba(0,0,0,0.4)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'linear-gradient(180deg, #e8e8e8 0%, #b0b0b0 50%, #9a9a9a 100%)';
+                          e.currentTarget.style.color = '#333';
+                          e.currentTarget.style.borderColor = '#888';
+                          e.currentTarget.style.boxShadow = 'inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 3px rgba(0,0,0,0.3)';
+                        }}
+                      >
                         Check Amazon
                       </button>
                     </td>
