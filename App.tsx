@@ -53,9 +53,9 @@ const App: React.FC = () => {
   const getBaseline = () => {
     switch(selectedCurrency) {
       case 'USD': return { price: 1599, country: 'US', symbol: '$' };
-      case 'GBP': return { price: 1699 * (fxRates.GBP || 0.79), country: 'GB', symbol: '£' };
-      case 'EUR': return { price: 1899 * (fxRates.EUR || 0.92), country: 'FR', symbol: '€' };
-      case 'JPY': return { price: 248800 * (fxRates.JPY || 148), country: 'JP', symbol: '¥' };
+      case 'GBP': return { price: 1699, country: 'GB', symbol: '£' };
+      case 'EUR': return { price: 1899, country: 'FR', symbol: '€' };
+      case 'JPY': return { price: 248800, country: 'JP', symbol: '¥' };
       default: return { price: 1599, country: 'US', symbol: '$' };
     }
   };
