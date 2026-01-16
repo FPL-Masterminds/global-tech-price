@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import VideoBackground from './VideoBackground';
-import { VIDEO_POOL } from '../constants';
+import { VIDEO_POOL } from '@/constants';
 
 interface RecommendationModalProps {
   isOpen: boolean;

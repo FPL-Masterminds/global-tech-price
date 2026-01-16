@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import VideoBackground from './components/VideoBackground';
-import { VIDEO_POOL } from './constants';
+import Link from 'next/link';
+import VideoBackground from '@/components/VideoBackground';
+import { VIDEO_POOL } from '@/constants';
 
 const VatRefundPolicy: React.FC = () => {
   const heroVideoPool = [

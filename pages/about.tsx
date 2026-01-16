@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
-import VideoBackground from './components/VideoBackground';
-import { VIDEO_POOL } from './constants';
+import Link from 'next/link';
+import VideoBackground from '@/components/VideoBackground';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/constants';
 import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {

@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import VideoBackground from './components/VideoBackground';
-import RecommendationModal from './components/RecommendationModal';
-import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from './constants';
-import { Product } from './types';
+import Link from 'next/link';
+import VideoBackground from '@/components/VideoBackground';
+import RecommendationModal from '@/components/RecommendationModal';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/constants';
+import { Product } from '@/types';
 
 const App: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
