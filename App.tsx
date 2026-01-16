@@ -10,6 +10,17 @@ const App: React.FC = () => {
   const [includeTaxes, setIncludeTaxes] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState('all');
   const [sortBy, setSortBy] = useState('default');
+  const [fxRates, setFxRates] = useState<any>({ USD: 1, GBP: 0.79, EUR: 0.92, JPY: 148 });
+
+  // Fetch live FX rates from Frankfurter API
+  useEffect(() => {
+    fetch('https://api.frankfurter.app/latest?from=USD')
+      .then(res => res.json())
+      .then(data => {
+        setFxRates({ USD: 1, ...data.rates });
+      })
+      .catch(err => console.error('FX API error:', err));
+  }, []);
 
   // Randomly select videos for different sections on mount
   // Curated hero videos: #2, #7, #8, #9, #10, #11
@@ -33,6 +44,24 @@ const App: React.FC = () => {
     };
   }, []);
 
+  // Currency conversion helper
+  const convertPrice = (usdPrice: number) => {
+    return usdPrice * (fxRates[selectedCurrency] || 1);
+  };
+
+  // Get baseline price and country for diff calculations
+  const getBaseline = () => {
+    switch(selectedCurrency) {
+      case 'USD': return { price: 1599, country: 'US', symbol: '$' };
+      case 'GBP': return { price: 1699 * (fxRates.GBP || 0.79), country: 'GB', symbol: '£' };
+      case 'EUR': return { price: 1899 * (fxRates.EUR || 0.92), country: 'FR', symbol: '€' };
+      case 'JPY': return { price: 248800 * (fxRates.JPY || 148), country: 'JP', symbol: '¥' };
+      default: return { price: 1599, country: 'US', symbol: '$' };
+    }
+  };
+
+  const baseline = getBaseline();
+
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
     let filtered = [...MOCK_PRICES];
@@ -45,22 +74,25 @@ const App: React.FC = () => {
     // Sort
     if (sortBy !== 'default') {
       filtered.sort((a, b) => {
+        const aConverted = convertPrice(a.priceInUsd);
+        const bConverted = convertPrice(b.priceInUsd);
+        
         switch(sortBy) {
-          case 'usd-high': return b.priceInUsd - a.priceInUsd;
-          case 'usd-low': return a.priceInUsd - b.priceInUsd;
-          case 'gbp-high': return (b.priceInUsd * 0.79) - (a.priceInUsd * 0.79);
-          case 'gbp-low': return (a.priceInUsd * 0.79) - (b.priceInUsd * 0.79);
-          case 'diffus-high': return (b.priceInUsd - 1599) - (a.priceInUsd - 1599);
-          case 'diffus-low': return (a.priceInUsd - 1599) - (b.priceInUsd - 1599);
-          case 'diffuk-high': return (b.priceInUsd - 2150) - (a.priceInUsd - 2150);
-          case 'diffuk-low': return (a.priceInUsd - 2150) - (b.priceInUsd - 2150);
+          case 'usd-high': return bConverted - aConverted;
+          case 'usd-low': return aConverted - bConverted;
+          case 'gbp-high': return bConverted - aConverted;
+          case 'gbp-low': return aConverted - bConverted;
+          case 'diffus-high': return (bConverted - baseline.price) - (aConverted - baseline.price);
+          case 'diffus-low': return (aConverted - baseline.price) - (bConverted - baseline.price);
+          case 'diffuk-high': return (bConverted - baseline.price) - (aConverted - baseline.price);
+          case 'diffuk-low': return (aConverted - baseline.price) - (bConverted - baseline.price);
           default: return 0;
         }
       });
     }
     
     return filtered;
-  }, [selectedCountry, sortBy]);
+  }, [selectedCountry, sortBy, selectedCurrency, fxRates]);
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
@@ -176,10 +208,10 @@ const App: React.FC = () => {
                   <th className="py-2 px-4 min-w-[160px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Official Price</th>
                   <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Tax Status</th>
                   <th className="py-2 px-4 min-w-[180px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
-                  <th className="py-2 px-4 min-w-[150px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in USD</th>
-                  <th className="py-2 px-4 min-w-[150px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in GBP</th>
-                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs US</th>
-                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs UK</th>
+                  <th className="py-2 px-4 min-w-[150px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency}</th>
+                  <th className="py-2 px-4 min-w-[150px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency === 'USD' ? 'GBP' : 'USD'}</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {MOCK_PRICES.find(p => p.code === baseline.country)?.country}</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {selectedCurrency === 'USD' ? 'UK' : 'US'}</th>
                   <th className="py-2 px-4 min-w-[160px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Action</th>
                 </tr>
               </thead>
@@ -204,13 +236,25 @@ const App: React.FC = () => {
                       </span>
                     </td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
-                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>${item.priceInUsd.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>£{Math.round(item.priceInUsd * 0.79).toLocaleString()}</td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#d32f2f' : item.vsUsPrice === '+$0' ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
-                      {item.vsUsPrice}
+                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
+                      {baseline.symbol}{Math.round(convertPrice(item.priceInUsd)).toLocaleString()}
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.priceInUsd - 2150) > 0 ? '#d32f2f' : (item.priceInUsd - 2150) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
-                      {item.priceInUsd - 2150 === 0 ? '+£0' : item.priceInUsd - 2150 > 0 ? `+£${item.priceInUsd - 2150}` : `-£${Math.abs(item.priceInUsd - 2150)}`}
+                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
+                      {selectedCurrency === 'USD' ? '£' : '$'}{Math.round(item.priceInUsd * (selectedCurrency === 'USD' ? (fxRates.GBP || 0.79) : 1)).toLocaleString()}
+                    </td>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (convertPrice(item.priceInUsd) - baseline.price) > 0 ? '#d32f2f' : (convertPrice(item.priceInUsd) - baseline.price) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                      {(() => {
+                        const diff = Math.round(convertPrice(item.priceInUsd) - baseline.price);
+                        return diff === 0 ? `+${baseline.symbol}0` : diff > 0 ? `+${baseline.symbol}${Math.abs(diff).toLocaleString()}` : `-${baseline.symbol}${Math.abs(diff).toLocaleString()}`;
+                      })()}
+                    </td>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.priceInUsd - (selectedCurrency === 'USD' ? 2150 : 1599)) > 0 ? '#d32f2f' : (item.priceInUsd - (selectedCurrency === 'USD' ? 2150 : 1599)) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                      {(() => {
+                        const altPrice = selectedCurrency === 'USD' ? 2150 : 1599;
+                        const diff = Math.round(item.priceInUsd - altPrice);
+                        const symbol = selectedCurrency === 'USD' ? '£' : '$';
+                        return diff === 0 ? `+${symbol}0` : diff > 0 ? `+${symbol}${Math.abs(diff).toLocaleString()}` : `-${symbol}${Math.abs(diff).toLocaleString()}`;
+                      })()}
                     </td>
                     <td className="py-3 px-4 text-center">
                       <button 
