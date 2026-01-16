@@ -6,16 +6,18 @@ interface VideoBackgroundProps {
   overlayOpacity?: number;
   className?: string;
   objectFit?: 'cover' | 'contain';
+  noFade?: boolean;
 }
 
 const VideoBackground: React.FC<VideoBackgroundProps> = ({ 
   src, 
   overlayOpacity = 0.4, 
   className = "",
-  objectFit = 'cover'
+  objectFit = 'cover',
+  noFade = false
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [opacity, setOpacity] = useState(0);
+  const [opacity, setOpacity] = useState(noFade ? 1 : 0);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -23,12 +25,12 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
 
     // Fade in on load
     const handleCanPlay = () => {
-      setOpacity(1);
+      if (!noFade) setOpacity(1);
     };
 
     // Fade out before loop, fade in after
     const handleTimeUpdate = () => {
-      if (video.duration > 0) {
+      if (!noFade && video.duration > 0) {
         const timeLeft = video.duration - video.currentTime;
         if (timeLeft < 1) {
           setOpacity(0);
