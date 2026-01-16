@@ -8,6 +8,8 @@ const App: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [includeTaxes, setIncludeTaxes] = useState(true);
+  const [selectedCountry, setSelectedCountry] = useState('all');
+  const [sortBy, setSortBy] = useState('default');
 
   // Randomly select videos for different sections on mount
   // Curated hero videos: #2, #7, #8, #9, #10, #11
@@ -78,6 +80,39 @@ const App: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-start">
+              <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Country</label>
+              <select 
+                value={selectedCountry}
+                onChange={(e) => setSelectedCountry(e.target.value)}
+                className="w-full bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
+              >
+                <option value="all" className="bg-neutral-900">All Countries</option>
+                {MOCK_PRICES.map(p => (
+                  <option key={p.code} value={p.code} className="bg-neutral-900">{p.country}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="flex flex-col items-start">
+              <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Sort By</label>
+              <select 
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="w-full bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
+              >
+                <option value="default" className="bg-neutral-900">Default Order</option>
+                <option value="usd-high" className="bg-neutral-900">Price USD: High → Low</option>
+                <option value="usd-low" className="bg-neutral-900">Price USD: Low → High</option>
+                <option value="gbp-high" className="bg-neutral-900">Price GBP: High → Low</option>
+                <option value="gbp-low" className="bg-neutral-900">Price GBP: Low → High</option>
+                <option value="diffus-high" className="bg-neutral-900">Diff vs US: High → Low</option>
+                <option value="diffus-low" className="bg-neutral-900">Diff vs US: Low → High</option>
+                <option value="diffuk-high" className="bg-neutral-900">Diff vs UK: High → Low</option>
+                <option value="diffuk-low" className="bg-neutral-900">Diff vs UK: Low → High</option>
+              </select>
+            </div>
+
+            <div className="flex flex-col items-start">
               <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Include Taxes</label>
               <div className="flex items-center space-x-3">
                 <span className={`text-[14px] ${!includeTaxes ? 'text-white' : 'text-white/40'}`}>Net</span>
@@ -120,7 +155,7 @@ const App: React.FC = () => {
                 </tr>
               </thead>
               <tbody style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
-                {MOCK_PRICES.map((item, idx) => (
+                {filteredAndSortedPrices.map((item, idx) => (
                   <tr key={idx} className="transition-all cursor-pointer" style={{ 
                     background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
                     borderBottom: '1px solid #ddd'
