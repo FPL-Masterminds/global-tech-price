@@ -104,15 +104,15 @@ const App: React.FC = () => {
             <table className="w-full text-left border-collapse" style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
               <thead>
                 <tr style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderBottom: '1px solid #999', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.8)' }}>
-                  <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider sticky left-0 z-20" style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderRight: '1px solid #bbb' }}>Flag</th>
-                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider" style={{ borderRight: '1px solid #bbb' }}>Country</th>
-                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Official Price</th>
+                  <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center sticky left-0 z-20" style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderRight: '1px solid #bbb' }}>Flag</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Country</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Official Price</th>
                   <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Tax Status</th>
-                  <th className="py-2 px-4 min-w-[160px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
-                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Price in USD</th>
-                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Diff vs US</th>
-                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Diff vs UK</th>
-                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right">Action</th>
+                  <th className="py-2 px-4 min-w-[160px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in USD</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs US</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs UK</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Action</th>
                 </tr>
               </thead>
               <tbody style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
@@ -120,7 +120,7 @@ const App: React.FC = () => {
                   <tr key={idx} className="transition-all cursor-pointer" style={{ 
                     background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
                     borderBottom: '1px solid #ddd'
-                  }} onMouseEnter={(e) => e.currentTarget.style.background = '#3478F6'} onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}>
+                  }} onMouseEnter={(e) => e.currentTarget.style.background = '#d9e9ff'} onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}>
                     <td className="py-3 px-4 sticky left-0 z-10 text-center" style={{ background: idx % 2 === 0 ? '#fff' : '#f5f5f5', borderRight: '1px solid #ddd' }}>
                       <img 
                         src={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png`}
