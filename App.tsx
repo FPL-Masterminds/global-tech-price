@@ -33,6 +33,35 @@ const App: React.FC = () => {
     };
   }, []);
 
+  // Filter and sort logic
+  const filteredAndSortedPrices = useMemo(() => {
+    let filtered = [...MOCK_PRICES];
+    
+    // Filter by country
+    if (selectedCountry !== 'all') {
+      filtered = filtered.filter(item => item.code === selectedCountry);
+    }
+    
+    // Sort
+    if (sortBy !== 'default') {
+      filtered.sort((a, b) => {
+        switch(sortBy) {
+          case 'usd-high': return b.priceInUsd - a.priceInUsd;
+          case 'usd-low': return a.priceInUsd - b.priceInUsd;
+          case 'gbp-high': return (b.priceInUsd * 0.79) - (a.priceInUsd * 0.79);
+          case 'gbp-low': return (a.priceInUsd * 0.79) - (b.priceInUsd * 0.79);
+          case 'diffus-high': return (b.priceInUsd - 1599) - (a.priceInUsd - 1599);
+          case 'diffus-low': return (a.priceInUsd - 1599) - (b.priceInUsd - 1599);
+          case 'diffuk-high': return (b.priceInUsd - 2150) - (a.priceInUsd - 2150);
+          case 'diffuk-low': return (a.priceInUsd - 2150) - (b.priceInUsd - 2150);
+          default: return 0;
+        }
+      });
+    }
+    
+    return filtered;
+  }, [selectedCountry, sortBy]);
+
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
       {/* Hero Section */}
