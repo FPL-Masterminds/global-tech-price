@@ -67,11 +67,14 @@ const App: React.FC = () => {
 
   // ALL countries with displayPrice (for modal comparisons - never filtered)
   const allCountriesWithPrices = useMemo(() => {
-    return MOCK_PRICES.map(item => ({
-      ...item,
-      displayPrice: convertPrice(item.priceInUsd)
-    }));
-  }, [selectedCurrency, fxRates]);
+    return MOCK_PRICES.map(item => {
+      const normalizedPrice = normalizePrice(item);
+      return {
+        ...item,
+        displayPrice: convertPrice(normalizedPrice)
+      };
+    });
+  }, [selectedCurrency, fxRates, includeTaxes]);
 
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
@@ -82,11 +85,14 @@ const App: React.FC = () => {
       filtered = filtered.filter(item => item.code === selectedCountry);
     }
     
-    // Add displayPrice (converted price) to each item
-    filtered = filtered.map(item => ({
-      ...item,
-      displayPrice: convertPrice(item.priceInUsd)
-    }));
+    // Add displayPrice (converted price with tax normalization) to each item
+    filtered = filtered.map(item => {
+      const normalizedPrice = normalizePrice(item);
+      return {
+        ...item,
+        displayPrice: convertPrice(normalizedPrice)
+      };
+    });
     
     // Sort
     if (sortBy !== 'default') {
@@ -109,7 +115,7 @@ const App: React.FC = () => {
     }
     
     return filtered;
-  }, [selectedCountry, sortBy, selectedCurrency, fxRates]);
+  }, [selectedCountry, sortBy, selectedCurrency, fxRates, includeTaxes]);
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
