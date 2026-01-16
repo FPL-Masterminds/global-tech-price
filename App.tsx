@@ -119,6 +119,7 @@ const App: React.FC = () => {
                   <th className="py-3 px-6 min-w-[160px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">FX Rate</th>
                   <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Price in USD</th>
                   <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs US</th>
+                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs UK</th>
                   <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
                 </tr>
               </thead>
@@ -144,9 +145,12 @@ const App: React.FC = () => {
                     <td className="py-4 px-6 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
                       {item.vsUsPrice}
                     </td>
+                    <td className="py-4 px-6 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: (item.priceInUsd - 2581) > 0 ? '#dc2626' : (item.priceInUsd - 2581) === 0 ? '#6b7280' : '#16a34a' }}>
+                      {item.priceInUsd - 2581 === 0 ? '+£0' : item.priceInUsd - 2581 > 0 ? `+£${item.priceInUsd - 2581}` : `-£${Math.abs(item.priceInUsd - 2581)}`}
+                    </td>
                     <td className="py-4 px-6 text-right">
                       <button className="px-5 py-2 rounded-md text-[11px] font-semibold bg-black text-white hover:bg-gray-800 transition-all whitespace-nowrap">
-                        Check Store
+                        Check Amazon
                       </button>
                     </td>
                   </tr>
