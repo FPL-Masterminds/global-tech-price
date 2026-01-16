@@ -70,11 +70,11 @@ const App: React.FC = () => {
         
         <div className="relative z-10 w-[87.5%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Title */}
-          <div>
+          <div className="text-center md:text-left">
             <h1 className="text-[48px] md:text-[72px] font-semibold leading-[1.05] mb-6 tracking-tight">
               Global Tech <br /> Price Index
             </h1>
-            <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px]">
+            <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px] mx-auto md:mx-0">
               Live FX & Tax Data. Find the best country to buy your next Tech product.
             </p>
           </div>
