@@ -100,7 +100,7 @@ const App: React.FC = () => {
 
       {/* Main Grid Section - iTunes 2005 Style */}
       <section className="bg-black py-[124px] flex flex-col items-center">
-        <div className="w-[87.5%] max-w-[1400px]">
+        <div className="w-[95%] max-w-[1800px]">
           <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center text-white">Global Comparison</h2>
           
           <div className="overflow-x-auto rounded-lg shadow-2xl" style={{ background: 'linear-gradient(180deg, #e8e8e8 0%, #d0d0d0 50%, #c0c0c0 100%)', border: '1px solid #999' }}>
