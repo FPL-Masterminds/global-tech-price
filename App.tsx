@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import VideoBackground from './components/VideoBackground';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from './constants';
 import { Product } from './types';
