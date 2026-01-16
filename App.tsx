@@ -290,21 +290,21 @@ const App: React.FC = () => {
                     </td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
                     <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
-                      {baseline.symbol}{Math.round(convertPrice(item.priceInUsd)).toLocaleString()}
+                      {baseline.symbol}{Math.round(item.displayPrice).toLocaleString()}
                     </td>
                     <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
-                      {selectedCurrency === 'USD' ? '£' : '$'}{Math.round(item.priceInUsd * (selectedCurrency === 'USD' ? (fxRates.GBP || 0.79) : 1)).toLocaleString()}
+                      {selectedCurrency === 'USD' ? '£' : '$'}{Math.round(item.displayPrice * (selectedCurrency === 'USD' ? (fxRates.GBP || 1) : (1 / (fxRates.GBP || 0.79)))).toLocaleString()}
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (convertPrice(item.priceInUsd) - baseline.price) > 0 ? '#d32f2f' : (convertPrice(item.priceInUsd) - baseline.price) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.displayPrice - baseline.price) > 0 ? '#d32f2f' : (item.displayPrice - baseline.price) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {(() => {
-                        const diff = Math.round(convertPrice(item.priceInUsd) - baseline.price);
+                        const diff = Math.round(item.displayPrice - baseline.price);
                         return diff === 0 ? `+${baseline.symbol}0` : diff > 0 ? `+${baseline.symbol}${Math.abs(diff).toLocaleString()}` : `-${baseline.symbol}${Math.abs(diff).toLocaleString()}`;
                       })()}
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.priceInUsd - (selectedCurrency === 'USD' ? 2150 : 1599)) > 0 ? '#d32f2f' : (item.priceInUsd - (selectedCurrency === 'USD' ? 2150 : 1599)) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.displayPrice - (selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0)) > 0 ? '#d32f2f' : (item.displayPrice - (selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0)) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {(() => {
-                        const altPrice = selectedCurrency === 'USD' ? 2150 : 1599;
-                        const diff = Math.round(item.priceInUsd - altPrice);
+                        const altPrice = selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0;
+                        const diff = Math.round(item.displayPrice - altPrice);
                         const symbol = selectedCurrency === 'USD' ? '£' : '$';
                         return diff === 0 ? `+${symbol}0` : diff > 0 ? `+${symbol}${Math.abs(diff).toLocaleString()}` : `-${symbol}${Math.abs(diff).toLocaleString()}`;
                       })()}
