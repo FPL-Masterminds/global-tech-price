@@ -34,25 +34,28 @@ const App: React.FC = () => {
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
       {/* Hero Section */}
-      <header className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+      <header className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-20">
         <VideoBackground src={sectionVideos.hero} overlayOpacity={0.5} />
         
-        <div className="relative z-10 text-center px-4 w-[87.5%] max-w-[1024px]">
-          <h1 className="text-[48px] md:text-[80px] font-semibold leading-[1.05] mb-6 tracking-tight">
-            Global Tech <br /> Price Index
-          </h1>
-          <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px] mx-auto mb-10">
-            Live FX & Tax Data. Find the best country to buy your next Tech product.
-          </p>
-          
-          {/* Controls Glass Card */}
-          <div className="glass-card rounded-[28px] p-6 md:p-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 backdrop-blur-[20px]">
+        <div className="relative z-10 w-[87.5%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Title */}
+          <div>
+            <h1 className="text-[48px] md:text-[72px] font-semibold leading-[1.05] mb-6 tracking-tight">
+              Global Tech <br /> Price Index
+            </h1>
+            <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[500px]">
+              Live FX & Tax Data. Find the best country to buy your next Tech product.
+            </p>
+          </div>
+
+          {/* Right Column - Controls */}
+          <div className="glass-card rounded-[28px] p-8 backdrop-blur-[20px] space-y-6">
             <div className="flex flex-col items-start">
               <label className="text-[12px] font-semibold text-white/60 mb-2 uppercase tracking-wider">Product</label>
               <select 
                 value={selectedProduct.id}
                 onChange={(e) => setSelectedProduct(PRODUCTS.find(p => p.id === e.target.value) || PRODUCTS[0])}
-                className="bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
+                className="w-full bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
               >
                 {PRODUCTS.map(p => (
                   <option key={p.id} value={p.id} className="bg-neutral-900">{p.name}</option>
@@ -65,7 +68,7 @@ const App: React.FC = () => {
               <select 
                 value={selectedCurrency}
                 onChange={(e) => setSelectedCurrency(e.target.value)}
-                className="bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
+                className="w-full bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
               >
                 <option value="USD" className="bg-neutral-900">USD</option>
                 <option value="GBP" className="bg-neutral-900">GBP</option>
@@ -88,7 +91,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <button className="h-[56px] px-8 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all">
+            <button className="w-full h-[56px] rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all">
               Download CSV
             </button>
           </div>
