@@ -65,6 +65,14 @@ const App: React.FC = () => {
 
   const baseline = getBaseline();
 
+  // ALL countries with displayPrice (for modal comparisons - never filtered)
+  const allCountriesWithPrices = useMemo(() => {
+    return MOCK_PRICES.map(item => ({
+      ...item,
+      displayPrice: convertPrice(item.priceInUsd)
+    }));
+  }, [selectedCurrency, fxRates]);
+
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
     let filtered = [...MOCK_PRICES];
@@ -414,7 +422,7 @@ const App: React.FC = () => {
         sortBy={sortBy}
         includeTaxes={includeTaxes}
         topCountry={filteredAndSortedPrices[0]}
-        allCountries={filteredAndSortedPrices}
+        allCountries={allCountriesWithPrices}
       />
     </div>
   );
