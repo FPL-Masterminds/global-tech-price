@@ -1,4 +1,6 @@
 import React from 'react';
+import VideoBackground from './VideoBackground';
+import { VIDEO_POOL } from '../constants';
 
 interface RecommendationModalProps {
   isOpen: boolean;
@@ -67,7 +69,8 @@ const RecommendationModal: React.FC<RecommendationModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-      <div className="bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] rounded-2xl max-w-2xl w-full p-8 border border-white/10 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] rounded-2xl max-w-2xl w-full p-8 border border-white/10 shadow-2xl max-h-[90vh] overflow-y-auto overflow-hidden">
+        <VideoBackground src={VIDEO_POOL[0]} overlayOpacity={0.7} className="rounded-2xl" />
         <div className="flex justify-between items-start mb-6">
           <h2 className="text-[32px] font-semibold text-white">Your Best Deal</h2>
           <button 
