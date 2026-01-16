@@ -74,11 +74,17 @@ const App: React.FC = () => {
       filtered = filtered.filter(item => item.code === selectedCountry);
     }
     
+    // Add displayPrice (converted price) to each item
+    filtered = filtered.map(item => ({
+      ...item,
+      displayPrice: convertPrice(item.priceInUsd)
+    }));
+    
     // Sort
     if (sortBy !== 'default') {
       filtered.sort((a, b) => {
-        const aConverted = convertPrice(a.priceInUsd);
-        const bConverted = convertPrice(b.priceInUsd);
+        const aConverted = a.displayPrice;
+        const bConverted = b.displayPrice;
         
         switch(sortBy) {
           case 'usd-high': return bConverted - aConverted;
