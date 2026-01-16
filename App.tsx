@@ -354,26 +354,41 @@ const App: React.FC = () => {
             Exchange rates and prices are for reference only. Tax rates may vary by region. Always check the official store for current pricing.
           </p>
           
-          <div className="mt-8 p-6 bg-white/5 backdrop-blur-md rounded-lg border border-white/10">
-            <h3 className="text-[13px] font-semibold text-white mb-3 uppercase tracking-wider">Tax Status Legend</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-[11px]">
-              <div>
-                <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">+ Tax</span>
-                <p className="text-white/60 mt-2">Sales tax not included</p>
+          {/* Tax Status Legend - Accordion */}
+          <div className="mt-8">
+            <details className="group bg-white/5 rounded-xl border border-white/10 overflow-hidden hover:bg-white/[0.07] transition-all">
+              <summary className="cursor-pointer py-4 px-6 text-[14px] font-semibold text-white/80 list-none flex items-center justify-between">
+                <span>Tax Status Explained</span>
+                <svg 
+                  className="w-5 h-5 transition-transform group-open:rotate-180" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-6 pt-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-[13px]">
+                  <div>
+                    <span className="px-2 py-1 rounded text-[10px] font-semibold bg-gray-100 text-gray-700">+ Tax</span>
+                    <p className="text-white/60 mt-2">Sales tax is not included in the displayed price. You will pay additional tax at checkout (varies by state/region).</p>
+                  </div>
+                  <div>
+                    <span className="px-2 py-1 rounded text-[10px] font-semibold bg-gray-100 text-gray-700">Incl. VAT</span>
+                    <p className="text-white/60 mt-2">Value Added Tax is already included in the displayed price. Common in Europe (typically 15-25%).</p>
+                  </div>
+                  <div>
+                    <span className="px-2 py-1 rounded text-[10px] font-semibold bg-gray-100 text-gray-700">Incl. GST</span>
+                    <p className="text-white/60 mt-2">Goods and Services Tax is already included. Used in Australia, Singapore, and other countries (typically 7-15%).</p>
+                  </div>
+                  <div>
+                    <span className="px-2 py-1 rounded text-[10px] font-semibold bg-gray-100 text-gray-700">Incl. ICMS</span>
+                    <p className="text-white/60 mt-2">Brazilian state consumption tax is already included in the displayed price (varies by state and product category).</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">Incl. VAT</span>
-                <p className="text-white/60 mt-2">VAT included (20%)</p>
-              </div>
-              <div>
-                <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">Incl. GST</span>
-                <p className="text-white/60 mt-2">GST included (10%)</p>
-              </div>
-              <div>
-                <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700">Incl. ICMS</span>
-                <p className="text-white/60 mt-2">Brazilian tax included</p>
-              </div>
-            </div>
+            </details>
           </div>
         </div>
       </section>
