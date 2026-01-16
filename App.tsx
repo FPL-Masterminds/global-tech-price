@@ -33,24 +33,6 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 h-[44px] glass-nav z-[9999] flex items-center justify-center">
-        <div className="w-[87.5%] max-w-[1024px] flex items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <svg className="w-[14px] fill-[#F5F5F7] opacity-80" viewBox="0 0 170 170">
-              <path d="M150.37,130.25c-2.45,5.66-5.35,10.87-8.71,15.66c-4.58,6.53-8.33,11.05-11.22,13.56c-4.48,4.12-9.28,6.23-14.42,6.35c-3.69,0-8.14-1.05-13.32-3.18c-5.19-2.12-9.97-3.18-14.35-3.18c-4.58,0-9.43,1.06-14.55,3.18c-5.12,2.12-9.27,3.26-12.46,3.41c-5.19,0.38-10.27-1.58-15.23-5.87c-3.14-2.71-7.22-7.57-12.24-14.58c-5.02-7.01-9-14.75-11.95-23.21C8.94,103.68,7.47,91.95,7.47,81.42c0-11.75,2.46-21.73,7.38-29.94c4.92-8.21,11.52-14.61,19.8-19.2c8.28-4.59,17.2-6.89,26.77-6.89c4.27,0,9.27,0.96,15.01,2.87c5.73,1.91,10,2.87,12.8,2.87c2.31,0,7.1-1.2,14.35-3.59c7.26-2.39,13.43-3.46,18.52-3.18c14.24,0.76,25.26,6.13,33.06,16.12c-11.75,7.1-17.63,17.25-17.63,30.43c0,10.61,3.77,19.64,11.31,27.09C136.19,108.45,142.16,113.88,149.25,117.5C150.21,122.2,150.59,126.45,150.37,130.25z M115.39,5.34c0,9.15-3.37,17.68-10.12,25.59c-7.22,8.44-16.12,13.56-25.79,12.35c-0.12-0.88-0.18-2.12-0.18-3.72c0-8.91,3.69-17.92,11.07-27.03c4.12-5.09,9.25-9.15,15.39-12.18C111.9,1.13,115.39,0,115.39,0C115.52,2.02,115.39,3.8,115.39,5.34z" />
-            </svg>
-            <div className="hidden md:flex space-x-6 text-[12px] font-semibold text-white/80">
-              <a href="#" className="hover:text-white transition-colors">Store</a>
-              <a href="#" className="hover:text-white transition-colors">Mac</a>
-              <a href="#" className="hover:text-white transition-colors">iPhone</a>
-              <a href="#" className="hover:text-white transition-colors">Watch</a>
-              <a href="#" className="hover:text-white transition-colors">Support</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <header className="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         <VideoBackground src={sectionVideos.hero} overlayOpacity={0.5} />
@@ -264,9 +246,9 @@ const App: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="pt-12 border-t border-white/10 text-[12px] text-white/40 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <div className="pt-12 border-t border-white/10 text-[12px] text-white/40 flex flex-col items-center justify-center space-y-3 text-center">
             <p>Copyright © 2026 Global Tech Price. All rights reserved.</p>
-            <p>Data for informational purposes only. We are not tax specialists, financial advisors, or refund experts. Always verify pricing and tax regulations independently.</p>
+            <p className="max-w-2xl">Data for informational purposes only. We are not tax specialists, financial advisors, or refund experts. Always verify pricing and tax regulations independently.</p>
           </div>
         </div>
       </footer>
