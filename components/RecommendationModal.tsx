@@ -189,6 +189,9 @@ const RecommendationModal: React.FC<RecommendationModalProps> = ({
                   reference ONLY. You MUST verify current refund policies, eligibility requirements, and procedures with official government sources or the retailer 
                   before making any purchase decisions. We accept NO liability for refund denials, processing failures, or financial losses.
                 </p>
+                <p className="text-blue-400 text-[11px] mt-2">
+                  <a href="/vat-refund-policy" target="_blank" className="underline hover:text-blue-300">Read our full VAT Refund Policy →</a>
+                </p>
               </div>
             </div>
           )}
