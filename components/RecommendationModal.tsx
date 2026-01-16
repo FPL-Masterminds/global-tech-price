@@ -143,19 +143,26 @@ const RecommendationModal: React.FC<RecommendationModalProps> = ({
           {/* Tax Status */}
           <div className="bg-white/5 rounded-xl p-5 border border-white/10">
             <h3 className="text-[16px] font-semibold text-white mb-2">⚠️ Important</h3>
-            <p className="text-white/70 text-[14px]">
-              {topCountry.taxStatus === '+ Tax' ? (
+            <p className="text-white/70 text-[14px] mb-3">
+              <span className="text-white font-semibold">Prices shown are {includeTaxes ? 'TAX-INCLUSIVE (Gross)' : 'TAX-EXCLUSIVE (Net)'}.</span>
+            </p>
+            <p className="text-white/60 text-[13px]">
+              {includeTaxes ? (
                 <>
-                  This price is <span className="text-yellow-400 font-semibold">BEFORE local sales tax</span>. Expect to pay more at checkout depending on the region.
+                  All prices have been normalized to <span className="text-green-400 font-semibold">INCLUDE taxes</span> for fair comparison. Pre-tax prices (like USA) have had estimated taxes added. This represents your final checkout price.
                 </>
               ) : (
                 <>
-                  This price <span className="text-green-400 font-semibold">INCLUDES {topCountry.taxStatus}</span>. What you see is what you'll pay.
+                  All prices have been normalized to <span className="text-blue-400 font-semibold">EXCLUDE taxes</span> for fair comparison. Tax-inclusive prices (like UK VAT) have had taxes removed. This represents the base product cost before government charges.
                 </>
               )}
             </p>
-            <p className="text-white/60 text-[13px] mt-3">
-              If importing, check for customs duties, VAT reclaim eligibility (for travelers), and warranty differences.
+            <p className="text-white/60 text-[13px] mt-3 pt-3 border-t border-white/10">
+              <span className="font-semibold text-white">Original: </span>
+              {topCountry.country}'s official price was listed as "{topCountry.officialPrice}" ({topCountry.taxStatus}).
+            </p>
+            <p className="text-white/50 text-[12px] mt-3">
+              If importing internationally, check for customs duties, VAT reclaim eligibility (for travelers), and warranty differences.
             </p>
           </div>
 
