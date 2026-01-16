@@ -95,53 +95,56 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Main Grid Section */}
+      {/* Main Grid Section - iTunes 2005 Style */}
       <section className="bg-black py-[124px] flex flex-col items-center">
         <div className="w-[87.5%] max-w-[1400px]">
           <h2 className="text-[32px] md:text-[56px] font-semibold mb-16 text-center text-white">Global Comparison</h2>
           
-          <div className="overflow-x-auto bg-white rounded-lg shadow-sm border border-gray-200">
-            <table className="w-full text-left border-collapse">
+          <div className="overflow-x-auto rounded-lg shadow-2xl" style={{ background: 'linear-gradient(180deg, #e8e8e8 0%, #d0d0d0 50%, #c0c0c0 100%)', border: '1px solid #999' }}>
+            <table className="w-full text-left border-collapse" style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
               <thead>
-                <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="py-3 px-6 min-w-[80px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider sticky left-0 z-20 bg-gray-50">Flag</th>
-                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider">Country</th>
-                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Official Price</th>
-                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-center">Tax Status</th>
-                  <th className="py-3 px-6 min-w-[160px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">FX Rate</th>
-                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Price in USD</th>
-                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs US</th>
-                  <th className="py-3 px-6 min-w-[120px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Diff vs UK</th>
-                  <th className="py-3 px-6 min-w-[140px] text-[11px] font-semibold text-gray-500 uppercase tracking-wider text-right">Action</th>
+                <tr style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderBottom: '1px solid #999', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.8)' }}>
+                  <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider sticky left-0 z-20" style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderRight: '1px solid #bbb' }}>Flag</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider" style={{ borderRight: '1px solid #bbb' }}>Country</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Official Price</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Tax Status</th>
+                  <th className="py-2 px-4 min-w-[160px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Price in USD</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Diff vs US</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>Diff vs UK</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right">Action</th>
                 </tr>
               </thead>
-              <tbody className="font-['Inter']">
+              <tbody style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
                 {MOCK_PRICES.map((item, idx) => (
-                  <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                    <td className="py-4 px-6 sticky left-0 z-10 bg-white hover:bg-gray-50 border-r border-gray-100">
+                  <tr key={idx} className="transition-all cursor-pointer" style={{ 
+                    background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
+                    borderBottom: '1px solid #ddd'
+                  }} onMouseEnter={(e) => e.currentTarget.style.background = '#3478F6'} onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}>
+                    <td className="py-3 px-4 sticky left-0 z-10" style={{ background: idx % 2 === 0 ? '#fff' : '#f5f5f5', borderRight: '1px solid #ddd' }}>
                       <img 
                         src={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png`}
                         alt={`${item.country} flag`}
                         className="w-8 h-6 object-cover rounded shadow-sm"
                       />
                     </td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-gray-700">{item.country}</td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-gray-700 text-right">{item.officialPrice}</td>
-                    <td className="py-4 px-6 text-center">
-                      <span className="px-2 py-1 rounded text-[11px] font-semibold bg-gray-100 text-gray-700 whitespace-nowrap">
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-900" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-right" style={{ borderRight: '1px solid #ddd' }}>{item.officialPrice}</td>
+                    <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
+                      <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>
                         {item.taxStatus}
                       </span>
                     </td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-gray-700 text-right whitespace-nowrap">{item.fxRate}</td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-gray-700 text-right whitespace-nowrap">${item.priceInUsd.toLocaleString()}</td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#dc2626' : item.vsUsPrice === '+$0' ? '#6b7280' : '#16a34a' }}>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-right whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
+                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-right whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>${item.priceInUsd.toLocaleString()}</td>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#d32f2f' : item.vsUsPrice === '+$0' ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {item.vsUsPrice}
                     </td>
-                    <td className="py-4 px-6 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: (item.priceInUsd - 2581) > 0 ? '#dc2626' : (item.priceInUsd - 2581) === 0 ? '#6b7280' : '#16a34a' }}>
-                      {item.priceInUsd - 2581 === 0 ? '+£0' : item.priceInUsd - 2581 > 0 ? `+£${item.priceInUsd - 2581}` : `-£${Math.abs(item.priceInUsd - 2581)}`}
+                    <td className="py-3 px-4 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: (item.priceInUsd - 2150) > 0 ? '#d32f2f' : (item.priceInUsd - 2150) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                      {item.priceInUsd - 2150 === 0 ? '+£0' : item.priceInUsd - 2150 > 0 ? `+£${item.priceInUsd - 2150}` : `-£${Math.abs(item.priceInUsd - 2150)}`}
                     </td>
-                    <td className="py-4 px-6 text-right">
-                      <button className="px-5 py-2 rounded-md text-[11px] font-semibold bg-black text-white hover:bg-gray-800 transition-all whitespace-nowrap">
+                    <td className="py-3 px-4 text-right">
+                      <button className="px-4 py-1 text-[11px] font-normal text-white whitespace-nowrap" style={{ background: 'linear-gradient(180deg, #6ba6ff 0%, #3478F6 100%)', border: '1px solid #2d6bc7', borderRadius: '12px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
                         Check Amazon
                       </button>
                     </td>
