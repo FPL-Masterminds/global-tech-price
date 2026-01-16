@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import VideoBackground from './components/VideoBackground';
+import RecommendationModal from './components/RecommendationModal';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from './constants';
 import { Product } from './types';
 
@@ -12,6 +13,7 @@ const App: React.FC = () => {
   const [selectedCountry, setSelectedCountry] = useState('all');
   const [sortBy, setSortBy] = useState('default');
   const [fxRates, setFxRates] = useState<any>({ USD: 1, GBP: 0.79, EUR: 0.92, JPY: 148 });
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Fetch live FX rates from Frankfurter API
   useEffect(() => {
@@ -188,8 +190,11 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <button className="w-full h-[56px] rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all">
-              Download CSV
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="w-full h-[56px] rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all"
+            >
+              Calculate Best Deal
             </button>
           </div>
         </div>
@@ -392,6 +397,19 @@ const App: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {/* Recommendation Modal */}
+      <RecommendationModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        selectedProduct={selectedProduct}
+        selectedCurrency={selectedCurrency}
+        selectedCountryFilter={selectedCountry === 'all' ? 'All Countries' : selectedCountry}
+        sortBy={sortBy}
+        includeTaxes={includeTaxes}
+        topCountry={filteredAndSortedPrices[0]}
+        allCountries={filteredAndSortedPrices}
+      />
     </div>
   );
 };
