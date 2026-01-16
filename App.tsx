@@ -47,6 +47,29 @@ const App: React.FC = () => {
     };
   }, []);
 
+  // Normalize price based on tax toggle
+  const normalizePrice = (item: any) => {
+    let basePrice = item.priceInUsd;
+    
+    if (includeTaxes) {
+      // GROSS MODE: All prices should include tax
+      if (!item.taxIncluded) {
+        // Add tax to pre-tax prices
+        basePrice = basePrice * (1 + item.taxRate);
+      }
+      // Already tax-included prices stay as-is
+    } else {
+      // NET MODE: All prices should exclude tax
+      if (item.taxIncluded) {
+        // Remove tax from tax-included prices
+        basePrice = basePrice / (1 + item.taxRate);
+      }
+      // Already pre-tax prices stay as-is
+    }
+    
+    return basePrice;
+  };
+
   // Currency conversion helper
   const convertPrice = (usdPrice: number) => {
     return usdPrice * (fxRates[selectedCurrency] || 1);
