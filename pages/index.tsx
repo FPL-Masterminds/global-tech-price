@@ -113,7 +113,7 @@ const App: React.FC = () => {
     }
     
     // Add displayPrice (converted price with tax normalization) to each item
-    filtered = filtered.map(item => {
+    const filteredWithDisplay = filtered.map(item => {
       const normalizedPrice = normalizePrice(item);
       return {
         ...item,
@@ -123,7 +123,7 @@ const App: React.FC = () => {
     
     // Sort
     if (sortBy !== 'default') {
-      filtered.sort((a, b) => {
+      filteredWithDisplay.sort((a, b) => {
         const aConverted = a.displayPrice;
         const bConverted = b.displayPrice;
         
@@ -141,7 +141,7 @@ const App: React.FC = () => {
       });
     }
     
-    return filtered;
+    return filteredWithDisplay;
   }, [selectedCountry, sortBy, selectedCurrency, fxRates, includeTaxes]);
 
   return (
@@ -430,9 +430,9 @@ const App: React.FC = () => {
             <div>
               <h4 className="text-white font-semibold mb-4">Explore</h4>
               <ul className="space-y-2">
-                <li><Link to="/" className="hover:text-white transition-colors">Pricing Data</Link></li>
-                <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
-                <li><Link to="/vat-refund-policy" className="hover:text-white transition-colors">VAT Refund Policy</Link></li>
+                <li><Link href="/" className="hover:text-white transition-colors">Pricing Data</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+                <li><Link href="/vat-refund-policy" className="hover:text-white transition-colors">VAT Refund Policy</Link></li>
               </ul>
             </div>
             <div>

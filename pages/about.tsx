@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import Link from 'next/link';
 import VideoBackground from '@/components/VideoBackground';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/constants';
-import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   const heroVideoPool = [
@@ -107,7 +106,7 @@ const About: React.FC = () => {
 
           <div className="pt-12 text-center">
             <Link 
-              to="/" 
+              href="/" 
               className="inline-block px-12 py-4 rounded-full bg-white text-black font-semibold text-[18px] hover:bg-white/90 transition-all"
             >
               Start Comparing Prices

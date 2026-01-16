@@ -164,7 +164,7 @@ const VatRefundPolicy: React.FC = () => {
 
           {/* Back to Dashboard */}
           <div className="text-center mt-16 pt-8 border-t border-white/10">
-            <Link to="/" className="inline-block h-[56px] px-8 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all flex items-center justify-center">
+            <Link href="/" className="inline-block h-[56px] px-8 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-all flex items-center justify-center">
               Back to Price Comparison
             </Link>
           </div>
@@ -180,9 +180,9 @@ const VatRefundPolicy: React.FC = () => {
             <div>
               <h4 className="text-white font-semibold mb-4">Explore</h4>
               <ul className="space-y-2">
-                <li><Link to="/" className="hover:text-white transition-colors">Pricing Data</Link></li>
-                <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
-                <li><Link to="/vat-refund-policy" className="hover:text-white transition-colors">VAT Refund Policy</Link></li>
+                <li><Link href="/" className="hover:text-white transition-colors">Pricing Data</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+                <li><Link href="/vat-refund-policy" className="hover:text-white transition-colors">VAT Refund Policy</Link></li>
               </ul>
             </div>
             <div>
