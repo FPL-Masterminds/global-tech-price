@@ -14,7 +14,27 @@ export const VIDEO_POOL = [
 ];
 
 export const PRODUCTS = [
-  { id: 'mbp14', name: 'MacBook Pro 14" M3', basePriceUsd: 1599 },
+  // M4 Models (Latest - Nov 2024)
+  { id: 'mbp14-m4-16-512', name: 'MacBook Pro 14" M4 16GB 512GB', basePriceUsd: 1599 },
+  { id: 'mbp14-m4-16-1tb', name: 'MacBook Pro 14" M4 16GB 1TB', basePriceUsd: 1799 },
+  { id: 'mbp14-m4pro-20-512', name: 'MacBook Pro 14" M4 Pro 20GB 512GB', basePriceUsd: 1999 },
+  { id: 'mbp14-m4pro-24-1tb', name: 'MacBook Pro 14" M4 Pro 24GB 1TB', basePriceUsd: 2399 },
+  { id: 'mbp14-m4max-36-1tb', name: 'MacBook Pro 14" M4 Max 36GB 1TB', basePriceUsd: 3199 },
+  { id: 'mbp16-m4pro-24-512', name: 'MacBook Pro 16" M4 Pro 24GB 512GB', basePriceUsd: 2499 },
+  { id: 'mbp16-m4pro-48-512', name: 'MacBook Pro 16" M4 Pro 48GB 512GB', basePriceUsd: 2899 },
+  { id: 'mbp16-m4max-48-1tb', name: 'MacBook Pro 16" M4 Max 48GB 1TB', basePriceUsd: 3499 },
+  
+  // M3 Models (2023)
+  { id: 'mbp14-m3-8-512', name: 'MacBook Pro 14" M3 8GB 512GB', basePriceUsd: 1599 },
+  { id: 'mbp14-m3-8-1tb', name: 'MacBook Pro 14" M3 8GB 1TB', basePriceUsd: 1799 },
+  { id: 'mbp14-m3pro-18-512', name: 'MacBook Pro 14" M3 Pro 18GB 512GB', basePriceUsd: 1999 },
+  { id: 'mbp14-m3pro-18-1tb', name: 'MacBook Pro 14" M3 Pro 18GB 1TB', basePriceUsd: 2199 },
+  { id: 'mbp14-m3max-36-1tb', name: 'MacBook Pro 14" M3 Max 36GB 1TB', basePriceUsd: 3099 },
+  { id: 'mbp16-m3pro-18-512', name: 'MacBook Pro 16" M3 Pro 18GB 512GB', basePriceUsd: 2499 },
+  { id: 'mbp16-m3pro-36-512', name: 'MacBook Pro 16" M3 Pro 36GB 512GB', basePriceUsd: 2899 },
+  { id: 'mbp16-m3max-36-1tb', name: 'MacBook Pro 16" M3 Max 36GB 1TB', basePriceUsd: 3499 },
+  
+  // Other Products
   { id: 'iphone15pro', name: 'iPhone 15 Pro', basePriceUsd: 999 },
   { id: 'ipadpro', name: 'iPad Pro 12.9"', basePriceUsd: 1099 },
   { id: 'airpodsmax', name: 'AirPods Max', basePriceUsd: 549 }
