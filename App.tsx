@@ -284,16 +284,16 @@ const App: React.FC = () => {
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-900 text-center" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.officialPrice}</td>
                     <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
-                      <div className="flex flex-col items-center gap-1">
-                        <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>
-                          {item.taxStatus}
-                        </span>
-                        {item.vatRefundEligible && (
-                          <span className="px-2 py-0.5 rounded text-[9px] font-semibold bg-green-100 text-green-700 whitespace-nowrap" style={{ border: '1px solid #4ade80' }} title="VAT/GST refund available for tourists">
-                            ✈️ Refund OK
-                          </span>
-                        )}
-                      </div>
+                      <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>
+                        {item.taxStatus}
+                      </span>
+                    </td>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-center" style={{ borderRight: '1px solid #ddd' }}>
+                      {item.vatRefundEligible ? (
+                        <span title="VAT/GST refund available for tourists">✓</span>
+                      ) : (
+                        <span className="text-gray-400">—</span>
+                      )}
                     </td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
                     <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
