@@ -229,7 +229,7 @@ const App: React.FC = () => {
       <footer className="relative bg-black py-[160px] flex flex-col items-center overflow-hidden">
         <VideoBackground src={sectionVideos.footer} overlayOpacity={0.8} />
         <div className="relative z-10 w-[87.5%] max-w-[1024px] text-center">
-          <h2 className="text-[32px] md:text-[56px] font-semibold mb-12">Apple Pricing Index</h2>
+          <h2 className="text-[32px] md:text-[56px] font-semibold mb-12">Global Tech Price</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-left text-[14px] text-white/60 mb-20">
             <div>
               <h4 className="text-white font-semibold mb-4">Explore</h4>
@@ -265,8 +265,8 @@ const App: React.FC = () => {
             </div>
           </div>
           <div className="pt-12 border-t border-white/10 text-[12px] text-white/40 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p>Copyright © 2024 Apple Pricing Index Noir. All rights reserved.</p>
-            <p>Made with minimalist precision for global shoppers.</p>
+            <p>Copyright © 2026 Global Tech Price. All rights reserved.</p>
+            <p>Data for informational purposes only. We are not tax specialists, financial advisors, or refund experts. Always verify pricing and tax regulations independently.</p>
           </div>
         </div>
       </footer>
