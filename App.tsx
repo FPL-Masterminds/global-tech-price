@@ -354,6 +354,7 @@ const App: React.FC = () => {
             <div>
               <h4 className="text-white font-semibold mb-4">Explore</h4>
               <ul className="space-y-2">
+                <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
                 <li><a href="#" className="hover:text-white transition-colors">Pricing Data</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Global Maps</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Trend Reports</a></li>
