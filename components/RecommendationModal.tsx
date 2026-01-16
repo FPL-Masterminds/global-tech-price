@@ -165,8 +165,43 @@ const RecommendationModal: React.FC<RecommendationModalProps> = ({
               <span className="font-semibold text-white">Original: </span>
               {topCountry.country}'s official price was listed as "{topCountry.officialPrice}" ({topCountry.taxStatus}).
             </p>
-            <p className="text-white/50 text-[12px] mt-3">
-              If importing internationally, check for customs duties, VAT reclaim eligibility (for travelers), and warranty differences.
+          </div>
+
+          {/* VAT Refund Info */}
+          {topCountry.vatRefundEligible && (
+            <div className="bg-green-900/20 rounded-xl p-5 border border-green-500/30">
+              <h3 className="text-[16px] font-semibold text-white mb-2">✈️ Tourist VAT Refund Available</h3>
+              <p className="text-white/80 text-[14px] mb-3">
+                {topCountry.country} allows foreign visitors to reclaim VAT/GST at the airport when leaving the country.
+              </p>
+              <p className="text-white/70 text-[13px] mb-2">
+                <span className="font-semibold text-green-400">Potential Refund:</span> Up to {(topCountry.refundPercentage * 100).toFixed(0)}% of the purchase price (~{symbol}{Math.round(topCountry.displayPrice * topCountry.refundPercentage).toLocaleString()})
+              </p>
+              <p className="text-white/70 text-[13px]">
+                <span className="font-semibold text-green-400">Effective Price After Refund:</span> {symbol}{Math.round(topCountry.displayPrice * (1 - topCountry.refundPercentage)).toLocaleString()}
+              </p>
+              <div className="mt-4 pt-4 border-t border-white/10">
+                <p className="text-red-400 font-semibold text-[12px] mb-2">⚠️ CRITICAL DISCLAIMER:</p>
+                <p className="text-white/50 text-[11px] leading-relaxed">
+                  VAT refund eligibility, processes, and amounts vary significantly by country and are subject to change without notice. Refunds typically require:
+                  minimum purchase amounts, specific documentation, airport processing (with fees), and proof of export. Actual refund amounts may be lower due to 
+                  administrative fees (typically 10-30% of VAT). We are NOT tax advisors, customs experts, or refund specialists. This information is for general 
+                  reference ONLY. You MUST verify current refund policies, eligibility requirements, and procedures with official government sources or the retailer 
+                  before making any purchase decisions. We accept NO liability for refund denials, processing failures, or financial losses.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* General Disclaimer */}
+          <div className="bg-red-900/20 rounded-xl p-5 border border-red-500/30">
+            <h3 className="text-[16px] font-semibold text-white mb-2">📋 Legal Disclaimer</h3>
+            <p className="text-white/60 text-[12px] leading-relaxed">
+              All data is for <span className="text-white font-semibold">informational purposes ONLY</span>. We are NOT tax specialists, financial advisors, customs brokers, 
+              or refund experts. Prices, exchange rates, tax rates, and refund policies change frequently and without notice. International purchases may incur customs duties, 
+              import VAT, shipping costs, and warranty limitations. You are solely responsible for verifying all information, understanding applicable laws and regulations, 
+              and making informed purchasing decisions. By using this tool, you acknowledge that we provide NO guarantees of accuracy and accept NO liability for any financial 
+              losses, denied refunds, customs issues, or other consequences arising from your use of this information.
             </p>
           </div>
 
