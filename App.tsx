@@ -121,29 +121,29 @@ const App: React.FC = () => {
                     background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
                     borderBottom: '1px solid #ddd'
                   }} onMouseEnter={(e) => e.currentTarget.style.background = '#3478F6'} onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}>
-                    <td className="py-3 px-4 sticky left-0 z-10" style={{ background: idx % 2 === 0 ? '#fff' : '#f5f5f5', borderRight: '1px solid #ddd' }}>
+                    <td className="py-3 px-4 sticky left-0 z-10 text-center" style={{ background: idx % 2 === 0 ? '#fff' : '#f5f5f5', borderRight: '1px solid #ddd' }}>
                       <img 
                         src={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png`}
                         alt={`${item.country} flag`}
-                        className="w-8 h-6 object-cover rounded shadow-sm"
+                        className="w-8 h-6 object-cover rounded shadow-sm mx-auto"
                       />
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-normal text-gray-900" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
-                    <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-right" style={{ borderRight: '1px solid #ddd' }}>{item.officialPrice}</td>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-900 text-center" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-center" style={{ borderRight: '1px solid #ddd' }}>{item.officialPrice}</td>
                     <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
                       <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>
                         {item.taxStatus}
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-right whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
-                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-right whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>${item.priceInUsd.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#d32f2f' : item.vsUsPrice === '+$0' ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-700 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.fxRate}</td>
+                    <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>${item.priceInUsd.toLocaleString()}</td>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: item.vsUsPrice.startsWith('+') && item.vsUsPrice !== '+$0' ? '#d32f2f' : item.vsUsPrice === '+$0' ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {item.vsUsPrice}
                     </td>
-                    <td className="py-3 px-4 text-[11px] font-semibold text-right whitespace-nowrap" style={{ color: (item.priceInUsd - 2150) > 0 ? '#d32f2f' : (item.priceInUsd - 2150) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
+                    <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.priceInUsd - 2150) > 0 ? '#d32f2f' : (item.priceInUsd - 2150) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {item.priceInUsd - 2150 === 0 ? '+£0' : item.priceInUsd - 2150 > 0 ? `+£${item.priceInUsd - 2150}` : `-£${Math.abs(item.priceInUsd - 2150)}`}
                     </td>
-                    <td className="py-3 px-4 text-right">
+                    <td className="py-3 px-4 text-center">
                       <button className="px-4 py-1 text-[11px] font-normal text-white whitespace-nowrap" style={{ background: 'linear-gradient(180deg, #6ba6ff 0%, #3478F6 100%)', border: '1px solid #2d6bc7', borderRadius: '12px', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
                         Check Amazon
                       </button>
