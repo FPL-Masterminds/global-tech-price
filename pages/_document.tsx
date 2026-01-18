@@ -7,16 +7,12 @@ export default function Document() {
         {/* HLS.js for video streaming */}
         <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
         
-        {/* Fonts */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          @import url('https://fonts.cdnfonts.com/css/myriad-pro');
-          
-          * {
-            font-family: 'Myriad Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-          }
-        ` }} />
+        {/* Google Fonts - Inter */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
-      <body className="bg-black text-white">
+      <body className="bg-black text-white" style={{ fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
         <Main />
         <NextScript />
       </body>
