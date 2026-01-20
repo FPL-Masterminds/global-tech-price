@@ -18,27 +18,41 @@ export interface PriceData {
 export function loadPricesFromCSV(): PriceData[] {
   const csvPath = path.join(process.cwd(), 'data', 'prices.csv');
   const fileContents = fs.readFileSync(csvPath, 'utf-8');
-  const lines = fileContents.trim().split('\n');
-
+  
+  const lines = fileContents.trim().split('\n').slice(1); // Skip header
   const prices: PriceData[] = [];
 
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i];
-    const matches = line.match(/([^,]*(?:"[^"]*")?[^,]*),/g);
-    if (!matches) continue;
-
-    const values = matches.map(m => m.slice(0, -1).replace(/^"|"$/g, ''));
+  for (const line of lines) {
+    if (!line.trim()) continue;
     
-    const productId = values[0];
-    const productName = values[1];
-    const country = values[2];
-    const countryCode = values[3];
-    const officialPrice = values[4] || null;
-    const officialCurrency = values[5];
-    const taxRate = parseFloat(values[6]);
-    const taxIncluded = values[7] === 'true';
-    const vatRefundEligible = values[8] === 'true';
-    const refundPercentage = parseFloat(values[9]);
+    // Properly parse CSV with quoted fields
+    const fields: string[] = [];
+    let current = '';
+    let inQuotes = false;
+    
+    for (let i = 0; i < line.length; i++) {
+      const char = line[i];
+      if (char === '"') {
+        inQuotes = !inQuotes;
+      } else if (char === ',' && !inQuotes) {
+        fields.push(current);
+        current = '';
+      } else {
+        current += char;
+      }
+    }
+    fields.push(current); // Last field
+    
+    const productId = fields[0];
+    const productName = fields[1];
+    const country = fields[2];
+    const countryCode = fields[3];
+    const officialPrice = fields[4] || null;
+    const officialCurrency = fields[5];
+    const taxRate = parseFloat(fields[6]);
+    const taxIncluded = fields[7] === 'true';
+    const vatRefundEligible = fields[8] === 'true';
+    const refundPercentage = parseFloat(fields[9]);
 
     let priceInUsd: number | undefined;
     if (officialPrice) {
