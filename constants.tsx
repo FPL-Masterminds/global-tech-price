@@ -57,10 +57,10 @@ export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: str
   'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900' },
   'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900' },
   'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'TH': 'THB 89,900' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'TH': 'THB 103,900' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'TH': 'THB 124,900' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'TH': 'THB 144,900' },
 };
 
 // Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
@@ -125,15 +125,21 @@ export const PRODUCT_URL_SLUGS_MX: { [productId: string]: string } = {
 
 // Thailand slugs (in Thai)
 export const PRODUCT_URL_SLUGS_TH: { [productId: string]: string } = {
-  // M5 Models
+  // M5 Models - 14-inch
   'mbp14-m5-16-512': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m5-พร้อม-cpu-แบบ-10-core-และ-gpu-แบบ-10-core-หน่วยความจำ-16gb-512gb',
   'mbp14-m5-16-1tb': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m5-พร้อม-cpu-แบบ-10-core-และ-gpu-แบบ-10-core-หน่วยความจำ-16gb-1tb',
-  'mbp14-m5-24-1tb': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m5-พร้อม-cpu-แบบ-10-core-และ-gpu-แบบ-10-core-หน่วยความจำขนาด-24gb-1tb',
+  // Note: M5 24GB 1TB URL missing due to timeout during scraping
   
   // M4 Models - 14-inch
   'mbp14-m4pro-24-512': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-pro-พร้อม-cpu-แบบ-12-core-และ-gpu-แบบ-16-core-หน่วยความจำขนาด-24gb-512gb',
   'mbp14-m4pro-24-1tb': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-pro-พร้อม-cpu-แบบ-14-core-และ-gpu-แบบ-20-core-หน่วยความจำขนาด-24gb-1tb',
   'mbp14-m4max-36-1tb': 'รุ่น-14-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-max-พร้อม-cpu-แบบ-14-core,-gpu-แบบ-32-core,-neural-engine-แบบ-16-core-หน่วยความจำ-36gb-1tb',
+  
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': 'รุ่น-16-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-pro-พร้อม-cpu-แบบ-14-core-และ-gpu-แบบ-20-core-หน่วยความจำขนาด-24gb-512gb',
+  'mbp16-m4pro-48-512': 'รุ่น-16-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-pro-พร้อม-cpu-แบบ-14-core-และ-gpu-แบบ-20-core-หน่วยความจำ-48gb-512gb',
+  'mbp16-m4max-36-1tb': 'รุ่น-16-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-max-พร้อม-cpu-แบบ-14-core,-gpu-แบบ-32-core,-neural-engine-แบบ-16-core-หน่วยความจำ-36gb-1tb',
+  'mbp16-m4max-48-1tb': 'รุ่น-16-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-max-พร้อม-cpu-แบบ-16-core-และ-gpu-แบบ-40-core-หน่วยความจำ-48gb-1tb',
 };
 
 // Helper function to get full Apple Store URL for a product in a country
