@@ -38,14 +38,14 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  'mbp14-m4-16-512': { 'CZ': 'CZK 45,990' },
-  'mbp14-m4-16-1tb': { 'CZ': 'CZK 51,990' },
-  'mbp14-m4pro-24-512': { 'CZ': 'CZK 56,990' },
-  'mbp14-m4pro-24-1tb': { 'CZ': 'CZK 68,990' },
-  'mbp14-m4max-36-1tb': { 'CZ': 'CZK 92,990' },
-  'mbp16-m4pro-24-512': { 'CZ': 'CZK 69,990' },
-  'mbp16-m4pro-48-512': { 'CZ': 'CZK 81,990' },
-  'mbp16-m4max-48-1tb': { 'CZ': 'CZK 114,990' },
+  'mbp14-m4-16-512': { 'CZ': 'CZK 45,990', 'GB': 'GBP 1,599' },
+  'mbp14-m4-16-1tb': { 'CZ': 'CZK 51,990', 'GB': 'GBP 1,799' },
+  'mbp14-m4pro-24-512': { 'CZ': 'CZK 56,990', 'GB': 'GBP 1,999' },
+  'mbp14-m4pro-24-1tb': { 'CZ': 'CZK 68,990', 'GB': 'GBP 2,399' },
+  'mbp14-m4max-36-1tb': { 'CZ': 'CZK 92,990', 'GB': 'GBP 3,199' },
+  'mbp16-m4pro-24-512': { 'CZ': 'CZK 69,990', 'GB': 'GBP 2,499' },
+  'mbp16-m4pro-48-512': { 'CZ': 'CZK 81,990', 'GB': 'GBP 2,899' },
+  'mbp16-m4max-48-1tb': { 'CZ': 'CZK 114,990', 'GB': 'GBP 3,999' },
 };
 
 export const MOCK_PRICES = [
