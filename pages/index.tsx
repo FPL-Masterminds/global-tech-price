@@ -134,18 +134,6 @@ const App: React.FC = () => {
         // Convert to USD using live FX rates
         const rate = fxRates[officialCurrency] || 1;
         priceInUsd = amount / rate;
-        
-        if (item.code === 'CZ') {
-          console.log('CZECH DEBUG:', {
-            officialPrice,
-            parts,
-            officialCurrency,
-            amount,
-            rate,
-            priceInUsd,
-            fxRates
-          });
-        }
       }
       
       // Apply tax normalization
@@ -158,9 +146,11 @@ const App: React.FC = () => {
         normalizedPrice = priceInUsd * (1 + item.taxRate);
       }
       
-      // Get live FX rate display
+      // Get live FX rate display - shows conversion from selected currency to country's currency
       const liveFxRate = fxRates[officialCurrency] || 1;
-      const fxRateDisplay = `1 USD = ${liveFxRate.toFixed(2)} ${officialCurrency}`;
+      const selectedCurrencyRate = fxRates[selectedCurrency] || 1;
+      const rateToSelectedCurrency = liveFxRate / selectedCurrencyRate;
+      const fxRateDisplay = `1 ${selectedCurrency} = ${rateToSelectedCurrency.toFixed(2)} ${officialCurrency}`;
       
       return {
         ...item,
@@ -324,7 +314,7 @@ const App: React.FC = () => {
                   <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Official Price</th>
                   <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Tax Status</th>
                   <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Refund</th>
-                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>FX Rate (1 {selectedCurrency} =)</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency}</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency === 'USD' ? 'GBP' : 'USD'}</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {MOCK_PRICES.find(p => p.code === baseline.country)?.country}</th>
