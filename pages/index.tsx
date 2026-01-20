@@ -173,8 +173,8 @@ const App: React.FC = () => {
 
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
-    // START with allCountriesWithPrices which has calculated priceInUsd!
-    let filtered = allCountriesWithPrices.filter(item => item.productId === selectedProduct.id);
+    // allCountriesWithPrices already has prices for selectedProduct from PRODUCT_PRICES
+    let filtered = [...allCountriesWithPrices];
     
     // Filter by country
     if (selectedCountry !== 'all') {
@@ -205,7 +205,7 @@ const App: React.FC = () => {
     }
     
     return filteredWithDisplay;
-  }, [selectedCountry, sortBy, selectedCurrency, fxRates, includeTaxes, selectedProduct, allCountriesWithPrices, baseline]);
+  }, [selectedCountry, sortBy, allCountriesWithPrices, baseline]);
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
