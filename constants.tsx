@@ -45,22 +45,22 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  // M5 Models (US, CA, GB, CZ, MX, TH, HK)
-  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999' },
-  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499' },
-  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999' },
+  // M5 Models (US, CA, GB, CZ, MX, TH, HK, JP)
+  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999', 'JP': 'JPY 248,800' },
+  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499', 'JP': 'JPY 278,800' },
+  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999', 'JP': 'JPY 308,800' },
   
   // M4 Models
   'mbp14-m4-16-512': { 'US': 'USD 1,599', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990' },
   'mbp14-m4-16-1tb': { 'US': 'USD 1,799', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990' },
   'mbp14-m4-24-1tb': { 'US': 'USD 1,999', 'GB': 'GBP 1,999' },
-  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999' },
-  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999' },
-  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249' },
+  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999', 'JP': 'JPY 328,800' },
+  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999', 'JP': 'JPY 398,800' },
+  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999', 'JP': 'JPY 528,800' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999', 'JP': 'JPY 398,800' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999', 'JP': 'JPY 458,800' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499', 'JP': 'JPY 554,800' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249', 'JP': 'JPY 634,800' },
 };
 
 // Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
@@ -142,9 +142,26 @@ export const PRODUCT_URL_SLUGS_TH: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': 'รุ่น-16-นิ้ว-ดำสเปซแบล็ค-จอภาพมาตรฐาน-ชิป-apple-m4-max-พร้อม-cpu-แบบ-16-core-และ-gpu-แบบ-40-core-หน่วยความจำ-48gb-1tb',
 };
 
+// Japanese slugs (in Japanese language)
+export const PRODUCT_URL_SLUGS_JP: { [productId: string]: string } = {
+  // M5 Models
+  'mbp14-m5-16-512': '14インチ-スペースブラック-標準ディスプレイ-10コアcpuと10コアgpu搭載apple-m5チップ-16gbメモリ-512gb',
+  'mbp14-m5-16-1tb': '14インチ-スペースブラック-標準ディスプレイ-10コアcpuと10コアgpu搭載apple-m5チップ-16gbメモリ-1tb',
+  'mbp14-m5-24-1tb': '14インチ-スペースブラック-標準ディスプレイ-10コアcpuと10コアgpu搭載apple-m5チップ-24gbメモリ-1tb',
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14インチ-スペースブラック-標準ディスプレイ-12コアcpuと16コアgpu搭載apple-m4-proチップ-24gbメモリ-512gb',
+  'mbp14-m4pro-24-1tb': '14インチ-スペースブラック-標準ディスプレイ-14コアcpuと20コアgpu搭載apple-m4-proチップ-24gbメモリ-1tb',
+  'mbp14-m4max-36-1tb': '14インチ-スペースブラック-標準ディスプレイ-14コアcpuと32コアgpu搭載apple-m4-maxチップ-36gbメモリ-1tb',
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16インチ-スペースブラック-標準ディスプレイ-14コアcpuと20コアgpu搭載apple-m4-proチップ-24gbメモリ-512gb',
+  'mbp16-m4pro-48-512': '16インチ-スペースブラック-標準ディスプレイ-14コアcpuと20コアgpu搭載apple-m4-proチップ-48gbメモリ-512gb',
+  'mbp16-m4max-36-1tb': '16インチ-スペースブラック-標準ディスプレイ-14コアcpuと32コアgpu搭載apple-m4-maxチップ-36gbメモリ-1tb',
+  'mbp16-m4max-48-1tb': '16インチ-スペースブラック-標準ディスプレイ-16コアcpuと40コアgpu搭載apple-m4-maxチップ-48gbメモリ-1tb',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Czech Republic, Mexico, and Thailand use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -152,6 +169,8 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_MX[productId];
   } else if (countryCode === 'TH') {
     slug = PRODUCT_URL_SLUGS_TH[productId];
+  } else if (countryCode === 'JP') {
+    slug = PRODUCT_URL_SLUGS_JP[productId];
   } else {
     slug = PRODUCT_URL_SLUGS_EN[productId];
   }
