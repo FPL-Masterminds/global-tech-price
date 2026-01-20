@@ -36,6 +36,18 @@ export const PRODUCTS = [
   { id: 'mbp16-m3max-36-1tb', name: 'MacBook Pro 16" M3 Max 36GB 1TB', basePriceUsd: 3499 }
 ];
 
+// Product prices by country (scraped official prices)
+export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
+  'mbp14-m4-16-512': { 'CZ': 'CZK 45,990' },
+  'mbp14-m4-16-1tb': { 'CZ': 'CZK 51,990' },
+  'mbp14-m4pro-24-512': { 'CZ': 'CZK 56,990' },
+  'mbp14-m4pro-24-1tb': { 'CZ': 'CZK 68,990' },
+  'mbp14-m4max-36-1tb': { 'CZ': 'CZK 92,990' },
+  'mbp16-m4pro-24-512': { 'CZ': 'CZK 69,990' },
+  'mbp16-m4pro-48-512': { 'CZ': 'CZK 81,990' },
+  'mbp16-m4max-48-1tb': { 'CZ': 'CZK 114,990' },
+};
+
 export const MOCK_PRICES = [
   { country: "United Kingdom", code: "GB", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.79 GBP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20 },
   { country: "United States", code: "US", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 1.00 USD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.07, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0 },

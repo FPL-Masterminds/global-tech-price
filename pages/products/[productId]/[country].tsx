@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import VideoBackground from '@/components/VideoBackground';
-import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/constants';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES } from '@/constants';
 import { Product } from '@/types';
 
 interface ProductCountryPageProps {
@@ -53,7 +53,7 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
           {/* Price Card */}
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 max-w-[600px] mx-auto mb-12 border border-white/20">
             <div className="text-[14px] text-white/70 mb-2">Official Price in {countryData.country}</div>
-            <div className="text-[56px] font-semibold mb-4">{countryData.officialPrice}</div>
+            <div className="text-[56px] font-semibold mb-4">{PRODUCT_PRICES[product.id]?.[countryData.code] || '—'}</div>
             <div className="text-[16px] text-white/80 mb-6">{countryData.taxStatus}</div>
             
             {savingsVsUs !== 0 && (
@@ -100,7 +100,7 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
             <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
               <div className="text-[14px] text-white/70 mb-2">Your Country</div>
               <div className="text-[24px] font-semibold mb-2">{countryData.country}</div>
-              <div className="text-[18px] text-white/80">{countryData.officialPrice}</div>
+              <div className="text-[18px] text-white/80">{PRODUCT_PRICES[product.id]?.[countryData.code] || '—'}</div>
             </div>
 
             <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
@@ -130,7 +130,7 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
           
           <div className="space-y-6 text-[16px] leading-relaxed text-white/80">
             <p>
-              The official price for the {product.name} in {countryData.country} is {countryData.officialPrice}. 
+              The official price for the {product.name} in {countryData.country} is {PRODUCT_PRICES[product.id]?.[countryData.code] || 'not available'}. 
               This price {countryData.taxIncluded ? 'includes' : 'excludes'} local taxes.
             </p>
             
