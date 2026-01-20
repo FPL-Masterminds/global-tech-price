@@ -45,22 +45,22 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  // M5 Models (US, CA, GB, CZ, MX, TH)
-  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900' },
-  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900' },
-  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900' },
+  // M5 Models (US, CA, GB, CZ, MX, TH, HK)
+  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999' },
+  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499' },
+  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999' },
   
   // M4 Models
   'mbp14-m4-16-512': { 'US': 'USD 1,599', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990' },
   'mbp14-m4-16-1tb': { 'US': 'USD 1,799', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990' },
   'mbp14-m4-24-1tb': { 'US': 'USD 1,999', 'GB': 'GBP 1,999' },
-  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900' },
-  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900' },
-  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'MX': 'MXN 84,999', 'TH': 'THB 124,900' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900' },
+  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999' },
+  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999' },
+  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249' },
 };
 
 // Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
