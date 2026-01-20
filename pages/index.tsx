@@ -12,7 +12,13 @@ const App: React.FC = () => {
   const [includeTaxes, setIncludeTaxes] = useState(true);
   const [selectedCountry, setSelectedCountry] = useState('all');
   const [sortBy, setSortBy] = useState('default');
-  const [fxRates, setFxRates] = useState<any>({ USD: 1, GBP: 0.79, EUR: 0.92, JPY: 148 });
+  const [fxRates, setFxRates] = useState<any>({ 
+    USD: 1, GBP: 0.79, EUR: 0.92, JPY: 148, THB: 35.60, HKD: 7.80,
+    MYR: 4.62, CAD: 1.35, SGD: 1.34, VND: 24500, TWD: 31.50,
+    AED: 3.67, AUD: 1.52, NZD: 1.65, KRW: 1320, CNY: 7.25,
+    PHP: 56.50, MXN: 17.20, INR: 83.20, PLN: 4.05, DKK: 6.88,
+    SEK: 10.50, NOK: 10.80, CZK: 23.20, TRY: 32.50, CLP: 950, BRL: 4.98
+  });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Fetch live FX rates from Frankfurter API
@@ -20,9 +26,13 @@ const App: React.FC = () => {
     fetch('https://api.frankfurter.app/latest?from=USD')
       .then(res => res.json())
       .then(data => {
+        console.log('FX Rates loaded:', data.rates);
         setFxRates({ USD: 1, ...data.rates });
       })
-      .catch(err => console.error('FX API error:', err));
+      .catch(err => {
+        console.error('FX API error:', err);
+        // Keep using fallback rates
+      });
   }, []);
 
   // Randomly select videos for different sections on mount
