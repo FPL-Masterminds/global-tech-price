@@ -134,6 +134,18 @@ const App: React.FC = () => {
         // Convert to USD using live FX rates
         const rate = fxRates[officialCurrency] || 1;
         priceInUsd = amount / rate;
+        
+        if (item.code === 'CZ') {
+          console.log('CZECH DEBUG:', {
+            officialPrice,
+            parts,
+            officialCurrency,
+            amount,
+            rate,
+            priceInUsd,
+            fxRates
+          });
+        }
       }
       
       // Apply tax normalization
@@ -161,21 +173,16 @@ const App: React.FC = () => {
 
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
-    let filtered = [...MOCK_PRICES];
+    // START with allCountriesWithPrices which has calculated priceInUsd!
+    let filtered = allCountriesWithPrices.filter(item => item.productId === selectedProduct.id);
     
     // Filter by country
     if (selectedCountry !== 'all') {
       filtered = filtered.filter(item => item.code === selectedCountry);
     }
     
-    // Add displayPrice (converted price with tax normalization) to each item
-    const filteredWithDisplay = filtered.map(item => {
-      const normalizedPrice = normalizePrice(item);
-      return {
-        ...item,
-        displayPrice: convertPrice(normalizedPrice)
-      };
-    });
+    // displayPrice is already calculated in allCountriesWithPrices
+    const filteredWithDisplay = [...filtered];
     
     // Sort
     if (sortBy !== 'default') {
@@ -198,7 +205,7 @@ const App: React.FC = () => {
     }
     
     return filteredWithDisplay;
-  }, [selectedCountry, sortBy, selectedCurrency, fxRates, includeTaxes]);
+  }, [selectedCountry, sortBy, selectedCurrency, fxRates, includeTaxes, selectedProduct, allCountriesWithPrices, baseline]);
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
