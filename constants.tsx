@@ -45,22 +45,22 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  // M5 Models (US only for now)
-  'mbp14-m5-16-512': { 'US': 'USD 1,599' },
-  'mbp14-m5-16-1tb': { 'US': 'USD 1,799' },
-  'mbp14-m5-24-1tb': { 'US': 'USD 1,999' },
+  // M5 Models (US, CA, GB, CZ)
+  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990' },
+  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990' },
+  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990' },
   
   // M4 Models
-  'mbp14-m4-16-512': { 'US': 'USD 1,599', 'CZ': 'CZK 45,990', 'GB': 'GBP 1,599' },
-  'mbp14-m4-16-1tb': { 'US': 'USD 1,799', 'CZ': 'CZK 51,990', 'GB': 'GBP 1,799' },
+  'mbp14-m4-16-512': { 'US': 'USD 1,599', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990' },
+  'mbp14-m4-16-1tb': { 'US': 'USD 1,799', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990' },
   'mbp14-m4-24-1tb': { 'US': 'USD 1,999', 'GB': 'GBP 1,999' },
-  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CZ': 'CZK 56,990', 'GB': 'GBP 1,999' },
-  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CZ': 'CZK 68,990', 'GB': 'GBP 2,399' },
-  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CZ': 'CZK 92,990', 'GB': 'GBP 3,199' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CZ': 'CZK 69,990', 'GB': 'GBP 2,499' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CZ': 'CZK 81,990', 'GB': 'GBP 2,899' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'GB': 'GBP 3,499' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CZ': 'CZK 114,990', 'GB': 'GBP 3,999' },
+  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990' },
+  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990' },
+  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990' },
 };
 
 export const MOCK_PRICES = [
