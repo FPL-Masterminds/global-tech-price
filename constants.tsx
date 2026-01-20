@@ -156,14 +156,9 @@ export const PRODUCT_URL_SLUGS_JP: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16インチ-スペースブラック-標準ディスプレイ-16コアcpuと40コアgpu搭載apple-m4-maxチップ-48gbメモリ-1tb',
 };
 
-// Vietnamese slugs (in Vietnamese language) - TO BE COLLECTED
-export const PRODUCT_URL_SLUGS_VN: { [productId: string]: string } = {
-  // Placeholder for Vietnamese localized URLs - will be collected via browser automation
-};
-
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Czech Republic, Mexico, Thailand, Japan, and Vietnam use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English (including VN, MY, SG)
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -173,8 +168,6 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_TH[productId];
   } else if (countryCode === 'JP') {
     slug = PRODUCT_URL_SLUGS_JP[productId];
-  } else if (countryCode === 'VN') {
-    slug = PRODUCT_URL_SLUGS_VN[productId];
   } else {
     slug = PRODUCT_URL_SLUGS_EN[productId];
   }
