@@ -77,9 +77,7 @@ countries.forEach(c => {
   products.forEach(p => {
     // Add Czech price if we have it
     const price = (c.code === 'CZ' && czechPrices[p.id]) ? czechPrices[p.id] : '';
-    // Escape quotes in product name for proper CSV format
-    const escapedName = p.name.replace(/"/g, '""');
-    csv += `${p.id},"${escapedName}",${c.country},${c.code},${price},${c.currency},${c.tax},${c.taxInc},${c.vat},${c.vatPct},"${escapedName}"\n`;
+    csv += `${p.id},${p.name},${c.country},${c.code},${price},${c.currency},${c.tax},${c.taxInc},${c.vat},${c.vatPct},${p.name}\n`;
   });
 });
 

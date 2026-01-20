@@ -1,596 +1,596 @@
 productId,productName,country,countryCode,officialPrice,officialCurrency,taxRate,taxIncluded,vatRefundEligible,refundPercentage,amazonKeyword
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",United States,US,,USD,0.0825,false,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",United Kingdom,GB,,GBP,0.2,true,true,20,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Thailand,TH,,THB,0.07,true,true,7,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Hong Kong,HK,,HKD,0,false,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Japan,JP,,JPY,0.1,true,true,10,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Malaysia,MY,,MYR,0.1,false,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Canada,CA,,CAD,0.13,false,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Singapore,SG,,SGD,0.09,true,true,9,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Vietnam,VN,,VND,0.1,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Taiwan,TW,,TWD,0.05,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",United Arab Emirates,AE,,AED,0.05,true,true,5,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Australia,AU,,AUD,0.1,true,true,10,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",New Zealand,NZ,,NZD,0.15,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",South Korea,KR,,KRW,0.1,true,true,10,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",China,CN,,CNY,0.13,true,true,13,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Philippines,PH,,PHP,0.12,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Mexico,MX,,MXN,0.16,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",India,IN,,INR,0.18,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Poland,PL,,PLN,0.23,true,true,23,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Luxembourg,LU,,EUR,0.17,true,true,17,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Germany,DE,,EUR,0.19,true,true,19,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Austria,AT,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",France,FR,,EUR,0.2,true,true,20,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Spain,ES,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Netherlands,NL,,EUR,0.21,true,true,21,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Italy,IT,,EUR,0.22,true,true,22,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Portugal,PT,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Ireland,IE,,EUR,0.23,true,true,23,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Denmark,DK,,DKK,0.25,true,true,25,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Sweden,SE,,SEK,0.25,true,true,25,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Norway,NO,,NOK,0.25,true,true,25,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Czech Republic,CZ,45990,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Czech Republic,CZ,51990,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Czech Republic,CZ,56990,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Czech Republic,CZ,68990,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Czech Republic,CZ,92990,CZK,0.21,true,true,21,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Czech Republic,CZ,69990,CZK,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Czech Republic,CZ,81990,CZK,0.21,true,true,21,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Czech Republic,CZ,114990,CZK,0.21,true,true,21,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Czech Republic,CZ,,CZK,0.21,true,true,21,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Turkey,TR,,TRY,0.2,true,true,20,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Chile,CL,,CLP,0.19,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
-mbp14-m4-16-512,"MacBook Pro 14"" M4 16GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 16GB 512GB"
-mbp14-m4-16-1tb,"MacBook Pro 14"" M4 16GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 16GB 1TB"
-mbp14-m4pro-20-512,"MacBook Pro 14"" M4 Pro 20GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 Pro 20GB 512GB"
-mbp14-m4pro-24-512,"MacBook Pro 14"" M4 Pro 24GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 512GB"
-mbp14-m4pro-24-1tb,"MacBook Pro 14"" M4 Pro 24GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 Pro 24GB 1TB"
-mbp14-m4max-36-1tb,"MacBook Pro 14"" M4 Max 36GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M4 Max 36GB 1TB"
-mbp16-m4pro-24-512,"MacBook Pro 16"" M4 Pro 24GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M4 Pro 24GB 512GB"
-mbp16-m4pro-48-512,"MacBook Pro 16"" M4 Pro 48GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M4 Pro 48GB 512GB"
-mbp16-m4max-48-1tb,"MacBook Pro 16"" M4 Max 48GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M4 Max 48GB 1TB"
-mbp14-m3-8-512,"MacBook Pro 14"" M3 8GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M3 8GB 512GB"
-mbp14-m3-8-1tb,"MacBook Pro 14"" M3 8GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M3 8GB 1TB"
-mbp14-m3pro-18-512,"MacBook Pro 14"" M3 Pro 18GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 512GB"
-mbp14-m3pro-18-1tb,"MacBook Pro 14"" M3 Pro 18GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M3 Pro 18GB 1TB"
-mbp14-m3max-36-1tb,"MacBook Pro 14"" M3 Max 36GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 14"" M3 Max 36GB 1TB"
-mbp16-m3pro-18-512,"MacBook Pro 16"" M3 Pro 18GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M3 Pro 18GB 512GB"
-mbp16-m3pro-36-512,"MacBook Pro 16"" M3 Pro 36GB 512GB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M3 Pro 36GB 512GB"
-mbp16-m3max-36-1tb,"MacBook Pro 16"" M3 Max 36GB 1TB",Brazil,BR,,BRL,0.25,true,false,0,"MacBook Pro 16"" M3 Max 36GB 1TB"
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,United States,US,,USD,0.0825,false,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,United Kingdom,GB,,GBP,0.2,true,true,20,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Thailand,TH,,THB,0.07,true,true,7,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Hong Kong,HK,,HKD,0,false,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Japan,JP,,JPY,0.1,true,true,10,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Malaysia,MY,,MYR,0.1,false,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Canada,CA,,CAD,0.13,false,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Singapore,SG,,SGD,0.09,true,true,9,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Vietnam,VN,,VND,0.1,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Taiwan,TW,,TWD,0.05,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,United Arab Emirates,AE,,AED,0.05,true,true,5,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Australia,AU,,AUD,0.1,true,true,10,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,New Zealand,NZ,,NZD,0.15,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,South Korea,KR,,KRW,0.1,true,true,10,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,China,CN,,CNY,0.13,true,true,13,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Philippines,PH,,PHP,0.12,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Mexico,MX,,MXN,0.16,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,India,IN,,INR,0.18,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Poland,PL,,PLN,0.23,true,true,23,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Luxembourg,LU,,EUR,0.17,true,true,17,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Germany,DE,,EUR,0.19,true,true,19,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Austria,AT,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,France,FR,,EUR,0.2,true,true,20,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Spain,ES,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Netherlands,NL,,EUR,0.21,true,true,21,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Italy,IT,,EUR,0.22,true,true,22,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Portugal,PT,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Ireland,IE,,EUR,0.23,true,true,23,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Denmark,DK,,DKK,0.25,true,true,25,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Sweden,SE,,SEK,0.25,true,true,25,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Norway,NO,,NOK,0.25,true,true,25,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Czech Republic,CZ,45990,CZK,0.21,true,true,21,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Czech Republic,CZ,51990,CZK,0.21,true,true,21,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Czech Republic,CZ,56990,CZK,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Czech Republic,CZ,68990,CZK,0.21,true,true,21,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Czech Republic,CZ,92990,CZK,0.21,true,true,21,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Czech Republic,CZ,69990,CZK,0.21,true,true,21,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Czech Republic,CZ,81990,CZK,0.21,true,true,21,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Czech Republic,CZ,114990,CZK,0.21,true,true,21,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Czech Republic,CZ,,CZK,0.21,true,true,21,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Turkey,TR,,TRY,0.2,true,true,20,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Chile,CL,,CLP,0.19,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB
+mbp14-m4-16-512,MacBook Pro 14" M4 16GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 16GB 512GB
+mbp14-m4-16-1tb,MacBook Pro 14" M4 16GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 16GB 1TB
+mbp14-m4pro-20-512,MacBook Pro 14" M4 Pro 20GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 Pro 20GB 512GB
+mbp14-m4pro-24-512,MacBook Pro 14" M4 Pro 24GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 Pro 24GB 512GB
+mbp14-m4pro-24-1tb,MacBook Pro 14" M4 Pro 24GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 Pro 24GB 1TB
+mbp14-m4max-36-1tb,MacBook Pro 14" M4 Max 36GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M4 Max 36GB 1TB
+mbp16-m4pro-24-512,MacBook Pro 16" M4 Pro 24GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M4 Pro 24GB 512GB
+mbp16-m4pro-48-512,MacBook Pro 16" M4 Pro 48GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M4 Pro 48GB 512GB
+mbp16-m4max-48-1tb,MacBook Pro 16" M4 Max 48GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M4 Max 48GB 1TB
+mbp14-m3-8-512,MacBook Pro 14" M3 8GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M3 8GB 512GB
+mbp14-m3-8-1tb,MacBook Pro 14" M3 8GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M3 8GB 1TB
+mbp14-m3pro-18-512,MacBook Pro 14" M3 Pro 18GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M3 Pro 18GB 512GB
+mbp14-m3pro-18-1tb,MacBook Pro 14" M3 Pro 18GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M3 Pro 18GB 1TB
+mbp14-m3max-36-1tb,MacBook Pro 14" M3 Max 36GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 14" M3 Max 36GB 1TB
+mbp16-m3pro-18-512,MacBook Pro 16" M3 Pro 18GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M3 Pro 18GB 512GB
+mbp16-m3pro-36-512,MacBook Pro 16" M3 Pro 36GB 512GB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M3 Pro 36GB 512GB
+mbp16-m3max-36-1tb,MacBook Pro 16" M3 Max 36GB 1TB,Brazil,BR,,BRL,0.25,true,false,0,MacBook Pro 16" M3 Max 36GB 1TB

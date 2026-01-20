@@ -25,23 +25,8 @@ export function loadPricesFromCSV(): PriceData[] {
   for (const line of lines) {
     if (!line.trim()) continue;
     
-    // Properly parse CSV with quoted fields
-    const fields: string[] = [];
-    let current = '';
-    let inQuotes = false;
-    
-    for (let i = 0; i < line.length; i++) {
-      const char = line[i];
-      if (char === '"') {
-        inQuotes = !inQuotes;
-      } else if (char === ',' && !inQuotes) {
-        fields.push(current);
-        current = '';
-      } else {
-        current += char;
-      }
-    }
-    fields.push(current); // Last field
+    // Simple comma split - no quotes in CSV
+    const fields = line.split(',');
     
     const productId = fields[0];
     const productName = fields[1];
