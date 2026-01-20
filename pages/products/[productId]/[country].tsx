@@ -187,18 +187,20 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  const { loadPricesFromCSV } = await import('@/lib/loadPrices');
+  const allPrices = loadPricesFromCSV();
   const paths: any[] = [];
   
-  // Generate paths for all product/country combinations
-  PRODUCTS.forEach(product => {
-    MOCK_PRICES.forEach(country => {
+  // Only generate paths for product/country combinations that have prices
+  allPrices.forEach(priceData => {
+    if (priceData.officialPrice) { // Only if there's an actual price
       paths.push({
         params: {
-          productId: product.id,
-          country: country.code.toLowerCase()
+          productId: priceData.productId,
+          country: priceData.countryCode.toLowerCase()
         }
       });
-    });
+    }
   });
 
   return {
@@ -208,9 +210,20 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const { loadPricesFromCSV } = await import('@/lib/loadPrices');
+  const allPrices = loadPricesFromCSV();
+  
   const productId = params?.productId as string;
   const countryCode = (params?.country as string).toUpperCase();
   
+  const priceData = allPrices.find(p => p.productId === productId && p.countryCode === countryCode);
+  
+  if (!priceData || !priceData.officialPrice) {
+    return {
+      notFound: true
+    };
+  }
+
   const product = PRODUCTS.find(p => p.id === productId);
   const countryData = MOCK_PRICES.find(c => c.code === countryCode);
   

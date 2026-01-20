@@ -4,6 +4,7 @@ const products = [
   { id: 'mbp14-m4-16-512', name: 'MacBook Pro 14" M4 16GB 512GB' },
   { id: 'mbp14-m4-16-1tb', name: 'MacBook Pro 14" M4 16GB 1TB' },
   { id: 'mbp14-m4pro-20-512', name: 'MacBook Pro 14" M4 Pro 20GB 512GB' },
+  { id: 'mbp14-m4pro-24-512', name: 'MacBook Pro 14" M4 Pro 24GB 512GB' },
   { id: 'mbp14-m4pro-24-1tb', name: 'MacBook Pro 14" M4 Pro 24GB 1TB' },
   { id: 'mbp14-m4max-36-1tb', name: 'MacBook Pro 14" M4 Max 36GB 1TB' },
   { id: 'mbp16-m4pro-24-512', name: 'MacBook Pro 16" M4 Pro 24GB 512GB' },
@@ -16,10 +17,7 @@ const products = [
   { id: 'mbp14-m3max-36-1tb', name: 'MacBook Pro 14" M3 Max 36GB 1TB' },
   { id: 'mbp16-m3pro-18-512', name: 'MacBook Pro 16" M3 Pro 18GB 512GB' },
   { id: 'mbp16-m3pro-36-512', name: 'MacBook Pro 16" M3 Pro 36GB 512GB' },
-  { id: 'mbp16-m3max-36-1tb', name: 'MacBook Pro 16" M3 Max 36GB 1TB' },
-  { id: 'iphone15pro', name: 'iPhone 15 Pro' },
-  { id: 'ipadpro', name: 'iPad Pro 12.9"' },
-  { id: 'airpodsmax', name: 'AirPods Max' }
+  { id: 'mbp16-m3max-36-1tb', name: 'MacBook Pro 16" M3 Max 36GB 1TB' }
 ];
 
 const countries = [
@@ -60,13 +58,30 @@ const countries = [
   {country:'Brazil',code:'BR',currency:'BRL',tax:0.25,taxInc:true,vat:false,vatPct:0}
 ];
 
+// Czech prices I scraped
+const czechPrices = {
+  'mbp14-m4-16-512': '45990',
+  'mbp14-m4-16-1tb': '51990',
+  'mbp14-m4pro-24-512': '56990',
+  'mbp14-m4pro-24-1tb': '68990',
+  'mbp14-m4max-36-1tb': '92990',
+  'mbp16-m4pro-24-512': '69990',
+  'mbp16-m4pro-48-512': '81990',
+  'mbp16-m4max-48-1tb': '114990'
+};
+
 let csv = 'productId,productName,country,countryCode,officialPrice,officialCurrency,taxRate,taxIncluded,vatRefundEligible,refundPercentage,amazonKeyword\n';
 
-products.forEach(p => {
-  countries.forEach(c => {
-    csv += `${p.id},"${p.name}",${c.country},${c.code},,${c.currency},${c.tax},${c.taxInc},${c.vat},${c.vatPct},"${p.name}"\n`;
+// ORGANIZED BY COUNTRY (not product)
+countries.forEach(c => {
+  products.forEach(p => {
+    // Add Czech price if we have it
+    const price = (c.code === 'CZ' && czechPrices[p.id]) ? czechPrices[p.id] : '';
+    csv += `${p.id},"${p.name}",${c.country},${c.code},${price},${c.currency},${c.tax},${c.taxInc},${c.vat},${c.vatPct},"${p.name}"\n`;
   });
 });
 
-fs.writeFileSync('data/prices-full-665.csv', csv);
-console.log('✅ Generated 665 rows (19 products × 35 countries)');
+fs.writeFileSync('data/prices.csv', csv);
+console.log(`✅ Generated ${products.length * countries.length} rows (35 countries × ${products.length} Mac products)`);
+console.log('✅ Organized by COUNTRY (not product)');
+console.log(`✅ Added Czech prices for ${Object.keys(czechPrices).length} M4 MacBook Pros`);

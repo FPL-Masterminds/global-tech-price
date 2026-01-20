@@ -1,12 +1,17 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 import VideoBackground from '@/components/VideoBackground';
 import RecommendationModal from '@/components/RecommendationModal';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES } from '@/constants';
 import { Product } from '@/types';
 
-const App: React.FC = () => {
+interface HomeProps {
+  pricesFromCSV: any[];
+}
+
+const App: React.FC<HomeProps> = ({ pricesFromCSV }) => {
   const [selectedProduct, setSelectedProduct] = useState(PRODUCTS[0]);
   const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [includeTaxes, setIncludeTaxes] = useState(true);
@@ -14,6 +19,20 @@ const App: React.FC = () => {
   const [sortBy, setSortBy] = useState('default');
   const [fxRates, setFxRates] = useState<any>({ USD: 1, GBP: 0.79, EUR: 0.92, JPY: 148 });
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Merge CSV prices with MOCK_PRICES metadata
+  const PRICES_WITH_DATA = useMemo(() => {
+    return MOCK_PRICES.map(mockPrice => {
+      const csvData = pricesFromCSV.find(
+        csv => csv.countryCode === mockPrice.code && csv.productId === selectedProduct.id
+      );
+      return {
+        ...mockPrice,
+        officialPrice: csvData?.officialPrice || '',
+        priceInUsd: csvData?.priceInUsd || 0
+      };
+    });
+  }, [pricesFromCSV, selectedProduct.id]);
 
   // Fetch live FX rates from Frankfurter API
   useEffect(() => {
@@ -94,7 +113,7 @@ const App: React.FC = () => {
 
   // ALL countries with displayPrice (for modal comparisons - never filtered)
   const allCountriesWithPrices = useMemo(() => {
-    return MOCK_PRICES.map(item => {
+    return PRICES_WITH_DATA.map(item => {
       const normalizedPrice = normalizePrice(item);
       return {
         ...item,
@@ -105,7 +124,7 @@ const App: React.FC = () => {
 
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
-    let filtered = [...MOCK_PRICES];
+    let filtered = [...PRICES_WITH_DATA];
     
     // Filter by country
     if (selectedCountry !== 'all') {
@@ -198,7 +217,7 @@ const App: React.FC = () => {
                 className="w-full bg-transparent text-[18px] font-semibold border-b border-white/20 pb-1 focus:outline-none cursor-pointer"
               >
                 <option value="all" className="bg-neutral-900">All Countries</option>
-                {MOCK_PRICES.map(p => (
+                {PRICES_WITH_DATA.map(p => (
                   <option key={p.code} value={p.code} className="bg-neutral-900">{p.country}</option>
                 ))}
               </select>
@@ -264,7 +283,7 @@ const App: React.FC = () => {
                   <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>FX Rate</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency}</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Price in {selectedCurrency === 'USD' ? 'GBP' : 'USD'}</th>
-                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {MOCK_PRICES.find(p => p.code === baseline.country)?.country}</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {PRICES_WITH_DATA.find(p => p.code === baseline.country)?.country}</th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Diff vs {selectedCurrency === 'USD' ? 'UK' : 'US'}</th>
                   <th className="py-2 px-4 min-w-[180px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Action</th>
                 </tr>
@@ -283,7 +302,9 @@ const App: React.FC = () => {
                       />
                     </td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-900 text-center" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
-                    <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>{item.officialPrice}</td>
+                    <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
+                      {item.officialPrice || '—'}
+                    </td>
                     <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
                       <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>
                         {item.taxStatus}
@@ -481,6 +502,17 @@ const App: React.FC = () => {
       />
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { loadPricesFromCSV } = await import('@/lib/loadPrices');
+  const pricesFromCSV = loadPricesFromCSV();
+
+  return {
+    props: {
+      pricesFromCSV
+    }
+  };
 };
 
 export default App;
