@@ -376,8 +376,16 @@ const App: React.FC = () => {
                     </td>
                     <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ color: (item.displayPrice - (selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0)) > 0 ? '#d32f2f' : (item.displayPrice - (selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0)) === 0 ? '#666' : '#388e3c', borderRight: '1px solid #ddd' }}>
                       {(() => {
-                        const altPrice = selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB')?.displayPrice || 0 : allCountriesWithPrices.find(c => c.code === 'US')?.displayPrice || 0;
-                        const diff = Math.round(item.displayPrice - altPrice);
+                        // Get alt country price (UK if showing USD, US if showing GBP)
+                        const altCountryData = selectedCurrency === 'USD' ? allCountriesWithPrices.find(c => c.code === 'GB') : allCountriesWithPrices.find(c => c.code === 'US');
+                        const altCountryDisplayPrice = altCountryData?.displayPrice || 0;
+                        
+                        // Convert both to the alternate currency
+                        const conversionRate = selectedCurrency === 'USD' ? (fxRates.GBP || 0.79) : (1 / (fxRates.GBP || 0.79));
+                        const itemInAltCurrency = item.displayPrice * conversionRate;
+                        const altCountryInAltCurrency = altCountryDisplayPrice * conversionRate;
+                        
+                        const diff = Math.round(itemInAltCurrency - altCountryInAltCurrency);
                         const symbol = selectedCurrency === 'USD' ? '£' : '$';
                         return diff === 0 ? `+${symbol}0` : diff > 0 ? `+${symbol}${Math.abs(diff).toLocaleString()}` : `-${symbol}${Math.abs(diff).toLocaleString()}`;
                       })()}
