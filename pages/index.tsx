@@ -324,7 +324,7 @@ const App: React.FC = () => {
               </thead>
               <tbody style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
                 {filteredAndSortedPrices.map((item, idx) => (
-                  <tr key={idx} className="transition-all cursor-pointer" style={{ 
+                  <tr key={idx} className="transition-all" style={{ 
                     background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
                     borderBottom: '1px solid #ddd'
                   }} onMouseEnter={(e) => e.currentTarget.style.background = '#d9e9ff'} onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}>
