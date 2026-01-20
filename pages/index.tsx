@@ -95,13 +95,44 @@ const App: React.FC = () => {
   // ALL countries with displayPrice (for modal comparisons - never filtered)
   const allCountriesWithPrices = useMemo(() => {
     return MOCK_PRICES.map(item => {
-      const normalizedPrice = normalizePrice(item);
+      // Get official price from PRODUCT_PRICES
+      const officialPrice = PRODUCT_PRICES[selectedProduct.id]?.[item.code] || '';
+      
+      // Parse the price string (e.g., "CZK 45,990" -> 45990, "CZK")
+      let priceInUsd = 0;
+      if (officialPrice) {
+        const parts = officialPrice.split(' ');
+        const currency = parts[0];
+        const amount = parseFloat(parts[1].replace(/,/g, ''));
+        
+        // Convert to USD using live FX rates
+        const rate = fxRates[currency] || 1;
+        priceInUsd = amount / rate;
+      }
+      
+      // Apply tax normalization
+      let normalizedPrice = priceInUsd;
+      if (item.taxIncluded && !includeTaxes) {
+        // Remove tax
+        normalizedPrice = priceInUsd / (1 + item.taxRate);
+      } else if (!item.taxIncluded && includeTaxes) {
+        // Add tax
+        normalizedPrice = priceInUsd * (1 + item.taxRate);
+      }
+      
+      // Get live FX rate for this currency
+      const officialCurrency = item.officialCurrency || (officialPrice ? officialPrice.split(' ')[0] : 'USD');
+      const liveFxRate = fxRates[officialCurrency] || 1;
+      const fxRateDisplay = `1 USD = ${liveFxRate.toFixed(2)} ${officialCurrency}`;
+      
       return {
         ...item,
-        displayPrice: convertPrice(normalizedPrice)
+        priceInUsd,
+        displayPrice: convertPrice(normalizedPrice),
+        fxRate: fxRateDisplay
       };
     });
-  }, [selectedCurrency, fxRates, includeTaxes]);
+  }, [selectedProduct.id, selectedCurrency, fxRates, includeTaxes]);
 
   // Filter and sort logic
   const filteredAndSortedPrices = useMemo(() => {
