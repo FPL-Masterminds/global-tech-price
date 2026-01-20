@@ -92,6 +92,20 @@ const App: React.FC = () => {
 
   const baseline = getBaseline();
 
+  // Currency map from country code to currency
+  const getCurrency = (countryCode: string): string => {
+    const currencyMap: {[key: string]: string} = {
+      'GB': 'GBP', 'US': 'USD', 'TH': 'THB', 'HK': 'HKD', 'JP': 'JPY',
+      'MY': 'MYR', 'CA': 'CAD', 'SG': 'SGD', 'VN': 'VND', 'TW': 'TWD',
+      'AE': 'AED', 'AU': 'AUD', 'NZ': 'NZD', 'KR': 'KRW', 'CN': 'CNY',
+      'PH': 'PHP', 'MX': 'MXN', 'IN': 'INR', 'PL': 'PLN', 'LU': 'EUR',
+      'DE': 'EUR', 'AT': 'EUR', 'FR': 'EUR', 'ES': 'EUR', 'NL': 'EUR',
+      'IT': 'EUR', 'PT': 'EUR', 'IE': 'EUR', 'DK': 'DKK', 'SE': 'SEK',
+      'NO': 'NOK', 'CZ': 'CZK', 'TR': 'TRY', 'CL': 'CLP', 'BR': 'BRL'
+    };
+    return currencyMap[countryCode] || 'USD';
+  };
+
   // ALL countries with displayPrice (for modal comparisons - never filtered)
   const allCountriesWithPrices = useMemo(() => {
     return MOCK_PRICES.map(item => {
@@ -100,13 +114,15 @@ const App: React.FC = () => {
       
       // Parse the price string (e.g., "CZK 45,990" -> 45990, "CZK")
       let priceInUsd = 0;
+      let officialCurrency = getCurrency(item.code);
+      
       if (officialPrice) {
         const parts = officialPrice.split(' ');
-        const currency = parts[0];
+        officialCurrency = parts[0];
         const amount = parseFloat(parts[1].replace(/,/g, ''));
         
         // Convert to USD using live FX rates
-        const rate = fxRates[currency] || 1;
+        const rate = fxRates[officialCurrency] || 1;
         priceInUsd = amount / rate;
       }
       
@@ -120,8 +136,7 @@ const App: React.FC = () => {
         normalizedPrice = priceInUsd * (1 + item.taxRate);
       }
       
-      // Get live FX rate for this currency
-      const officialCurrency = item.officialCurrency || (officialPrice ? officialPrice.split(' ')[0] : 'USD');
+      // Get live FX rate display
       const liveFxRate = fxRates[officialCurrency] || 1;
       const fxRateDisplay = `1 USD = ${liveFxRate.toFixed(2)} ${officialCurrency}`;
       
