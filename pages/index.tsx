@@ -3,7 +3,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import VideoBackground from '@/components/VideoBackground';
 import RecommendationModal from '@/components/RecommendationModal';
-import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES } from '@/constants';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES, getAppleStoreUrl } from '@/constants';
 import { Product } from '@/types';
 
 const App: React.FC = () => {
@@ -337,7 +337,25 @@ const App: React.FC = () => {
                     </td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-900 text-center" style={{ borderRight: '1px solid #ddd' }}>{item.country}</td>
                     <td className="py-3 px-4 text-[11px] font-normal text-gray-800 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
-                      {PRODUCT_PRICES[selectedProduct.id]?.[item.code] || '—'}
+                      {(() => {
+                        const price = PRODUCT_PRICES[selectedProduct.id]?.[item.code] || '—';
+                        const url = getAppleStoreUrl(selectedProduct.id, item.code);
+                        
+                        if (url && price !== '—') {
+                          return (
+                            <a 
+                              href={url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                              style={{ color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+                            >
+                              {price}
+                            </a>
+                          );
+                        }
+                        return price;
+                      })()}
                     </td>
                     <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
                       <span className="px-2 py-0.5 rounded text-[10px] font-normal bg-white/60 text-gray-700 whitespace-nowrap" style={{ border: '1px solid #ccc' }}>

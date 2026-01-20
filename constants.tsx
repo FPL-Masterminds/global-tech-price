@@ -63,40 +63,111 @@ export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: str
   'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990' },
 };
 
+// Product-specific Apple Store URLs (path slugs - prepend country-specific base URL)
+export const PRODUCT_URL_SLUGS: { [productId: string]: string } = {
+  // M5 Models
+  'mbp14-m5-16-512': '14-inch-space-black-standard-display-apple-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-512gb',
+  'mbp14-m5-16-1tb': '14-inch-space-black-standard-display-apple-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-1tb',
+  'mbp14-m5-24-1tb': '14-inch-space-black-standard-display-apple-m5-chip-with-10-core-cpu-and-10-core-gpu-24gb-memory-1tb',
+  
+  // M4 Models - 14-inch
+  'mbp14-m4-16-512': '14-inch-space-black-standard-display-apple-m4-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-512gb',
+  'mbp14-m4-16-1tb': '14-inch-space-black-standard-display-apple-m4-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-1tb',
+  'mbp14-m4-24-1tb': '14-inch-space-black-standard-display-apple-m4-chip-with-10-core-cpu-and-10-core-gpu-24gb-memory-1tb',
+  'mbp14-m4pro-24-512': '14-inch-space-black-standard-display-apple-m4-pro-chip-with-12-core-cpu-16-core-gpu-24gb-memory-512gb',
+  'mbp14-m4pro-24-1tb': '14-inch-space-black-standard-display-apple-m4-pro-with-14-core-cpu-and-20-core-gpu-24gb-memory-1tb',
+  'mbp14-m4max-36-1tb': '14-inch-space-black-standard-display-apple-m4-max-with-14-core-cpu-32-core-gpu-16-core-neural-engine-36gb-memory-1tb',
+  
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16-inch-space-black-standard-display-apple-m4-pro-with-14-core-cpu-and-20-core-gpu-24gb-memory-512gb',
+  'mbp16-m4pro-48-512': '16-inch-space-black-standard-display-apple-m4-pro-with-14-core-cpu-and-20-core-gpu-48gb-memory-512gb',
+  'mbp16-m4max-36-1tb': '16-inch-space-black-standard-display-apple-m4-max-with-14-core-cpu-32-core-gpu-16-core-neural-engine-36gb-memory-1tb',
+  'mbp16-m4max-48-1tb': '16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb',
+};
+
+// Helper function to get full Apple Store URL for a product in a country
+export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
+  const slug = PRODUCT_URL_SLUGS[productId];
+  if (!slug) return null;
+  
+  const countryPaths: { [key: string]: string } = {
+    'GB': '/uk',
+    'US': '',
+    'CA': '/ca',
+    'CZ': '/cz',
+    'TH': '/th',
+    'HK': '/hk',
+    'JP': '/jp',
+    'MY': '/my',
+    'SG': '/sg',
+    'VN': '/vn',
+    'TW': '/tw',
+    'AE': '/ae',
+    'AU': '/au',
+    'NZ': '/nz',
+    'KR': '/kr',
+    'CN': '/cn',
+    'PH': '/ph',
+    'MX': '/mx',
+    'IN': '/in',
+    'PL': '/pl',
+    'LU': '/lu',
+    'DE': '/de',
+    'AT': '/at',
+    'FR': '/fr',
+    'ES': '/es',
+    'NL': '/nl',
+    'IT': '/it',
+    'PT': '/pt',
+    'IE': '/ie',
+    'DKK': '/dk',
+    'SE': '/se',
+    'NO': '/no',
+    'TR': '/tr',
+    'CL': '/cl',
+    'BR': '/br',
+  };
+  
+  const countryPath = countryPaths[countryCode];
+  if (countryPath === undefined) return null;
+  
+  return `https://www.apple.com${countryPath}/shop/buy-mac/macbook-pro/${slug}`;
+}
+
 export const MOCK_PRICES = [
-  { country: "United Kingdom", code: "GB", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.79 GBP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20 },
-  { country: "United States", code: "US", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 1.00 USD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.07, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Thailand", code: "TH", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 35.60 THB", priceInUsd: 0, vsUsPrice: "", taxRate: 0.07, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.07 },
-  { country: "Hong Kong", code: "HK", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 7.80 HKD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.00, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Japan", code: "JP", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 148.00 JPY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10 },
-  { country: "Malaysia", code: "MY", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 4.62 MYR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Canada", code: "CA", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 1.35 CAD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.13, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Singapore", code: "SG", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.34 SGD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.09, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.09 },
-  { country: "Vietnam", code: "VN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 24500 VND", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Taiwan", code: "TW", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 31.50 TWD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.05, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "United Arab Emirates", code: "AE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 3.67 AED", priceInUsd: 0, vsUsPrice: "", taxRate: 0.05, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.05 },
-  { country: "Australia", code: "AU", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.52 AUD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10 },
-  { country: "New Zealand", code: "NZ", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.65 NZD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.15, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "South Korea", code: "KR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1320 KRW", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10 },
-  { country: "China", code: "CN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 7.25 CNY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.13, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.13 },
-  { country: "Philippines", code: "PH", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 56.50 PHP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.12, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Mexico", code: "MX", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 17.20 MXN", priceInUsd: 0, vsUsPrice: "", taxRate: 0.16, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "India", code: "IN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 83.20 INR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.18, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Poland", code: "PL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 4.05 PLN", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23 },
-  { country: "Luxembourg", code: "LU", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.17, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.17 },
-  { country: "Germany", code: "DE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.19, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.19 },
-  { country: "Austria", code: "AT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20 },
-  { country: "France", code: "FR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20 },
-  { country: "Spain", code: "ES", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21 },
-  { country: "Netherlands", code: "NL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21 },
-  { country: "Italy", code: "IT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.22, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.22 },
-  { country: "Portugal", code: "PT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23 },
-  { country: "Ireland", code: "IE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23 },
-  { country: "Denmark", code: "DKK", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 6.88 DKK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25 },
-  { country: "Sweden", code: "SE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 10.50 SEK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25 },
-  { country: "Norway", code: "NO", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 10.80 NOK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25 },
-  { country: "Czech Republic", code: "CZ", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 23.20 CZK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21 },
-  { country: "Turkey", code: "TR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 32.50 TRY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20 },
-  { country: "Chile", code: "CL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 950 CLP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.19, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 },
-  { country: "Brazil", code: "BR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 4.98 BRL", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0 }
+  { country: "United Kingdom", code: "GB", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.79 GBP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20, appleStoreUrl: "https://www.apple.com/uk/shop/buy-mac/macbook-pro" },
+  { country: "United States", code: "US", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 1.00 USD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.07, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/shop/buy-mac/macbook-pro" },
+  { country: "Thailand", code: "TH", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 35.60 THB", priceInUsd: 0, vsUsPrice: "", taxRate: 0.07, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.07, appleStoreUrl: "https://www.apple.com/th/shop/buy-mac/macbook-pro" },
+  { country: "Hong Kong", code: "HK", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 7.80 HKD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.00, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/hk/shop/buy-mac/macbook-pro" },
+  { country: "Japan", code: "JP", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 148.00 JPY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10, appleStoreUrl: "https://www.apple.com/jp/shop/buy-mac/macbook-pro" },
+  { country: "Malaysia", code: "MY", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 4.62 MYR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/my/shop/buy-mac/macbook-pro" },
+  { country: "Canada", code: "CA", officialPrice: "", taxStatus: "Tax Extra", fxRate: "1 USD = 1.35 CAD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.13, taxIncluded: false, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/ca/shop/buy-mac/macbook-pro" },
+  { country: "Singapore", code: "SG", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.34 SGD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.09, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.09, appleStoreUrl: "https://www.apple.com/sg/shop/buy-mac/macbook-pro" },
+  { country: "Vietnam", code: "VN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 24500 VND", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/vn/shop/buy-mac/macbook-pro" },
+  { country: "Taiwan", code: "TW", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 31.50 TWD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.05, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/tw/shop/buy-mac/macbook-pro" },
+  { country: "United Arab Emirates", code: "AE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 3.67 AED", priceInUsd: 0, vsUsPrice: "", taxRate: 0.05, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.05, appleStoreUrl: "https://www.apple.com/ae/shop/buy-mac/macbook-pro" },
+  { country: "Australia", code: "AU", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.52 AUD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10, appleStoreUrl: "https://www.apple.com/au/shop/buy-mac/macbook-pro" },
+  { country: "New Zealand", code: "NZ", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1.65 NZD", priceInUsd: 0, vsUsPrice: "", taxRate: 0.15, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/nz/shop/buy-mac/macbook-pro" },
+  { country: "South Korea", code: "KR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 1320 KRW", priceInUsd: 0, vsUsPrice: "", taxRate: 0.10, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.10, appleStoreUrl: "https://www.apple.com/kr/shop/buy-mac/macbook-pro" },
+  { country: "China", code: "CN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 7.25 CNY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.13, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.13, appleStoreUrl: "https://www.apple.com/cn/shop/buy-mac/macbook-pro" },
+  { country: "Philippines", code: "PH", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 56.50 PHP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.12, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/ph/shop/buy-mac/macbook-pro" },
+  { country: "Mexico", code: "MX", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 17.20 MXN", priceInUsd: 0, vsUsPrice: "", taxRate: 0.16, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/mx/shop/buy-mac/macbook-pro" },
+  { country: "India", code: "IN", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 83.20 INR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.18, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/in/shop/buy-mac/macbook-pro" },
+  { country: "Poland", code: "PL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 4.05 PLN", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23, appleStoreUrl: "https://www.apple.com/pl/shop/buy-mac/macbook-pro" },
+  { country: "Luxembourg", code: "LU", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.17, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.17, appleStoreUrl: "https://www.apple.com/lu/shop/buy-mac/macbook-pro" },
+  { country: "Germany", code: "DE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.19, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.19, appleStoreUrl: "https://www.apple.com/de/shop/buy-mac/macbook-pro" },
+  { country: "Austria", code: "AT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20, appleStoreUrl: "https://www.apple.com/at/shop/buy-mac/macbook-pro" },
+  { country: "France", code: "FR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20, appleStoreUrl: "https://www.apple.com/fr/shop/buy-mac/macbook-pro" },
+  { country: "Spain", code: "ES", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21, appleStoreUrl: "https://www.apple.com/es/shop/buy-mac/macbook-pro" },
+  { country: "Netherlands", code: "NL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21, appleStoreUrl: "https://www.apple.com/nl/shop/buy-mac/macbook-pro" },
+  { country: "Italy", code: "IT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.22, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.22, appleStoreUrl: "https://www.apple.com/it/shop/buy-mac/macbook-pro" },
+  { country: "Portugal", code: "PT", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23, appleStoreUrl: "https://www.apple.com/pt/shop/buy-mac/macbook-pro" },
+  { country: "Ireland", code: "IE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 0.92 EUR", priceInUsd: 0, vsUsPrice: "", taxRate: 0.23, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.23, appleStoreUrl: "https://www.apple.com/ie/shop/buy-mac/macbook-pro" },
+  { country: "Denmark", code: "DKK", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 6.88 DKK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25, appleStoreUrl: "https://www.apple.com/dk/shop/buy-mac/macbook-pro" },
+  { country: "Sweden", code: "SE", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 10.50 SEK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25, appleStoreUrl: "https://www.apple.com/se/shop/buy-mac/macbook-pro" },
+  { country: "Norway", code: "NO", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 10.80 NOK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.25, appleStoreUrl: "https://www.apple.com/no/shop/buy-mac/macbook-pro" },
+  { country: "Czech Republic", code: "CZ", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 23.20 CZK", priceInUsd: 0, vsUsPrice: "", taxRate: 0.21, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.21, appleStoreUrl: "https://www.apple.com/cz/shop/buy-mac/macbook-pro" },
+  { country: "Turkey", code: "TR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 32.50 TRY", priceInUsd: 0, vsUsPrice: "", taxRate: 0.20, taxIncluded: true, vatRefundEligible: true, refundPercentage: 0.20, appleStoreUrl: "https://www.apple.com/tr/shop/buy-mac/macbook-pro" },
+  { country: "Chile", code: "CL", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 950 CLP", priceInUsd: 0, vsUsPrice: "", taxRate: 0.19, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/cl/shop/buy-mac/macbook-pro" },
+  { country: "Brazil", code: "BR", officialPrice: "", taxStatus: "Tax Included", fxRate: "1 USD = 4.98 BRL", priceInUsd: 0, vsUsPrice: "", taxRate: 0.25, taxIncluded: true, vatRefundEligible: false, refundPercentage: 0, appleStoreUrl: "https://www.apple.com/br/shop/buy-mac/macbook-pro" }
 ];
