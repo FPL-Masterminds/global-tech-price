@@ -17,13 +17,15 @@ export const PRODUCTS = [
   // M4 Models (Latest - Nov 2024)
   { id: 'mbp14-m4-16-512', name: 'MacBook Pro 14" M4 16GB 512GB', basePriceUsd: 1599 },
   { id: 'mbp14-m4-16-1tb', name: 'MacBook Pro 14" M4 16GB 1TB', basePriceUsd: 1799 },
+  { id: 'mbp14-m4-24-1tb', name: 'MacBook Pro 14" M4 24GB 1TB', basePriceUsd: 1999 },
   { id: 'mbp14-m4pro-20-512', name: 'MacBook Pro 14" M4 Pro 20GB 512GB', basePriceUsd: 1999 },
   { id: 'mbp14-m4pro-24-512', name: 'MacBook Pro 14" M4 Pro 24GB 512GB', basePriceUsd: 1999 },
   { id: 'mbp14-m4pro-24-1tb', name: 'MacBook Pro 14" M4 Pro 24GB 1TB', basePriceUsd: 2399 },
   { id: 'mbp14-m4max-36-1tb', name: 'MacBook Pro 14" M4 Max 36GB 1TB', basePriceUsd: 3199 },
   { id: 'mbp16-m4pro-24-512', name: 'MacBook Pro 16" M4 Pro 24GB 512GB', basePriceUsd: 2499 },
   { id: 'mbp16-m4pro-48-512', name: 'MacBook Pro 16" M4 Pro 48GB 512GB', basePriceUsd: 2899 },
-  { id: 'mbp16-m4max-48-1tb', name: 'MacBook Pro 16" M4 Max 48GB 1TB', basePriceUsd: 3499 },
+  { id: 'mbp16-m4max-36-1tb', name: 'MacBook Pro 16" M4 Max 36GB 1TB', basePriceUsd: 3499 },
+  { id: 'mbp16-m4max-48-1tb', name: 'MacBook Pro 16" M4 Max 48GB 1TB', basePriceUsd: 3999 },
   
   // M3 Models (2023)
   { id: 'mbp14-m3-8-512', name: 'MacBook Pro 14" M3 8GB 512GB', basePriceUsd: 1599 },
@@ -40,11 +42,13 @@ export const PRODUCTS = [
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
   'mbp14-m4-16-512': { 'CZ': 'CZK 45,990', 'GB': 'GBP 1,599' },
   'mbp14-m4-16-1tb': { 'CZ': 'CZK 51,990', 'GB': 'GBP 1,799' },
+  'mbp14-m4-24-1tb': { 'GB': 'GBP 1,999' },
   'mbp14-m4pro-24-512': { 'CZ': 'CZK 56,990', 'GB': 'GBP 1,999' },
   'mbp14-m4pro-24-1tb': { 'CZ': 'CZK 68,990', 'GB': 'GBP 2,399' },
   'mbp14-m4max-36-1tb': { 'CZ': 'CZK 92,990', 'GB': 'GBP 3,199' },
   'mbp16-m4pro-24-512': { 'CZ': 'CZK 69,990', 'GB': 'GBP 2,499' },
   'mbp16-m4pro-48-512': { 'CZ': 'CZK 81,990', 'GB': 'GBP 2,899' },
+  'mbp16-m4max-36-1tb': { 'GB': 'GBP 3,499' },
   'mbp16-m4max-48-1tb': { 'CZ': 'CZK 114,990', 'GB': 'GBP 3,999' },
 };
 
