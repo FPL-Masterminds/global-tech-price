@@ -28,7 +28,7 @@ const App: React.FC = () => {
       .then(data => {
         console.log('FX Rates loaded:', data.rates);
         // MERGE API rates with fallback rates (don't overwrite VND, TWD, etc.)
-        setFxRates(prev => ({ ...prev, ...data.rates }));
+        setFxRates((prev: any) => ({ ...prev, ...data.rates }));
       })
       .catch(err => {
         console.error('FX API error:', err);
