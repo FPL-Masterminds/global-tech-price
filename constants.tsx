@@ -45,19 +45,19 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  // M5 Models (US, CA, GB, CZ, MX, TH, HK, JP, MY, SG, VN)
-  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999', 'JP': 'JPY 248,800', 'MY': 'MYR 6,999', 'SG': 'SGD 2,199', 'VN': 'VND 41999000' },
-  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499', 'JP': 'JPY 278,800', 'MY': 'MYR 7,849', 'SG': 'SGD 2,499', 'VN': 'VND 46899000' },
-  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999', 'JP': 'JPY 308,800', 'MY': 'MYR 8,699', 'SG': 'SGD 2,799', 'VN': 'VND 51799000' },
+  // M5 Models (US, CA, GB, CZ, MX, TH, HK, JP, MY, SG, VN, TW)
+  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999', 'JP': 'JPY 248,800', 'MY': 'MYR 6,999', 'SG': 'SGD 2,199', 'VN': 'VND 41999000', 'TW': 'TWD 52900' },
+  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499', 'JP': 'JPY 278,800', 'MY': 'MYR 7,849', 'SG': 'SGD 2,499', 'VN': 'VND 46899000', 'TW': 'TWD 59900' },
+  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999', 'JP': 'JPY 308,800', 'MY': 'MYR 8,699', 'SG': 'SGD 2,799', 'VN': 'VND 51799000', 'TW': 'TWD 66900' },
   
   // M4 Models (discontinued: mbp14-m4-16-512, mbp14-m4-16-1tb, mbp14-m4-24-1tb)
-  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999', 'JP': 'JPY 328,800', 'MY': 'MYR 8,499', 'SG': 'SGD 2,749', 'VN': 'VND 51999000' },
-  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,499', 'SG': 'SGD 3,349', 'VN': 'VND 61799000' },
-  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999', 'JP': 'JPY 528,800', 'MY': 'MYR 13,999', 'SG': 'SGD 4,549', 'VN': 'VND 81399000' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,999', 'SG': 'SGD 3,499', 'VN': 'VND 66999000' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999', 'JP': 'JPY 458,800', 'MY': 'MYR 12,699', 'SG': 'SGD 4,099', 'VN': 'VND 76799000' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499', 'JP': 'JPY 554,800', 'MY': 'MYR 15,299', 'SG': 'SGD 4,999', 'VN': 'VND 91499000' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249', 'JP': 'JPY 634,800', 'MY': 'MYR 17,499', 'SG': 'SGD 5,749', 'VN': 'VND 103749000' },
+  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999', 'JP': 'JPY 328,800', 'MY': 'MYR 8,499', 'SG': 'SGD 2,749', 'VN': 'VND 51999000', 'TW': 'TWD 67900' },
+  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,499', 'SG': 'SGD 3,349', 'VN': 'VND 61799000', 'TW': 'TWD 81900' },
+  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999', 'JP': 'JPY 528,800', 'MY': 'MYR 13,999', 'SG': 'SGD 4,549', 'VN': 'VND 81399000', 'TW': 'TWD 109900' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,999', 'SG': 'SGD 3,499', 'VN': 'VND 66999000', 'TW': 'TWD 84900' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999', 'JP': 'JPY 458,800', 'MY': 'MYR 12,699', 'SG': 'SGD 4,099', 'VN': 'VND 76799000', 'TW': 'TWD 98900' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499', 'JP': 'JPY 554,800', 'MY': 'MYR 15,299', 'SG': 'SGD 4,999', 'VN': 'VND 91499000', 'TW': 'TWD 119900' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249', 'JP': 'JPY 634,800', 'MY': 'MYR 17,499', 'SG': 'SGD 5,749', 'VN': 'VND 103749000', 'TW': 'TWD 134900' },
 };
 
 // Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
@@ -158,9 +158,12 @@ export const PRODUCT_URL_SLUGS_JP: { [productId: string]: string } = {
 
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Vietnam uses a configuration-based system without individual product URLs
+  // Vietnam and Taiwan use configuration-based systems without individual product URLs
   if (countryCode === 'VN') {
     return 'https://www.apple.com/vn/shop/buy-mac/macbook-pro';
+  }
+  if (countryCode === 'TW') {
+    return 'https://www.apple.com/tw/shop/buy-mac/macbook-pro';
   }
   
   // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English
