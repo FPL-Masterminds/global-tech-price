@@ -63,8 +63,8 @@ export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: str
   'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990' },
 };
 
-// Product-specific Apple Store URLs (path slugs - prepend country-specific base URL)
-export const PRODUCT_URL_SLUGS: { [productId: string]: string } = {
+// Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
+export const PRODUCT_URL_SLUGS_EN: { [productId: string]: string } = {
   // M5 Models
   'mbp14-m5-16-512': '14-inch-space-black-standard-display-apple-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-512gb',
   'mbp14-m5-16-1tb': '14-inch-space-black-standard-display-apple-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-memory-1tb',
@@ -85,9 +85,32 @@ export const PRODUCT_URL_SLUGS: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb',
 };
 
+// Czech Republic slugs (in Czech language)
+export const PRODUCT_URL_SLUGS_CZ: { [productId: string]: string } = {
+  // M5 Models
+  'mbp14-m5-16-512': '14palcový-vesmírně-černá-standardní-displej-čip-apple-m5-s-10jádrovým-cpu-a-10jádrovým-gpu-16-gb-paměti-512gb',
+  'mbp14-m5-16-1tb': '14palcový-vesmírně-černá-standardní-displej-čip-apple-m5-s-10jádrovým-cpu-a-10jádrovým-gpu-16-gb-paměti-1tb',
+  'mbp14-m5-24-1tb': '14palcový-vesmírně-černá-standardní-displej-čip-apple-m5-s-10jádrovým-cpu-a-10jádrovým-gpu-24gb-paměť-1tb',
+  
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14palcový-vesmírně-černá-standardní-displej-čip-apple-m4-pro-s-12jádrovým-cpu-a-16jádrovým-gpu-24gb-paměť-512gb',
+  'mbp14-m4pro-24-1tb': '14palcový-vesmírně-černá-standardní-displej-apple-m4-pro-s-14jádrovým-cpu-a-20jádrovým-gpu-24gb-paměť-1tb',
+  'mbp14-m4max-36-1tb': '14palcový-vesmírně-černá-standardní-displej-apple-m4-max-se-14jádrovým-cpu,-32jádrovým-gpu-a-16jádrovým-neural-enginem-36-gb-paměti-1tb',
+  
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16palcový-vesmírně-černá-standardní-displej-apple-m4-pro-s-14jádrovým-cpu-a-20jádrovým-gpu-24gb-paměť-512gb',
+  'mbp16-m4pro-48-512': '16palcový-vesmírně-černá-standardní-displej-apple-m4-pro-s-14jádrovým-cpu-a-20jádrovým-gpu-48-gb-paměti-512gb',
+  'mbp16-m4max-36-1tb': '16palcový-vesmírně-černá-standardní-displej-apple-m4-max-se-14jádrovým-cpu,-32jádrovým-gpu-a-16jádrovým-neural-enginem-36-gb-paměti-1tb',
+  'mbp16-m4max-48-1tb': '16palcový-vesmírně-černá-standardní-displej-apple-m4-max-s-16jádrovým-cpu-a-40jádrovým-gpu-48-gb-paměti-1tb',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  const slug = PRODUCT_URL_SLUGS[productId];
+  // Czech Republic uses Czech language slugs, all others use English
+  const slug = countryCode === 'CZ' 
+    ? PRODUCT_URL_SLUGS_CZ[productId] 
+    : PRODUCT_URL_SLUGS_EN[productId];
+    
   if (!slug) return null;
   
   const countryPaths: { [key: string]: string } = {
