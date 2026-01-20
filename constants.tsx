@@ -158,7 +158,12 @@ export const PRODUCT_URL_SLUGS_JP: { [productId: string]: string } = {
 
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English (including VN, MY, SG)
+  // Vietnam uses a configuration-based system without individual product URLs
+  if (countryCode === 'VN') {
+    return 'https://www.apple.com/vn/shop/buy-mac/macbook-pro';
+  }
+  
+  // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
