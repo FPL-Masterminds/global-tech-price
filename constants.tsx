@@ -156,20 +156,33 @@ export const PRODUCT_URL_SLUGS_JP: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16インチ-スペースブラック-標準ディスプレイ-16コアcpuと40コアgpu搭載apple-m4-maxチップ-48gbメモリ-1tb',
 };
 
+export const PRODUCT_URL_SLUGS_KR: { [productId: string]: string } = {
+  // M5 Models (Korean URL-encoded)
+  'mbp14-m5-16-512': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m5-%EC%B9%A9(10%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-10%EC%BD%94%EC%96%B4-gpu)-16gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-512gb',
+  'mbp14-m5-16-1tb': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m5-%EC%B9%A9(10%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-10%EC%BD%94%EC%96%B4-gpu)-16gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+  'mbp14-m5-24-1tb': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m5-%EC%B9%A9(10%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-10%EC%BD%94%EC%96%B4-gpu)-24gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-pro-%EC%B9%A9(12%EC%BD%94%EC%96%B4-cpu,-16%EC%BD%94%EC%96%B4-gpu)-24gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-512gb',
+  'mbp14-m4pro-24-1tb': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-pro(14%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-20%EC%BD%94%EC%96%B4-gpu)-24gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+  'mbp14-m4max-36-1tb': '14-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-max(14%EC%BD%94%EC%96%B4-cpu,-32%EC%BD%94%EC%96%B4-gpu,-16%EC%BD%94%EC%96%B4-neural-engine)-36gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-pro(14%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-20%EC%BD%94%EC%96%B4-gpu)-24gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-512gb',
+  'mbp16-m4pro-48-512': '16-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-pro(14%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-20%EC%BD%94%EC%96%B4-gpu)-48gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-512gb',
+  'mbp16-m4max-36-1tb': '16-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-max(14%EC%BD%94%EC%96%B4-cpu,-32%EC%BD%94%EC%96%B4-gpu,-16%EC%BD%94%EC%96%B4-neural-engine)-36gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+  'mbp16-m4max-48-1tb': '16-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-max(16%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-40%EC%BD%94%EC%96%B4-gpu)-48gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Vietnam, Taiwan, and South Korea use configuration-based systems without individual product URLs
+  // Vietnam and Taiwan use configuration-based systems without individual product URLs
   if (countryCode === 'VN') {
     return 'https://www.apple.com/vn/shop/buy-mac/macbook-pro';
   }
   if (countryCode === 'TW') {
     return 'https://www.apple.com/tw/shop/buy-mac/macbook-pro';
   }
-  if (countryCode === 'KR') {
-    return 'https://www.apple.com/kr/shop/buy-mac/macbook-pro';
-  }
   
-  // Czech Republic, Mexico, Thailand, and Japan use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, Japan, and South Korea use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -179,6 +192,8 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_TH[productId];
   } else if (countryCode === 'JP') {
     slug = PRODUCT_URL_SLUGS_JP[productId];
+  } else if (countryCode === 'KR') {
+    slug = PRODUCT_URL_SLUGS_KR[productId];
   } else {
     slug = PRODUCT_URL_SLUGS_EN[productId];
   }
