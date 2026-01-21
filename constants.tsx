@@ -188,14 +188,25 @@ export const PRODUCT_URL_SLUGS_TW: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-max-%E9%85%8D%E5%82%99-16-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-40-%E6%A0%B8%E5%BF%83-gpu-48gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
 };
 
+export const PRODUCT_URL_SLUGS_VN: { [productId: string]: string } = {
+  // M5 Models (Vietnamese URL-encoded)
+  'mbp14-m5-16-512': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-chip-apple-m5-v%E1%BB%9Bi-cpu-10-l%C3%B5i-v%C3%A0-gpu-10-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-16gb-512gb',
+  'mbp14-m5-16-1tb': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-chip-apple-m5-v%E1%BB%9Bi-cpu-10-l%C3%B5i-v%C3%A0-gpu-10-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-16gb-1tb',
+  'mbp14-m5-24-1tb': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-chip-apple-m5-v%E1%BB%9Bi-cpu-10-l%C3%B5i-v%C3%A0-gpu-10-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-24gb-1tb',
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-chip-apple-m4-pro-v%E1%BB%9Bi-cpu-12-l%C3%B5i-gpu-16-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-24gb-512gb',
+  'mbp14-m4pro-24-1tb': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-pro-v%E1%BB%9Bi-cpu-14-l%C3%B5i-v%C3%A0-gpu-20-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-24gb-1tb',
+  'mbp14-m4max-36-1tb': '14-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-max-v%E1%BB%9Bi-cpu-14-l%C3%B5i-gpu-32-l%C3%B5i-neural-engine-16-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-36gb-1tb',
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-pro-v%E1%BB%9Bi-cpu-14-l%C3%B5i-v%C3%A0-gpu-20-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-24gb-512gb',
+  'mbp16-m4pro-48-512': '16-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-pro-v%E1%BB%9Bi-cpu-14-l%C3%B5i-v%C3%A0-gpu-20-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-48gb-512gb',
+  'mbp16-m4max-36-1tb': '16-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-max-v%E1%BB%9Bi-cpu-14-l%C3%B5i-gpu-32-l%C3%B5i-neural-engine-16-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-36gb-1tb',
+  'mbp16-m4max-48-1tb': '16-inch-%C4%91en-kh%C3%B4ng-gian-m%C3%A0n-h%C3%ACnh-ti%C3%AAu-chu%E1%BA%A9n-apple-m4-max-v%E1%BB%9Bi-cpu-16-l%C3%B5i-v%C3%A0-gpu-40-l%C3%B5i-b%E1%BB%99-nh%E1%BB%9B-48gb-1tb',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Vietnam uses configuration-based system without individual product URLs
-  if (countryCode === 'VN') {
-    return 'https://www.apple.com/vn/shop/buy-mac/macbook-pro';
-  }
-  
-  // Czech Republic, Mexico, Thailand, Taiwan, Japan, and South Korea use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, Taiwan, Vietnam, Japan, and South Korea use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -205,6 +216,8 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_TH[productId];
   } else if (countryCode === 'TW') {
     slug = PRODUCT_URL_SLUGS_TW[productId];
+  } else if (countryCode === 'VN') {
+    slug = PRODUCT_URL_SLUGS_VN[productId];
   } else if (countryCode === 'JP') {
     slug = PRODUCT_URL_SLUGS_JP[productId];
   } else if (countryCode === 'KR') {
