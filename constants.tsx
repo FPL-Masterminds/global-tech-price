@@ -172,17 +172,30 @@ export const PRODUCT_URL_SLUGS_KR: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16-%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EB%B8%94%EB%9E%99-%EC%8A%A4%ED%83%A0%EB%8B%A4%EB%93%9C-%EB%94%94%EC%8A%A4%ED%94%8C%EB%A0%88%EC%9D%B4-apple-m4-max(16%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-40%EC%BD%94%EC%96%B4-gpu)-48gb-%EB%A9%94%EB%AA%A8%EB%A6%AC-1tb',
 };
 
+export const PRODUCT_URL_SLUGS_TW: { [productId: string]: string } = {
+  // M5 Models (Traditional Chinese URL-encoded)
+  'mbp14-m5-16-512': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m5-%E6%99%B6%E7%89%87%E9%85%8D%E5%82%99-10-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-10-%E6%A0%B8%E5%BF%83-gpu-16gb-%E8%A8%98%E6%86%B6%E9%AB%94-512gb',
+  'mbp14-m5-16-1tb': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m5-%E6%99%B6%E7%89%87%E9%85%8D%E5%82%99-10-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-10-%E6%A0%B8%E5%BF%83-gpu-16gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+  'mbp14-m5-24-1tb': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m5-%E6%99%B6%E7%89%87%E9%85%8D%E5%82%99-10-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-10-%E6%A0%B8%E5%BF%83-gpu-24gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-pro-%E6%99%B6%E7%89%87%E9%85%8D%E5%82%99-12-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-16-%E6%A0%B8%E5%BF%83-gpu-24gb-%E8%A8%98%E6%86%B6%E9%AB%94-512gb',
+  'mbp14-m4pro-24-1tb': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-pro-%E9%85%8D%E5%82%99-14-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-20-%E6%A0%B8%E5%BF%83-gpu-24gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+  'mbp14-m4max-36-1tb': '14-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-max-%E9%85%8D%E5%82%99-14-%E6%A0%B8%E5%BF%83-cpu-32-%E6%A0%B8%E5%BF%83-gpu-16-%E6%A0%B8%E5%BF%83%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF%E5%BC%95%E6%93%8E-36gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-pro-%E9%85%8D%E5%82%99-14-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-20-%E6%A0%B8%E5%BF%83-gpu-24gb-%E8%A8%98%E6%86%B6%E9%AB%94-512gb',
+  'mbp16-m4pro-48-512': '16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-pro-%E9%85%8D%E5%82%99-14-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-20-%E6%A0%B8%E5%BF%83-gpu-48gb-%E8%A8%98%E6%86%B6%E9%AB%94-512gb',
+  'mbp16-m4max-36-1tb': '16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-max-%E9%85%8D%E5%82%99-14-%E6%A0%B8%E5%BF%83-cpu-32-%E6%A0%B8%E5%BF%83-gpu-16-%E6%A0%B8%E5%BF%83%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF%E5%BC%95%E6%93%8E-36gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+  'mbp16-m4max-48-1tb': '16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-max-%E9%85%8D%E5%82%99-16-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-40-%E6%A0%B8%E5%BF%83-gpu-48gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Vietnam and Taiwan use configuration-based systems without individual product URLs
+  // Vietnam uses configuration-based system without individual product URLs
   if (countryCode === 'VN') {
     return 'https://www.apple.com/vn/shop/buy-mac/macbook-pro';
   }
-  if (countryCode === 'TW') {
-    return 'https://www.apple.com/tw/shop/buy-mac/macbook-pro';
-  }
   
-  // Czech Republic, Mexico, Thailand, Japan, and South Korea use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, Taiwan, Japan, and South Korea use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -190,6 +203,8 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_MX[productId];
   } else if (countryCode === 'TH') {
     slug = PRODUCT_URL_SLUGS_TH[productId];
+  } else if (countryCode === 'TW') {
+    slug = PRODUCT_URL_SLUGS_TW[productId];
   } else if (countryCode === 'JP') {
     slug = PRODUCT_URL_SLUGS_JP[productId];
   } else if (countryCode === 'KR') {
