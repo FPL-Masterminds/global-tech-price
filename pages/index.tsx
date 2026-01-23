@@ -92,13 +92,34 @@ const App: React.FC = () => {
 
   // Get baseline price and country for diff calculations
   const getBaseline = () => {
-    switch(selectedCurrency) {
-      case 'USD': return { price: 1599, country: 'US', symbol: '$' };
-      case 'GBP': return { price: 1699, country: 'GB', symbol: '£' };
-      case 'EUR': return { price: 1899, country: 'FR', symbol: '€' };
-      case 'JPY': return { price: 248800, country: 'JP', symbol: '¥' };
-      default: return { price: 1599, country: 'US', symbol: '$' };
+    const countryMap: {[key: string]: string} = {
+      'USD': 'US',
+      'GBP': 'GB',
+      'EUR': 'FR',
+      'JPY': 'JP'
+    };
+    
+    const symbolMap: {[key: string]: string} = {
+      'USD': '$',
+      'GBP': '£',
+      'EUR': '€',
+      'JPY': '¥'
+    };
+    
+    const countryCode = countryMap[selectedCurrency] || 'US';
+    const currencyCode = selectedCurrency || 'USD';
+    const symbol = symbolMap[selectedCurrency] || '$';
+    
+    // Get actual price from PRODUCT_PRICES for the selected product
+    const officialPrice = PRODUCT_PRICES[selectedProduct.id]?.[countryCode] || '';
+    let baselinePrice = 0;
+    
+    if (officialPrice) {
+      const parts = officialPrice.split(' ');
+      baselinePrice = parseFloat(parts[1].replace(/,/g, ''));
     }
+    
+    return { price: baselinePrice, country: countryCode, symbol: symbol };
   };
 
   const baseline = getBaseline();
