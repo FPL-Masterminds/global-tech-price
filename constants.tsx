@@ -45,19 +45,19 @@ export const PRODUCTS = [
 
 // Product prices by country (scraped official prices)
 export const PRODUCT_PRICES: { [productId: string]: { [countryCode: string]: string } } = {
-  // M5 Models (US, CA, GB, CZ, MX, TH, HK, JP, MY, SG, VN, TW, AE, AU, NZ, KR)
-  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999', 'JP': 'JPY 248,800', 'MY': 'MYR 6,999', 'SG': 'SGD 2,199', 'VN': 'VND 41999000', 'TW': 'TWD 52900', 'AE': 'AED 6,899', 'AU': 'AUD 2,499', 'NZ': 'NZD 2,999', 'KR': 'KRW 2390000', 'IN': 'INR 169,900', 'PL': 'PLN 7,999' },
-  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499', 'JP': 'JPY 278,800', 'MY': 'MYR 7,849', 'SG': 'SGD 2,499', 'VN': 'VND 46899000', 'TW': 'TWD 59900', 'AE': 'AED 7,739', 'AU': 'AUD 2,799', 'NZ': 'NZD 3,399', 'KR': 'KRW 2690000', 'IN': 'INR 189,900', 'PL': 'PLN 8,999' },
-  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999', 'JP': 'JPY 308,800', 'MY': 'MYR 8,699', 'SG': 'SGD 2,799', 'VN': 'VND 51799000', 'TW': 'TWD 66900', 'AE': 'AED 8,579', 'AU': 'AUD 3,099', 'NZ': 'NZD 3,799', 'KR': 'KRW 2990000', 'IN': 'INR 209,900', 'PL': 'PLN 9,999' },
+  // M5 Models (US, CA, GB, CZ, MX, TH, HK, JP, MY, SG, VN, TW, AE, AU, NZ, KR, IN, PL, LU)
+  'mbp14-m5-16-512': { 'US': 'USD 1,599', 'CA': 'CAD 2,099', 'GB': 'GBP 1,599', 'CZ': 'CZK 45,990', 'MX': 'MXN 37,999', 'TH': 'THB 54,900', 'HK': 'HKD 12,999', 'JP': 'JPY 248,800', 'MY': 'MYR 6,999', 'SG': 'SGD 2,199', 'VN': 'VND 41999000', 'TW': 'TWD 52900', 'AE': 'AED 6,899', 'AU': 'AUD 2,499', 'NZ': 'NZD 2,999', 'KR': 'KRW 2390000', 'IN': 'INR 169,900', 'PL': 'PLN 7,999', 'LU': 'EUR 1,768.54' },
+  'mbp14-m5-16-1tb': { 'US': 'USD 1,799', 'CA': 'CAD 2,399', 'GB': 'GBP 1,799', 'CZ': 'CZK 51,990', 'MX': 'MXN 42,999', 'TH': 'THB 61,900', 'HK': 'HKD 14,499', 'JP': 'JPY 278,800', 'MY': 'MYR 7,849', 'SG': 'SGD 2,499', 'VN': 'VND 46899000', 'TW': 'TWD 59900', 'AE': 'AED 7,739', 'AU': 'AUD 2,799', 'NZ': 'NZD 3,399', 'KR': 'KRW 2690000', 'IN': 'INR 189,900', 'PL': 'PLN 8,999', 'LU': 'EUR 2,010.27' },
+  'mbp14-m5-24-1tb': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 57,990', 'MX': 'MXN 47,999', 'TH': 'THB 68,900', 'HK': 'HKD 15,999', 'JP': 'JPY 308,800', 'MY': 'MYR 8,699', 'SG': 'SGD 2,799', 'VN': 'VND 51799000', 'TW': 'TWD 66900', 'AE': 'AED 8,579', 'AU': 'AUD 3,099', 'NZ': 'NZD 3,799', 'KR': 'KRW 2990000', 'IN': 'INR 209,900', 'PL': 'PLN 9,999', 'LU': 'EUR 2,252.00' },
   
   // M4 Models (discontinued: mbp14-m4-16-512, mbp14-m4-16-1tb, mbp14-m4-24-1tb)
-  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999', 'JP': 'JPY 328,800', 'MY': 'MYR 8,499', 'SG': 'SGD 2,749', 'VN': 'VND 51999000', 'TW': 'TWD 67900', 'AE': 'AED 8,499', 'AU': 'AUD 3,299', 'NZ': 'NZD 3,799', 'KR': 'KRW 2990000', 'IN': 'INR 199,900', 'PL': 'PLN 9,999' },
-  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,499', 'SG': 'SGD 3,349', 'VN': 'VND 61799000', 'TW': 'TWD 81900', 'AE': 'AED 10,179', 'AU': 'AUD 3,999', 'NZ': 'NZD 4,599', 'KR': 'KRW 3590000', 'IN': 'INR 239,900', 'PL': 'PLN 11,999' },
-  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999', 'JP': 'JPY 528,800', 'MY': 'MYR 13,999', 'SG': 'SGD 4,549', 'VN': 'VND 81399000', 'TW': 'TWD 109900', 'AE': 'AED 13,539', 'AU': 'AUD 4,999', 'NZ': 'NZD 5,999', 'KR': 'KRW 4790000', 'IN': 'INR 319,900', 'PL': 'PLN 15,999' },
-  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,999', 'SG': 'SGD 3,499', 'VN': 'VND 66999000', 'TW': 'TWD 84900', 'AE': 'AED 10,499', 'AU': 'AUD 3,999', 'NZ': 'NZD 4,799', 'KR': 'KRW 3690000', 'IN': 'INR 249,900', 'PL': 'PLN 12,499' },
-  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999', 'JP': 'JPY 458,800', 'MY': 'MYR 12,699', 'SG': 'SGD 4,099', 'VN': 'VND 76799000', 'TW': 'TWD 98900', 'AE': 'AED 12,179', 'AU': 'AUD 4,599', 'NZ': 'NZD 5,599', 'KR': 'KRW 4290000', 'IN': 'INR 289,900', 'PL': 'PLN 14,499' },
-  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499', 'JP': 'JPY 554,800', 'MY': 'MYR 15,299', 'SG': 'SGD 4,999', 'VN': 'VND 91499000', 'TW': 'TWD 119900', 'AE': 'AED 14,699', 'AU': 'AUD 5,699', 'NZ': 'NZD 6,799', 'KR': 'KRW 5190000', 'IN': 'INR 349,900', 'PL': 'PLN 17,999' },
-  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249', 'JP': 'JPY 634,800', 'MY': 'MYR 17,499', 'SG': 'SGD 5,749', 'VN': 'VND 103749000', 'TW': 'TWD 134900', 'AE': 'AED 16,799', 'AU': 'AUD 6,499', 'NZ': 'NZD 7,799', 'KR': 'KRW 5990000', 'IN': 'INR 399,900', 'PL': 'PLN 20,999' },
+  'mbp14-m4pro-24-512': { 'US': 'USD 1,999', 'CA': 'CAD 2,699', 'GB': 'GBP 1,999', 'CZ': 'CZK 56,990', 'MX': 'MXN 47,999', 'TH': 'THB 69,900', 'HK': 'HKD 15,999', 'JP': 'JPY 328,800', 'MY': 'MYR 8,499', 'SG': 'SGD 2,749', 'VN': 'VND 51999000', 'TW': 'TWD 67900', 'AE': 'AED 8,499', 'AU': 'AUD 3,299', 'NZ': 'NZD 3,799', 'KR': 'KRW 2990000', 'IN': 'INR 199,900', 'PL': 'PLN 9,999', 'LU': 'EUR 2,271.34' },
+  'mbp14-m4pro-24-1tb': { 'US': 'USD 2,399', 'CA': 'CAD 3,299', 'GB': 'GBP 2,399', 'CZ': 'CZK 68,990', 'MX': 'MXN 57,999', 'TH': 'THB 84,900', 'HK': 'HKD 18,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,499', 'SG': 'SGD 3,349', 'VN': 'VND 61799000', 'TW': 'TWD 81900', 'AE': 'AED 10,179', 'AU': 'AUD 3,999', 'NZ': 'NZD 4,599', 'KR': 'KRW 3590000', 'IN': 'INR 239,900', 'PL': 'PLN 11,999', 'LU': 'EUR 2,754.82' },
+  'mbp14-m4max-36-1tb': { 'US': 'USD 3,199', 'CA': 'CAD 4,499', 'GB': 'GBP 3,199', 'CZ': 'CZK 92,990', 'MX': 'MXN 77,999', 'TH': 'THB 114,900', 'HK': 'HKD 24,999', 'JP': 'JPY 528,800', 'MY': 'MYR 13,999', 'SG': 'SGD 4,549', 'VN': 'VND 81399000', 'TW': 'TWD 109900', 'AE': 'AED 13,539', 'AU': 'AUD 4,999', 'NZ': 'NZD 5,999', 'KR': 'KRW 4790000', 'IN': 'INR 319,900', 'PL': 'PLN 15,999', 'LU': 'EUR 3,721.76' },
+  'mbp16-m4pro-24-512': { 'US': 'USD 2,499', 'CA': 'CAD 3,299', 'GB': 'GBP 2,499', 'CZ': 'CZK 69,990', 'MX': 'MXN 59,999', 'TH': 'THB 89,900', 'HK': 'HKD 19,999', 'JP': 'JPY 398,800', 'MY': 'MYR 10,999', 'SG': 'SGD 3,499', 'VN': 'VND 66999000', 'TW': 'TWD 84900', 'AE': 'AED 10,499', 'AU': 'AUD 3,999', 'NZ': 'NZD 4,799', 'KR': 'KRW 3690000', 'IN': 'INR 249,900', 'PL': 'PLN 12,499', 'LU': 'EUR 2,754.82' },
+  'mbp16-m4pro-48-512': { 'US': 'USD 2,899', 'CA': 'CAD 3,899', 'GB': 'GBP 2,899', 'CZ': 'CZK 81,990', 'MX': 'MXN 69,999', 'TH': 'THB 103,900', 'HK': 'HKD 22,999', 'JP': 'JPY 458,800', 'MY': 'MYR 12,699', 'SG': 'SGD 4,099', 'VN': 'VND 76799000', 'TW': 'TWD 98900', 'AE': 'AED 12,179', 'AU': 'AUD 4,599', 'NZ': 'NZD 5,599', 'KR': 'KRW 4290000', 'IN': 'INR 289,900', 'PL': 'PLN 14,499', 'LU': 'EUR 3,238.29' },
+  'mbp16-m4max-36-1tb': { 'US': 'USD 3,499', 'CA': 'CAD 4,799', 'GB': 'GBP 3,499', 'CZ': 'CZK 99,990', 'MX': 'MXN 84,999', 'TH': 'THB 124,900', 'HK': 'HKD 27,499', 'JP': 'JPY 554,800', 'MY': 'MYR 15,299', 'SG': 'SGD 4,999', 'VN': 'VND 91499000', 'TW': 'TWD 119900', 'AE': 'AED 14,699', 'AU': 'AUD 5,699', 'NZ': 'NZD 6,799', 'KR': 'KRW 5190000', 'IN': 'INR 349,900', 'PL': 'PLN 17,999', 'LU': 'EUR 4,011.85' },
+  'mbp16-m4max-48-1tb': { 'US': 'USD 3,999', 'CA': 'CAD 5,499', 'GB': 'GBP 3,999', 'CZ': 'CZK 114,990', 'MX': 'MXN 97,999', 'TH': 'THB 144,900', 'HK': 'HKD 31,249', 'JP': 'JPY 634,800', 'MY': 'MYR 17,499', 'SG': 'SGD 5,749', 'VN': 'VND 103749000', 'TW': 'TWD 134900', 'AE': 'AED 16,799', 'AU': 'AUD 6,499', 'NZ': 'NZD 7,799', 'KR': 'KRW 5990000', 'IN': 'INR 399,900', 'PL': 'PLN 20,999', 'LU': 'EUR 4,592.00' },
 };
 
 // Product-specific Apple Store URLs - English slugs (US, CA, UK, most countries)
@@ -221,9 +221,26 @@ export const PRODUCT_URL_SLUGS_PL: { [productId: string]: string } = {
   'mbp16-m4max-48-1tb': '16-cali-gwiezdna-czer%C5%84-wy%C5%9Bwietlacz-standardowy-apple-m4-max-z-szesnastordzeniowy-cpu-i-czterdziestordzeniowy-gpu-48-gb-pami%C4%99ci-ram-1tb',
 };
 
+// Luxembourg localized URLs (French)
+export const PRODUCT_URL_SLUGS_LU: { [productId: string]: string } = {
+  // M5 Models - 14-inch (French/Luxembourg URL-encoded)
+  'mbp14-m5-16-512': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m5-avec-cpu-10-c%C5%93urs-et-gpu-10-c%C5%93urs-16-go-de-m%C3%A9moire-512go',
+  'mbp14-m5-16-1tb': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m5-avec-cpu-10-c%C5%93urs-et-gpu-10-c%C5%93urs-16-go-de-m%C3%A9moire-1to',
+  'mbp14-m5-24-1tb': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m5-avec-cpu-10-c%C5%93urs-et-gpu-10-c%C5%93urs-24-go-de-m%C3%A9moire-1to',
+  // M4 Models - 14-inch
+  'mbp14-m4pro-24-512': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-pro-avec-cpu-12-c%C5%93urs-gpu-16-c%C5%93urs-24-go-de-m%C3%A9moire-512go',
+  'mbp14-m4pro-24-1tb': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-pro-avec-cpu-14-c%C5%93urs-et-gpu-20-c%C5%93urs-24-go-de-m%C3%A9moire-1to',
+  'mbp14-m4max-36-1tb': '14-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-max-avec-cpu-14-c%C5%93urs-gpu-32-c%C5%93urs-neural-engine-16-c%C5%93urs-36-go-de-m%C3%A9moire-1to',
+  // M4 Models - 16-inch
+  'mbp16-m4pro-24-512': '16-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-pro-avec-cpu-14-c%C5%93urs-et-gpu-20-c%C5%93urs-24-go-de-m%C3%A9moire-512go',
+  'mbp16-m4pro-48-512': '16-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-pro-avec-cpu-14-c%C5%93urs-et-gpu-20-c%C5%93urs-48-go-de-m%C3%A9moire-512go',
+  'mbp16-m4max-36-1tb': '16-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-max-avec-cpu-14-c%C5%93urs-gpu-32-c%C5%93urs-neural-engine-16-c%C5%93urs-36-go-de-m%C3%A9moire-1to',
+  'mbp16-m4max-48-1tb': '16-pouces-noir-sid%C3%A9ral-verre-d%E2%80%99%C3%A9cran-standard-puce-apple-m4-max-avec-cpu-16-c%C5%93urs-et-gpu-40-c%C5%93urs-48-go-de-m%C3%A9moire-1to',
+};
+
 // Helper function to get full Apple Store URL for a product in a country
 export function getAppleStoreUrl(productId: string, countryCode: string): string | null {
-  // Czech Republic, Mexico, Thailand, Taiwan, Vietnam, Poland, Japan, and South Korea use localized slugs; all others use English
+  // Czech Republic, Mexico, Thailand, Taiwan, Vietnam, Poland, Luxembourg, Japan, and South Korea use localized slugs; all others use English
   let slug: string | undefined;
   if (countryCode === 'CZ') {
     slug = PRODUCT_URL_SLUGS_CZ[productId];
@@ -237,6 +254,8 @@ export function getAppleStoreUrl(productId: string, countryCode: string): string
     slug = PRODUCT_URL_SLUGS_VN[productId];
   } else if (countryCode === 'PL') {
     slug = PRODUCT_URL_SLUGS_PL[productId];
+  } else if (countryCode === 'LU') {
+    slug = PRODUCT_URL_SLUGS_LU[productId];
   } else if (countryCode === 'JP') {
     slug = PRODUCT_URL_SLUGS_JP[productId];
   } else if (countryCode === 'KR') {
