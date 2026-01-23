@@ -187,10 +187,25 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Don't generate any dynamic pages - we'll add them manually as we scrape prices
+  // Generate paths only for products that have prices in PRODUCT_PRICES
+  const paths: { params: { productId: string; country: string } }[] = [];
+  
+  // Loop through all products and countries with prices
+  Object.keys(PRODUCT_PRICES).forEach(productId => {
+    const countriesWithPrices = Object.keys(PRODUCT_PRICES[productId]);
+    countriesWithPrices.forEach(countryCode => {
+      paths.push({
+        params: {
+          productId,
+          country: countryCode.toLowerCase()
+        }
+      });
+    });
+  });
+  
   return {
-    paths: [],
-    fallback: 'blocking'
+    paths,
+    fallback: false // 404 for any product/country not in our data
   };
 };
 
