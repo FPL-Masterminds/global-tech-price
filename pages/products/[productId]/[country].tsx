@@ -4,6 +4,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import VideoBackground from '@/components/VideoBackground';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES } from '@/constants';
 import { Product } from '@/types';
+import { getAmazonAffiliateUrl, getAmazonDomain } from '@/lib/amazonAffiliate';
 
 interface ProductCountryPageProps {
   product: Product;
@@ -73,12 +74,12 @@ export default function ProductCountryPage({ product, countryData, allPrices }: 
           </div>
 
           <a 
-            href={`https://www.amazon.com/s?k=${encodeURIComponent(product.name)}`}
+            href={getAmazonAffiliateUrl(product.name, countryData.code)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-4 rounded-full bg-white text-black font-semibold text-[18px] hover:bg-white/90 transition-all"
           >
-            Check Amazon Price
+            Check Amazon.{getAmazonDomain(countryData.code).split('.').pop()} Price
           </a>
         </div>
       </header>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import VideoBackground from '@/components/VideoBackground';
 import RecommendationModal from '@/components/RecommendationModal';
 import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES, getAppleStoreUrl } from '@/constants';
+import { getAmazonAffiliateUrl } from '@/lib/amazonAffiliate';
 import { Product } from '@/types';
 
 const App: React.FC = () => {
@@ -421,15 +422,19 @@ const App: React.FC = () => {
                       })()}
                     </td>
                     <td className="py-3 px-4 text-center">
-                      <button 
-                        className="px-4 py-1.5 text-[11px] font-semibold whitespace-nowrap transition-all"
+                      <a
+                        href={getAmazonAffiliateUrl(selectedProduct.name, item.code)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-4 py-1.5 text-[11px] font-semibold whitespace-nowrap transition-all"
                         style={{ 
                           background: 'linear-gradient(180deg, #e8e8e8 0%, #b0b0b0 50%, #9a9a9a 100%)', 
                           color: '#333',
                           border: '1px solid #888', 
                           borderRadius: '14px', 
                           boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 3px rgba(0,0,0,0.3)',
-                          cursor: 'pointer'
+                          cursor: 'pointer',
+                          textDecoration: 'none'
                         }}
                         onMouseEnter={(e) => {
                           e.currentTarget.style.background = 'linear-gradient(180deg, #6ba6ff 0%, #3478F6 50%, #2d6bc7 100%)';
@@ -445,7 +450,7 @@ const App: React.FC = () => {
                         }}
                       >
                         Check Amazon
-                      </button>
+                      </a>
                     </td>
                   </tr>
                 ))}
