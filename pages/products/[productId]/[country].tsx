@@ -164,18 +164,21 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
             <table className="w-full text-left border-collapse" style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
               <thead>
                 <tr style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderBottom: '1px solid #999', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.8)' }}>
-                  <th className="py-3 px-6 text-[11px] font-bold text-gray-700 uppercase tracking-wider" style={{ borderRight: '1px solid #bbb' }}>Country</th>
-                  <th className="py-3 px-6 text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>USD Equivalent</th>
-                  <th className="py-3 px-6 text-[11px] font-bold text-gray-700 uppercase tracking-wider text-right" style={{ borderRight: '1px solid #bbb' }}>VS Global AVG</th>
-                  <th className="py-3 px-6 text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Verdict</th>
+                  <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Flag</th>
+                  <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Country</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>USD Equivalent</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>UK Equivalent</th>
+                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>VS Global AVG</th>
+                  <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Verdict</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
                 {benchmarkCountries.map((item, idx) => {
                   const isSelected = item.code === countryData.code;
                   const isUS = item.code === 'US';
                   const vsAvg = ((item.priceInUsd - globalAverageUsd) / globalAverageUsd) * 100;
                   const verdict = getVerdict(vsAvg, isSelected, isUS);
+                  const priceInGbp = item.priceInUsd * (fxRates.GBP || 0.79);
                   
                   return (
                     <tr 
@@ -184,20 +187,32 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
                         background: idx % 2 === 0 ? '#fff' : '#f5f5f5',
                         borderBottom: '1px solid #ddd'
                       }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = '#d9e9ff'} 
+                      onMouseLeave={(e) => e.currentTarget.style.background = idx % 2 === 0 ? '#fff' : '#f5f5f5'}
                     >
-                      <td className="py-4 px-6 text-[14px] font-semibold text-gray-900" style={{ borderRight: '1px solid #ddd' }}>
+                      <td className="py-3 px-4 text-center" style={{ borderRight: '1px solid #ddd' }}>
+                        <img 
+                          src={`https://flagcdn.com/w40/${item.code.toLowerCase()}.png`}
+                          alt={`${item.country} flag`}
+                          className="w-8 h-6 object-cover rounded shadow-sm mx-auto"
+                        />
+                      </td>
+                      <td className="py-3 px-4 text-[11px] font-normal text-gray-900 text-center" style={{ borderRight: '1px solid #ddd' }}>
                         {item.country}
                       </td>
-                      <td className="py-4 px-6 text-[14px] text-gray-900 text-right font-mono" style={{ borderRight: '1px solid #ddd' }}>
+                      <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
                         ${Math.round(item.priceInUsd).toLocaleString()}
                       </td>
-                      <td className="py-4 px-6 text-[14px] font-bold text-right" style={{ 
+                      <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
+                        £{Math.round(priceInGbp).toLocaleString()}
+                      </td>
+                      <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ 
                         borderRight: '1px solid #ddd',
                         color: vsAvg === 0 ? '#388e3c' : vsAvg > 0 ? '#d32f2f' : '#388e3c'
                       }}>
                         {vsAvg === 0 ? '0%' : vsAvg > 0 ? `+${Math.round(vsAvg)}%` : `${Math.round(vsAvg)}%`}
                       </td>
-                      <td className="py-4 px-6 text-center">
+                      <td className="py-3 px-4 text-center">
                         <span className={`px-3 py-1 rounded-full text-[10px] font-bold text-white uppercase tracking-wider ${verdict.color}`}>
                           {verdict.label}
                         </span>
