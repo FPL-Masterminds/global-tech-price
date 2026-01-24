@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import VideoBackground from '@/components/VideoBackground';
@@ -53,6 +53,9 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
   }, []);
 
   const footerVideo = VIDEO_POOL[4]; // #5 locked
+
+  // Currency toggle state - default to GBP for UK users, USD for others
+  const [currencyView, setCurrencyView] = useState<'USD' | 'GBP'>(countryData.code === 'GB' ? 'GBP' : 'USD');
 
   // Calculate global average in USD
   const globalAverageUsd = useMemo(() => {
@@ -156,9 +159,38 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
       {/* 01. Global Price Benchmark */}
       <section className="w-full py-12">
         <div className="w-[95%] max-w-[1400px] mx-auto">
-          <h2 className="text-[32px] font-semibold mb-8">
-            <span className="text-green-500">01.</span> Global Price Benchmark
-          </h2>
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-[32px] font-semibold">
+              <span className="text-green-500">01.</span> Global Price Benchmark
+            </h2>
+            
+            {/* Currency Toggle */}
+            <div className="flex items-center gap-3">
+              <span className="text-[12px] text-white/60 uppercase tracking-wider">View prices in:</span>
+              <div className="flex bg-white/10 backdrop-blur-md rounded-full p-1 border border-white/20">
+                <button
+                  onClick={() => setCurrencyView('USD')}
+                  className={`px-6 py-2 rounded-full text-[12px] font-bold uppercase tracking-wider transition-all ${
+                    currencyView === 'USD' 
+                      ? 'bg-white text-black' 
+                      : 'text-white/60 hover:text-white'
+                  }`}
+                >
+                  USD ($)
+                </button>
+                <button
+                  onClick={() => setCurrencyView('GBP')}
+                  className={`px-6 py-2 rounded-full text-[12px] font-bold uppercase tracking-wider transition-all ${
+                    currencyView === 'GBP' 
+                      ? 'bg-white text-black' 
+                      : 'text-white/60 hover:text-white'
+                  }`}
+                >
+                  GBP (£)
+                </button>
+              </div>
+            </div>
+          </div>
           
           <div className="overflow-x-auto rounded-lg shadow-2xl" style={{ background: 'linear-gradient(180deg, #e8e8e8 0%, #d0d0d0 50%, #c0c0c0 100%)', border: '1px solid #999' }}>
             <table className="w-full text-left border-collapse" style={{ fontFamily: "'Lucida Grande', 'Lucida Sans Unicode', sans-serif" }}>
@@ -166,8 +198,9 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
                 <tr style={{ background: 'linear-gradient(180deg, #f8f8f8 0%, #e0e0e0 100%)', borderBottom: '1px solid #999', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.8)' }}>
                   <th className="py-2 px-4 min-w-[80px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Flag</th>
                   <th className="py-2 px-4 min-w-[140px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>Country</th>
-                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>USD Equivalent</th>
-                  <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>UK Equivalent</th>
+                  <th className="py-2 px-4 min-w-[150px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>
+                    {currencyView === 'USD' ? 'Price (USD)' : 'Price (GBP)'}
+                  </th>
                   <th className="py-2 px-4 min-w-[130px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center" style={{ borderRight: '1px solid #bbb' }}>VS Global AVG</th>
                   <th className="py-2 px-4 min-w-[120px] text-[11px] font-bold text-gray-700 uppercase tracking-wider text-center">Verdict</th>
                 </tr>
@@ -201,10 +234,10 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
                         {item.country}
                       </td>
                       <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
-                        ${Math.round(item.priceInUsd).toLocaleString()}
-                      </td>
-                      <td className="py-3 px-4 text-[11px] font-bold text-gray-900 text-center whitespace-nowrap" style={{ borderRight: '1px solid #ddd' }}>
-                        £{Math.round(priceInGbp).toLocaleString()}
+                        {currencyView === 'USD' 
+                          ? `$${Math.round(item.priceInUsd).toLocaleString()}`
+                          : `£${Math.round(priceInGbp).toLocaleString()}`
+                        }
                       </td>
                       <td className="py-3 px-4 text-[11px] font-semibold text-center whitespace-nowrap" style={{ 
                         borderRight: '1px solid #ddd',
