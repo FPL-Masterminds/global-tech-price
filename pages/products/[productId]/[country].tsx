@@ -100,34 +100,44 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
         <VideoBackground src={heroVideo} overlayOpacity={0.5} />
         
         <div className="relative z-10 w-[87.5%] max-w-[1200px] text-center">
-          <h1 className="text-[56px] md:text-[72px] font-semibold leading-[1.05] mb-4 tracking-tight">
-            {product.name}
+          <h1 className="text-[48px] md:text-[72px] font-semibold leading-[1.05] mb-6 tracking-tight">
+            {product.name} <br />in {countryData.country}
           </h1>
-          <p className="text-[24px] md:text-[32px] font-semibold text-white/90 mb-2">
-            in {countryData.country}
+          <p className="text-[18px] md:text-[22px] font-semibold text-white/90 max-w-[700px] mx-auto mb-12">
+            Compare prices, taxes, and VAT refund eligibility for the {product.name} in {countryData.country}.
           </p>
-          <p className="text-[18px] md:text-[22px] text-white/80 max-w-[800px] mx-auto mb-12">
-            Compare prices, taxes, and VAT refund eligibility across {allPricesWithData.length} countries with live exchange rates.
-          </p>
+          
+          {/* Price Cards - Official vs Tourist Price */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[900px] mx-auto mb-12">
+            {/* Official Retail Price Card */}
+            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+              <div className="text-[12px] text-green-500 font-bold uppercase tracking-wider mb-2">Official Retail</div>
+              <div className="text-[48px] font-semibold mb-2">{PRODUCT_PRICES[product.id]?.[countryData.code] || '—'}</div>
+              <div className="text-[14px] text-white/60">≈ ${Math.round(currentPriceUsd).toLocaleString()} USD</div>
+            </div>
 
-          {/* Price Card */}
-          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 max-w-[600px] mx-auto mb-12 border border-white/20">
-            <div className="text-[14px] text-white/70 mb-2">Official Price in {countryData.country}</div>
-            <div className="text-[56px] font-semibold mb-4">{PRODUCT_PRICES[product.id]?.[countryData.code] || '—'}</div>
-            <div className="text-[16px] text-white/80 mb-6">{countryData.taxStatus}</div>
-            
-            {vsGlobalAvg !== 0 && (
-              <div className={`text-[20px] font-semibold ${vsGlobalAvg < 0 ? 'text-green-400' : 'text-red-400'}`}>
-                {vsGlobalAvg < 0 ? `${Math.abs(Math.round(vsGlobalAvg))}% below` : `${Math.round(vsGlobalAvg)}% above`} global average
-              </div>
-            )}
-            
-            {countryData.vatRefundEligible && (
-              <div className="mt-6 pt-6 border-t border-white/20">
-                <div className="text-[14px] text-green-400 font-semibold mb-2">✓ VAT Refund Eligible for Tourists</div>
-                <div className="text-[14px] text-white/70">
-                  Potential {Math.round(countryData.refundPercentage * 100)}% refund available
+            {/* Effective Tourist Price Card (if VAT refund eligible) */}
+            {countryData.vatRefundEligible ? (
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-green-500/30">
+                <div className="text-[12px] text-green-500 font-bold uppercase tracking-wider mb-2">Effective Tourist Price</div>
+                <div className="text-[48px] font-semibold mb-2">
+                  {(() => {
+                    const officialPrice = PRODUCT_PRICES[product.id]?.[countryData.code] || '';
+                    if (!officialPrice) return '—';
+                    const parts = officialPrice.split(' ');
+                    const currency = parts[0];
+                    const amount = parseFloat(parts[1].replace(/,/g, ''));
+                    const afterRefund = Math.round(amount * (1 - countryData.refundPercentage));
+                    return `${currency} ${afterRefund.toLocaleString()}`;
+                  })()}
                 </div>
+                <div className="text-[14px] text-green-400">After {Math.round(countryData.refundPercentage * 100)}% Tax Refund</div>
+              </div>
+            ) : (
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                <div className="text-[12px] text-white/60 font-bold uppercase tracking-wider mb-2">Tax Status</div>
+                <div className="text-[24px] font-semibold mb-2">{countryData.taxStatus}</div>
+                <div className="text-[14px] text-white/60">No VAT refund available for tourists</div>
               </div>
             )}
           </div>
