@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { PRODUCTS, MOCK_PRICES, PRODUCT_PRICES, getAppleStoreUrl } from '@/constants';
+import VideoBackground from '@/components/VideoBackground';
+import { VIDEO_POOL, PRODUCTS, MOCK_PRICES, PRODUCT_PRICES, getAppleStoreUrl } from '@/constants';
 import { Product } from '@/types';
 import { getAmazonAffiliateUrl } from '@/lib/amazonAffiliate';
 
@@ -37,6 +38,22 @@ const getVerdict = (vsGlobalAvg: number, isSelected: boolean, isUS: boolean) => 
 };
 
 export default function ProductCountryPage({ product, countryData, allPricesWithData, fxRates }: ProductCountryPageProps) {
+  // Video backgrounds
+  const heroVideoPool = [
+    VIDEO_POOL[1],  // #2
+    VIDEO_POOL[6],  // #7
+    VIDEO_POOL[7],  // #8
+    VIDEO_POOL[8],  // #9
+    VIDEO_POOL[9],  // #10
+    VIDEO_POOL[10], // #11
+  ];
+  
+  const heroVideo = useMemo(() => {
+    return heroVideoPool[Math.floor(Math.random() * heroVideoPool.length)];
+  }, []);
+
+  const footerVideo = VIDEO_POOL[4]; // #5 locked
+
   // Calculate global average in USD
   const globalAverageUsd = useMemo(() => {
     const sum = allPricesWithData.reduce((acc, item) => acc + item.priceInUsd, 0);
@@ -78,18 +95,51 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
         </div>
       </div>
 
-      {/* Hero Section */}
-      <header className="w-full py-16">
-        <div className="w-[95%] max-w-[1400px] mx-auto text-center">
+      {/* Hero Section with Video */}
+      <header className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-20">
+        <VideoBackground src={heroVideo} overlayOpacity={0.5} />
+        
+        <div className="relative z-10 w-[87.5%] max-w-[1200px] text-center">
           <h1 className="text-[56px] md:text-[72px] font-semibold leading-[1.05] mb-4 tracking-tight">
             {product.name}
           </h1>
-          <p className="text-[24px] md:text-[32px] font-semibold text-white/70 mb-2">
+          <p className="text-[24px] md:text-[32px] font-semibold text-white/90 mb-2">
             in {countryData.country}
           </p>
-          <p className="text-[18px] text-white/60 max-w-[800px] mx-auto">
+          <p className="text-[18px] md:text-[22px] text-white/80 max-w-[800px] mx-auto mb-12">
             Compare prices, taxes, and VAT refund eligibility across {allPricesWithData.length} countries with live exchange rates.
           </p>
+
+          {/* Price Card */}
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-12 max-w-[600px] mx-auto mb-12 border border-white/20">
+            <div className="text-[14px] text-white/70 mb-2">Official Price in {countryData.country}</div>
+            <div className="text-[56px] font-semibold mb-4">{PRODUCT_PRICES[product.id]?.[countryData.code] || '—'}</div>
+            <div className="text-[16px] text-white/80 mb-6">{countryData.taxStatus}</div>
+            
+            {vsGlobalAvg !== 0 && (
+              <div className={`text-[20px] font-semibold ${vsGlobalAvg < 0 ? 'text-green-400' : 'text-red-400'}`}>
+                {vsGlobalAvg < 0 ? `${Math.abs(Math.round(vsGlobalAvg))}% below` : `${Math.round(vsGlobalAvg)}% above`} global average
+              </div>
+            )}
+            
+            {countryData.vatRefundEligible && (
+              <div className="mt-6 pt-6 border-t border-white/20">
+                <div className="text-[14px] text-green-400 font-semibold mb-2">✓ VAT Refund Eligible for Tourists</div>
+                <div className="text-[14px] text-white/70">
+                  Potential {Math.round(countryData.refundPercentage * 100)}% refund available
+                </div>
+              </div>
+            )}
+          </div>
+
+          <a 
+            href={getAmazonAffiliateUrl(product.name, countryData.code)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-12 py-4 rounded-full bg-white text-black font-semibold text-[18px] hover:bg-white/90 transition-all"
+          >
+            Check Amazon Price
+          </a>
         </div>
       </header>
 
@@ -362,11 +412,21 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
         </div>
       </section>
 
-      {/* Footer with Disclaimers */}
-      <footer className="w-full py-12 border-t border-white/10">
-        <div className="w-[95%] max-w-[1400px] mx-auto">
+      {/* Footer with Video Background */}
+      <footer className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+        <VideoBackground src={footerVideo} overlayOpacity={0.7} noFade />
+        
+        <div className="relative z-10 w-[87.5%] max-w-[1200px]">
+          <nav className="mb-12">
+            <ul className="flex flex-wrap justify-center gap-8 text-[14px] text-white/70">
+              <li><Link href="/" className="hover:text-white transition-colors">Pricing Data</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
+              <li><Link href="/vat-refund-policy" className="hover:text-white transition-colors">VAT Refund Policy</Link></li>
+            </ul>
+          </nav>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-[14px] font-semibold text-white uppercase tracking-wider mb-4">Methodology</h3>
               <p className="text-[12px] text-white/60 leading-relaxed">
                 Prices are pulled via real-time API from official regional Apple Store fronts and cross-referenced with local retailers. 
@@ -374,7 +434,7 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
               </p>
             </div>
 
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-[14px] font-semibold text-white uppercase tracking-wider mb-4">Disclaimer</h3>
               <p className="text-[12px] text-white/60 leading-relaxed">
                 We are an independent price indexing service. We are not affiliated with Apple Inc. Always verify the price at the physical store before purchase. 
@@ -382,7 +442,7 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
               </p>
             </div>
 
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-[14px] font-semibold text-white uppercase tracking-wider mb-4">About Global Index</h3>
               <div className="space-y-2">
                 <Link href="/" className="block text-[12px] text-white/60 hover:text-white transition-colors">Our Mission</Link>
@@ -392,11 +452,15 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
             </div>
           </div>
 
-          <div className="text-center pt-8 border-t border-white/10">
-            <p className="text-[12px] text-white/40">
-              © 2026 GLOBAL TECH PRICE INDEX. ALL RIGHTS RESERVED. BUILT FOR 2026 SEARCH STANDARDS.
+          <div className="text-center pt-8 border-t border-white/20">
+            <p className="text-[12px] text-white/50">
+              © 2026 Global Tech Price Index. All rights reserved.
             </p>
-            <p className="text-[11px] text-white/30 mt-2">
+            <p className="text-[11px] text-white/40 mt-2">
+              Disclaimer: Exchange rates and prices are for reference only. Tax rates may vary by region. 
+              Always check the official store for current pricing. We are not responsible for pricing errors or changes.
+            </p>
+            <p className="text-[11px] text-white/40 mt-2">
               As an Amazon Associate, we earn from qualifying purchases.
             </p>
           </div>
