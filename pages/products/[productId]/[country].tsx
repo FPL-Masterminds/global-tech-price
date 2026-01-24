@@ -84,20 +84,6 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
 
   return (
     <div className="bg-black min-h-screen text-[#F5F5F7] selection:bg-white selection:text-black">
-      {/* Header with Data Freshness */}
-      <div className="w-full py-4 border-b border-white/10">
-        <div className="w-[95%] max-w-[1400px] mx-auto flex justify-between items-center text-[12px]">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-            <span className="text-white/60">Verified Data Freshness: {new Date().toLocaleDateString('en-GB')}</span>
-          </div>
-          <div className="flex gap-4">
-            <Link href="/" className="text-white/60 hover:text-white transition-colors">Sources: Apple Store</Link>
-            <Link href="/about" className="text-white/60 hover:text-white transition-colors">Pricing Methodology</Link>
-          </div>
-        </div>
-      </div>
-
       {/* Hero Section with Video */}
       <header className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-20">
         <VideoBackground src={heroVideo} overlayOpacity={0.5} />
