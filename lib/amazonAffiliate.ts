@@ -48,27 +48,34 @@ const AMAZON_DOMAINS: { [key: string]: string } = {
 };
 
 // Amazon Associate IDs per marketplace
-// YOU NEED TO REPLACE THESE WITH YOUR ACTUAL AMAZON ASSOCIATE IDs
+// ✅ REAL ASSOCIATE IDs - CONFIGURED AND READY TO EARN!
 const AMAZON_ASSOCIATE_IDS: { [domain: string]: string } = {
-  'amazon.com': 'jupitermc-21', // Replace with your US Associate ID
-  'amazon.co.uk': 'jupitermc-21', // Replace with your UK Associate ID
-  'amazon.ca': 'jupitermc-21', // Replace with your CA Associate ID
-  'amazon.de': 'jupitermc-21', // Replace with your DE Associate ID
-  'amazon.fr': 'jupitermc-21', // Replace with your FR Associate ID
-  'amazon.it': 'jupitermc-21', // Replace with your IT Associate ID
-  'amazon.es': 'jupitermc-21', // Replace with your ES Associate ID
-  'amazon.co.jp': 'jupitermc-21', // Replace with your JP Associate ID
-  'amazon.in': 'jupitermc-21', // Replace with your IN Associate ID
-  'amazon.com.au': 'jupitermc-21', // Replace with your AU Associate ID
-  'amazon.sg': 'jupitermc-21', // Replace with your SG Associate ID
-  'amazon.nl': 'jupitermc-21', // Replace with your NL Associate ID
-  'amazon.pl': 'jupitermc-21', // Replace with your PL Associate ID
-  'amazon.se': 'jupitermc-21', // Replace with your SE Associate ID
-  'amazon.com.tr': 'jupitermc-21', // Replace with your TR Associate ID
-  'amazon.ae': 'jupitermc-21', // Replace with your AE Associate ID
-  'amazon.com.mx': 'jupitermc-21', // Replace with your MX Associate ID
-  'amazon.com.br': 'jupitermc-21', // Replace with your BR Associate ID
-  'amazon.cn': 'jupitermc-21', // Replace with your CN Associate ID
+  // ✅ PRIMARY ACCOUNTS (YOU EARN COMMISSIONS!)
+  'amazon.com': 'usjupitermc-20', // ✅ US Associate ID
+  'amazon.co.uk': 'jupitermc-21', // ✅ UK Associate ID
+  'amazon.de': 'dejupitermc-21', // ✅ DE Associate ID
+  
+  // North America (uses US ID)
+  'amazon.ca': 'usjupitermc-20', // Canada → US account
+  'amazon.com.mx': 'usjupitermc-20', // Mexico → US account
+  'amazon.com.br': 'usjupitermc-20', // Brazil → US account
+  
+  // Europe (uses UK or DE IDs based on geography)
+  'amazon.fr': 'dejupitermc-21', // France → DE account (EU proximity)
+  'amazon.it': 'dejupitermc-21', // Italy → DE account (EU proximity)
+  'amazon.es': 'dejupitermc-21', // Spain → DE account (EU proximity)
+  'amazon.nl': 'dejupitermc-21', // Netherlands → DE account (EU proximity)
+  'amazon.pl': 'dejupitermc-21', // Poland → DE account (EU proximity)
+  'amazon.se': 'jupitermc-21', // Sweden → UK account (Scandinavia)
+  'amazon.com.tr': 'dejupitermc-21', // Turkey → DE account (EU proximity)
+  
+  // Asia Pacific (uses US ID)
+  'amazon.co.jp': 'usjupitermc-20', // Japan → US account
+  'amazon.in': 'usjupitermc-20', // India → US account
+  'amazon.com.au': 'usjupitermc-20', // Australia → US account
+  'amazon.sg': 'usjupitermc-20', // Singapore → US account
+  'amazon.ae': 'usjupitermc-20', // UAE → US account
+  'amazon.cn': 'usjupitermc-20', // China → US account
 };
 
 /**
@@ -82,7 +89,7 @@ export function getAmazonAffiliateUrl(productName: string, countryCode: string):
   const domain = AMAZON_DOMAINS[countryCode] || 'amazon.com';
   
   // Get the associate ID for this domain
-  const associateId = AMAZON_ASSOCIATE_IDS[domain] || 'jupitermc-21';
+  const associateId = AMAZON_ASSOCIATE_IDS[domain] || 'usjupitermc-20';
   
   // Encode the product name for URL
   const searchQuery = encodeURIComponent(productName);
