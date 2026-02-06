@@ -568,7 +568,7 @@ const App: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="pt-12 border-t border-white/10 text-[12px] text-white/40 flex flex-col items-center justify-center space-y-3 text-center">
+          <div className="pt-12 text-[12px] text-white/40 flex flex-col items-center justify-center space-y-3 text-center">
             <p>Copyright © 2026 Global Tech Price. All rights reserved.</p>
             <p className="max-w-2xl">Data for informational purposes only. We are not tax specialists, financial advisors, or refund experts. Always verify pricing and tax regulations independently.</p>
           </div>
