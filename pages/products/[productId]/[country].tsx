@@ -496,7 +496,7 @@ export default function ProductCountryPage({ product, countryData, allPricesWith
             </div>
           </div>
 
-          <div className="text-center pt-8 border-t border-white/20">
+          <div className="text-center pt-8">
             <p className="text-[12px] text-white/50">
               © 2026 Global Tech Price Index. All rights reserved.
             </p>
